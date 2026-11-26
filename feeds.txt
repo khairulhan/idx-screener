@@ -1,0 +1,7 @@
+# Satu URL RSS per baris. Baris diawali # diabaikan.
+# Google News (bahasa Indonesia) — ubah kata kunci sesuai kebutuhan, spasi ditulis +
+https://news.google.com/rss/search?q=saham+IHSG+when:1d&hl=id&gl=ID&ceid=ID:id
+https://news.google.com/rss/search?q=emiten+BEI+when:1d&hl=id&gl=ID&ceid=ID:id
+https://news.google.com/rss/search?q=saham+rekomendasi+hari+ini+when:1d&hl=id&gl=ID&ceid=ID:id
+https://news.google.com/rss/search?q=asing+net+buy+saham+when:1d&hl=id&gl=ID&ceid=ID:id
+# Tambahkan RSS portal berita ekonomi favorit Anda di bawah ini (cek alamat RSS di situs masing-masing)

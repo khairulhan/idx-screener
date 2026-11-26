@@ -1,0 +1,8 @@
+# Daftar saham untuk sumber CADANGAN (Yahoo Finance) bila situs BEI menolak.
+# Sumber utama (BEI) otomatis mencakup semua saham; daftar ini hanya dipakai saat darurat.
+# Satu kode per baris atau dipisah spasi. Silakan tambah/kurangi.
+BBCA BBRI BMRI BBNI BRIS ARTO TLKM EXCL ISAT TOWR TBIG
+ASII UNTR UNVR ICBP INDF MYOR SIDO KLBF CPIN AMRT MAPI ACES
+ADRO ADMR PTBA ITMG HRUM BUMI MEDC PGAS AKRA PGEO ESSA
+ANTM INCO MDKA AMMN BRPT TPIA INKP TKIM SMGR INTP JSMR
+GOTO BUKA EMTK

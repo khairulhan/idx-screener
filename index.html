@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IDX Screener Saham</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: meja screener trader — padat, cepat dibaca, angka di depan.
+   IDEA: papan ringkasan sesi bursa: konteks pasar, 4 kartu sorotan, peta kandidat, tabel skor.
+   PICTURE: peta sebar Kenaikan% × Nilai transaksi, gelembung = frekuensi, warna = kategori.
+   COLOUR and TYPE: malam biru-tinta dengan teal, kuning, merah sesuai contoh pengguna; Inter Tight + JetBrains Mono untuk angka.
+   LAYOUT: header, strip konteks, tab strategi, kartu 2×2, peta + tabel, panel data/parameter/berita. */
+:root{color-scheme:light dark;
+--bg:light-dark(#eef2f6,#0b1220);--panel:light-dark(#ffffff,#111a2b);--panel2:light-dark(#f6f8fb,#0f1727);
+--line:light-dark(#d9e0e8,#22304a);--ink:light-dark(#0f1a2a,#e7edf6);--mute:light-dark(#5a6b80,#8fa0b8);
+--teal:light-dark(#0f8f84,#2dd4bf);--amber:light-dark(#a86a00,#f5b638);--red:light-dark(#c42c47,#f0647a);
+--green:light-dark(#11804f,#34d399);--blue:light-dark(#2563c9,#60a5fa);--violet:light-dark(#7044c4,#a78bfa)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Inter Tight",system-ui,sans-serif;overflow-x:clip}
+.mono,.num{font-family:"JetBrains Mono",ui-monospace,monospace}
+.wrap{max-width:1280px;margin:0 auto;padding:20px max(3vw,14px) 48px}
+header{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:50px;height:50px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;background:var(--panel);color:var(--teal);flex:none}
+h1{font-size:clamp(20px,2.4vw,27px);line-height:1.1;margin:0;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.sub{color:var(--mute);font-size:14px;margin-top:4px}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid color-mix(in srgb,var(--teal) 45%,transparent);color:var(--teal);border-radius:99px;padding:3px 11px;font-size:13px;font-weight:600;vertical-align:middle;white-space:nowrap}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+button,.btn{font:600 14px "Inter Tight",sans-serif;min-height:40px;padding:0 15px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--teal)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+button.pri{background:var(--teal);color:#04201d;border-color:var(--teal)}
+button[disabled]{opacity:.5;cursor:wait}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:7px 12px;font-size:14px;font-weight:600}
+.chip b{font-family:"JetBrains Mono",monospace;color:var(--green);font-weight:600}
+.chip.warn{border-color:color-mix(in srgb,var(--amber) 55%,transparent);color:var(--amber)}
+.chip.ghost{color:var(--mute);border-style:dashed;cursor:pointer}
+.srcline{color:var(--mute);font-size:13px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--amber);flex:none}
+.demo{background:color-mix(in srgb,var(--amber) 14%,transparent);color:var(--amber);border-radius:8px;padding:2px 9px;font-weight:600}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:18px 0 14px;padding-bottom:2px}
+.tab{flex:none;border-radius:99px}
+.tab[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.desc{color:var(--mute);font-size:14px;margin:-4px 0 16px;max-width:80ch}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px;position:relative}
+.card.c2{border-color:color-mix(in srgb,var(--amber) 50%,transparent)}.card.c3{border-color:color-mix(in srgb,var(--red) 45%,transparent)}.card.c4{border-color:color-mix(in srgb,var(--teal) 40%,transparent)}
+.lbl{font-size:13px;font-weight:700;color:var(--mute);display:flex;justify-content:space-between;gap:8px;align-items:center}
+.c2 .lbl{color:var(--amber)}.c3 .lbl{color:var(--red)}.c4 .lbl{color:var(--teal)}
+.tag{font:700 12px "JetBrains Mono",monospace;padding:3px 8px;border-radius:6px;background:color-mix(in srgb,currentColor 14%,transparent);white-space:nowrap}
+.big{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin:10px 0 6px}
+.big .k{font:700 clamp(30px,4vw,44px)/1.05 "JetBrains Mono",monospace;letter-spacing:-.02em}
+.big .v{font:600 clamp(18px,2vw,24px) "JetBrains Mono",monospace}
+.c2 .v{color:var(--amber)}.c3 .v{color:var(--red)}.c4 .v{color:var(--green)}
+.foot{font-size:14px;color:var(--mute)}.foot .up{color:var(--green)}.foot .hi{color:var(--amber)}.foot .rd{color:var(--red)}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:14px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.box h2{font-size:17px;margin:0 0 4px;font-weight:700}
+.box .hint{color:var(--mute);font-size:13px;margin:0 0 10px}
+.fig{position:relative;height:380px}.fig text{font-family:"JetBrains Mono",monospace}.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);padding:8px 10px;border-radius:8px;font-size:13px;line-height:1.4;opacity:0;transition:opacity .12s;max-width:220px;z-index:3}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--mute);margin-top:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-size:12px;color:var(--mute);text-align:left;font-weight:700;padding:8px 8px;border-bottom:1px solid var(--line);white-space:nowrap;cursor:pointer;user-select:none}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+td.n,th.n{text-align:right;font-family:"JetBrains Mono",monospace;white-space:nowrap}
+tr.out td{opacity:.45}
+.code{font:700 15px "JetBrains Mono",monospace}
+.bar{width:86px;height:8px;border-radius:9px;background:var(--panel2);border:1px solid var(--line);overflow:hidden;display:inline-block;vertical-align:middle;margin-right:6px}
+.bar span{display:block;height:100%;background:var(--teal)}
+.badge{font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px;white-space:nowrap;background:color-mix(in srgb,currentColor 14%,transparent)}
+.why{display:flex;flex-wrap:wrap;gap:4px}.why span{font-size:12px;color:var(--mute);border:1px solid var(--line);border-radius:6px;padding:1px 6px;white-space:nowrap}
+.why span.neg{color:var(--red);border-color:color-mix(in srgb,var(--red) 40%,transparent)}
+select,input,textarea{font:16px "Inter Tight",sans-serif;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+td select{font-size:13px;padding:4px}
+textarea{width:100%;min-height:150px;font:13px/1.5 "JetBrains Mono",monospace;resize:vertical}
+details.box summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center;min-height:32px}
+details.box summary::after{content:"+";font:700 20px "JetBrains Mono";color:var(--mute)}details[open].box summary::after{content:"−"}
+.params{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:12px}
+.params label{display:grid;gap:4px;font-size:13px;color:var(--mute);font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.msg{font-size:13px;color:var(--mute)}.msg.err{color:var(--red)}.msg.ok{color:var(--green)}
+.newsres{display:grid;gap:8px;margin-top:12px}
+.nitem{display:grid;grid-template-columns:70px 64px minmax(0,1fr);gap:10px;align-items:start;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:14px}
+.empty{padding:28px;text-align:center;color:var(--mute)}
+.hl{display:grid;gap:2px;border-bottom:1px solid var(--line);padding:6px 0;font-size:14px}.hl a{color:var(--ink)}.hl .msg b{color:var(--teal)}
+.disc{font-size:12.5px;color:var(--mute);margin-top:22px;line-height:1.6;max-width:110ch}
+code{font-family:"JetBrains Mono",monospace;font-size:12.5px;overflow-wrap:anywhere}
+@media(max-width:700px){.cards{grid-template-columns:minmax(0,1fr)}.card{padding:16px 18px}.fig{height:300px}.why{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <div class="logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6M20 16V6"/></svg></div>
+    <div>
+      <h1>IDX Screener — Ringkasan Kandidat <span class="pill" id="presetPill"></span></h1>
+      <div class="sub mono" id="subline"></div>
+    </div>
+  </div>
+  <div class="actions">
+    <button id="goParam">Parameter</button>
+    <button id="goData">Tempel Data</button>
+    <button id="goNews">Berita</button>
+    <button id="themeBtn">Mode Terang</button>
+  </div>
+</header>
+
+<div class="chips" id="ctxChips"></div>
+<div class="srcline"><span class="dot"></span><span id="srcText"></span><span id="demoFlag"></span><button id="autoBtn" hidden>Kembali ke data otomatis</button><button id="reloadBtn">Muat ulang data</button></div>
+
+<div class="tabs" role="tablist" id="tabs"></div>
+<p class="desc" id="stratDesc"></p>
+
+<section class="cards" id="cards"></section>
+
+<div class="grid2">
+  <div class="box">
+    <h2>Peta kandidat</h2>
+    <p class="hint">Sumbu datar: kenaikan hari ini. Sumbu tegak: nilai transaksi (skala log). Besar gelembung: frekuensi.</p>
+    <div class="fig" id="fig"><svg id="plot"></svg><div class="tip" id="tip"></div></div>
+    <div class="legend" id="legend"></div>
+  </div>
+  <div class="box">
+    <h2 id="tblTitle">Daftar skor</h2>
+    <p class="hint">Klik judul kolom untuk mengurutkan. Kolom Berita bisa diisi manual (−2 sangat negatif s.d. +2 sangat positif) atau otomatis dari panel Berita.</p>
+    <label class="msg"><input type="checkbox" id="showAll"> Tampilkan juga yang tidak lolos</label>
+    <div class="scroll" style="margin-top:8px"><table id="tbl"></table></div>
+  </div>
+</div>
+
+<details class="box" id="pData" style="margin-top:14px">
+  <summary>Tempel / unggah data transaksi</summary>
+  <p class="hint">Tempel dari Excel (salin sel), CSV, atau unggah file .csv. Cocok dengan file <b>Ringkasan Saham</b> dari idx.co.id, ekspor screener Stockbit/RTI, atau tabel buatan Anda. Baris pertama harus judul kolom.</p>
+  <p class="hint">Kolom yang dikenali: <code>Kode</code>, <code>Penutupan/Close</code>, <code>Sebelumnya/Prev</code>, <code>Open</code>, <code>Tertinggi/High</code>, <code>Terendah/Low</code>, <code>Chg%</code>, <code>Nilai/Value</code>, <code>Volume</code>, <code>Frekuensi/Freq</code>, <code>Foreign Buy</code>, <code>Foreign Sell</code> atau <code>Net Foreign</code>, <code>MA20</code>, <code>AvgNilai20</code>, <code>Sektor</code>. Wajib: Kode, Close, dan Chg% atau Prev. Angka boleh format Indonesia (1.234,5) atau dengan akhiran K/Jt/M/B/T.</p>
+  <textarea id="dataIn" spellcheck="false"></textarea>
+  <div class="row">
+    <button class="pri" id="applyData">Terapkan data</button>
+    <label class="btn" style="display:inline-flex;align-items:center">Unggah CSV<input type="file" id="fileIn" accept=".csv,.tsv,.txt" hidden></label>
+    <label class="msg">Satuan kolom Nilai/Foreign:
+      <select id="unit"><option value="1">Rupiah</option><option value="1e6">Juta</option><option value="1e9">Miliar</option></select></label>
+    <button id="loadDemo">Muat data contoh</button>
+    <span class="msg" id="dataMsg"></span>
+  </div>
+  <div class="row">
+    <label class="msg">Label sumber data: <input id="srcLabel" placeholder="mis. Ringkasan Saham Sesi I, 15:31 WIB" style="width:min(340px,80vw)"></label>
+  </div>
+  <h2 style="font-size:15px;margin:18px 0 6px">Konteks pasar (opsional, tampil di strip atas)</h2>
+  <div class="params" id="ctxForm"></div>
+</details>
+
+<details class="box" id="pParam" style="margin-top:14px">
+  <summary>Parameter preset</summary>
+  <p class="hint">Ambang berlaku untuk strategi yang sedang aktif. Perubahan langsung menghitung ulang dan tersimpan di peramban ini.</p>
+  <div class="params" id="paramForm"></div>
+  <div class="row"><button id="resetParam">Kembalikan bawaan</button></div>
+</details>
+
+<details class="box" id="pNews" style="margin-top:14px">
+  <summary>Tren pemberitaan</summary>
+  <p class="hint">Judul berita terbaru diambil otomatis dari RSS dan emiten yang disebut diberi sentimen (lihat bawah). Anda juga bisa menempel teks berita sendiri. Saat dashboard dibuka di Claude, Claude membaca teksnya, menandai emiten yang disebut, menilai sentimen −2…+2 dan katalisnya, lalu mengisi kolom Berita di tabel. Claude hanya menilai teks yang Anda tempel — tidak mencari berita sendiri.</p>
+  <textarea id="newsIn" placeholder="Contoh:&#10;BRPT: anak usaha teken kontrak pasokan jangka panjang...&#10;Emiten tambang batu bara bagi dividen interim...&#10;OJK menghentikan sementara perdagangan saham XXXX..."></textarea>
+  <div class="row">
+    <button class="pri" id="newsBtn">Analisis berita dengan Claude</button>
+    <button id="newsClear">Hapus hasil berita</button>
+    <span class="msg" id="newsMsg"></span>
+  </div>
+  <div class="newsres" id="newsRes"></div>
+  <h2 style="font-size:15px;margin:18px 0 6px">Judul berita terbaru (otomatis dari RSS)</h2>
+  <div class="row" style="margin-top:0"><button id="useHead">Salin judul ke kotak analisis</button></div>
+  <div class="newsres" id="headlines"><p class="msg">Belum ada data/news.json.</p></div>
+</details>
+
+<p class="disc"><b>Bukan rekomendasi investasi.</b> Skor hanya menyaring data yang Anda masukkan dengan aturan teknis sederhana (posisi penutupan, likuiditas, aliran asing, sentimen berita). BSJP dan scalping berisiko tinggi: gap turun pagi, auto rejection bawah, dan likuiditas tipis bisa memutar hasil dalam hitungan menit. Batas ARA yang dipakai untuk penanda "dekat ARA" adalah asumsi 35% / 25% / 20% per rentang harga; periksa aturan BEI terbaru. Selalu verifikasi chart dan broker summary sebelum bertransaksi.</p>
+</div>
+
+<script>
+{
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store={get(k,d){try{const v=localStorage.getItem('idxscr_'+k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem('idxscr_'+k,JSON.stringify(v))}catch(e){}}};
+
+const DEMO=`Kode,Sektor,Sebelumnya,Open,Tertinggi,Terendah,Penutupan,Nilai,Frekuensi,Foreign Buy,Foreign Sell,MA20,AvgNilai20
+CTH01,Basic,1000,1010,1080,1005,1075,299180000000,42000,120000000000,61100000000,980,150000000000
+CTH02,Energy,2300,2310,2480,2300,2460,292400000000,38000,90000000000,70000000000,2250,180000000000
+CTH03,Energy,120,121,131,120,130,288100000000,55000,40000000000,52000000000,112,200000000000
+CTH04,Infra,270,275,334,272,332,85300000000,21000,5000000000,3000000000,240,20000000000
+CTH05,Basic,640,645,720,640,705,64000000000,15000,8000000000,4000000000,600,25000000000
+CTH06,Consumer,180,182,199,180,197,41000000000,12500,2000000000,2500000000,170,15000000000
+CTH07,Finance,4500,4520,4930,4500,4900,120000000000,18000,40000000000,25000000000,4400,90000000000
+CTH08,Industrial,860,865,915,860,900,33000000000,8000,3000000000,2000000000,850,30000000000
+CTH09,Property,1500,1505,1570,1495,1560,58000000000,9500,10000000000,12000000000,1520,60000000000
+CTH10,Tech,350,352,372,349,366,22000000000,6000,1000000000,800000000,340,18000000000
+CTH11,Finance,7800,7800,8050,7775,7950,410000000000,30000,150000000000,95000000000,7600,380000000000
+CTH12,Consumer,36,36,40,35,38,9000000000,7000,0,0,33,6000000000
+CTH13,Property,25,25,28,25,27,4000000000,3000,0,0,24,3000000000
+CTH14,Energy,2100,2120,2140,2010,2020,95000000000,16000,20000000000,35000000000,2150,80000000000
+CTH15,Infra,950,955,1010,940,960,47000000000,11000,6000000000,5000000000,930,40000000000
+CTH16,Health,3300,3310,3360,3290,3340,7000000000,900,500000000,300000000,3280,9000000000`;
+
+const STRATS={
+ bsjp:{name:'BSJP',pill:'BSJP — Beli Sore Jual Pagi',desc:'Mencari saham yang ditutup kuat di dekat harga tertinggi hari ini dengan nilai transaksi besar, berharap ada lanjutan kenaikan di pembukaan besok. Kenaikan sangat tinggi diberi penanda risiko pembalikan.'},
+ scalp:{name:'Scalping',pill:'Scalping — Likuid & Volatil',desc:'Mencari saham dengan frekuensi dan nilai transaksi tinggi, rentang harian lebar, dan fraksi harga (tick) kecil relatif terhadap harga — cocok untuk keluar-masuk cepat dalam sesi.'},
+ swing:{name:'Swing / Tren',pill:'Swing — Tren Naik',desc:'Mencari saham dengan kenaikan moderat di atas MA20, didukung lonjakan nilai transaksi dan net buy asing — untuk ditahan beberapa hari.'},
+ asing:{name:'Akumulasi Asing',pill:'Akumulasi Asing',desc:'Mengurutkan net buy asing, baik nominal maupun porsinya terhadap nilai transaksi, dengan syarat harga tidak turun.'},
+ berita:{name:'Tren Berita',pill:'Tren Berita — Katalis',desc:'Mengurutkan saham yang disebut dalam berita yang Anda tempel menurut sentimen dan jumlah sebutan, disaring likuiditas minimum.'}
+};
+const DEF={minPrice:50,minValue:5,minFreq:500,newsW:20,topN:3,
+ bsjpMinChg:2,bsjpMinPos:0.7,sangat:19,agresif:8,
+ scMinValue:20,scMinFreq:3000,scMinRange:3,
+ swMaxChg:10,swMinChg:0.5,
+ asMinRatio:5};
+const PLAB={minPrice:'Harga minimum (Rp)',minValue:'Nilai transaksi minimum (Rp miliar)',minFreq:'Frekuensi minimum (kali)',newsW:'Bobot berita dalam skor (%)',topN:'Jumlah prioritas teratas',
+ bsjpMinChg:'BSJP: kenaikan minimum (%)',bsjpMinPos:'BSJP: posisi close minimum (0–1)',sangat:'Batas "Sangat Agresif" (%)',agresif:'Batas "Agresif" (%)',
+ scMinValue:'Scalping: nilai minimum (Rp miliar)',scMinFreq:'Scalping: frekuensi minimum',scMinRange:'Scalping: rentang harian minimum (%)',
+ swMinChg:'Swing: kenaikan minimum (%)',swMaxChg:'Swing: kenaikan maksimum (%)',asMinRatio:'Asing: porsi net buy minimum (%)'};
+const PSHOW={bsjp:['bsjpMinChg','bsjpMinPos','sangat','agresif'],scalp:['scMinValue','scMinFreq','scMinRange'],swing:['swMinChg','swMaxChg'],asing:['asMinRatio'],berita:[]};
+const CTXF=[['ihsg','IHSG (mis. 5.233,14 (+0,68%))'],['nilai','Nilai BEI (mis. Rp5,06 T)'],['asing','Asing (mis. Net Buy +Rp221,82 M)'],['sektor','Sektor penggerak'],['makro','Waspada makro']];
+
+let P=Object.assign({},DEF,store.get('params',{}));
+let strat=store.get('strat','bsjp');
+let rawText=store.get('data',null);
+let isDemo=store.get('isDemo',rawText==null);
+if(rawText==null)rawText=DEMO;
+let unit=store.get('unit','1');
+let news=store.get('news',{});   // kode -> {s, n, katalis, horizon, src}
+let ctx=store.get('ctx',{});
+let mode=store.get('mode','auto');  // auto = pakai data/latest.csv bila ada
+let autoMeta=null,autoNews={},autoItems=[],autoCsv=null,NW={};
+let srcLabel=store.get('srcLabel','');
+let sortKey='score',sortDir=-1;
+let rows=[];
+
+/* ---------- parsing ---------- */
+function parseNum(v){
+ if(v==null)return NaN;let s=String(v).trim();if(!s||s==='-')return NaN;
+ let mult=1;const m=s.match(/(jt|k|m|b|t)\s*$/i);
+ if(m){const u=m[1].toLowerCase();mult={k:1e3,jt:1e6,m:1e9,b:1e9,t:1e12}[u];s=s.slice(0,-m[1].length)}
+ s=s.replace(/[^\d.,\-]/g,'');
+ const hasD=s.includes('.'),hasC=s.includes(',');
+ if(hasD&&hasC){if(s.lastIndexOf(',')>s.lastIndexOf('.'))s=s.replace(/\./g,'').replace(',','.');else s=s.replace(/,/g,'')}
+ else if(hasC){s=/^-?\d{1,3}(,\d{3})+$/.test(s)?s.replace(/,/g,''):s.replace(',','.')}
+ else if(hasD){if(/^-?\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,'')}
+ const n=parseFloat(s);return isNaN(n)?NaN:n*mult;
+}
+function splitLine(line,d){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const c=line[i];if(q){if(c==='"'){if(line[i+1]==='"'){cur+='"';i++}else q=false}else cur+=c}else if(c==='"')q=true;else if(c===d){out.push(cur);cur=''}else cur+=c}out.push(cur);return out}
+const ALI={kode:['kode','kodesaham','ticker','symbol','saham','stock','code','emiten'],close:['close','penutupan','last','harga','price','lastprice','hargaterakhir'],prev:['prev','sebelumnya','previous','prevclose'],open:['open','openprice','pembukaan'],high:['high','tertinggi'],low:['low','terendah'],chg:['chg','change','changepct','chgpct','perubahan','persen','pct','changepercent','return'],selisih:['selisih'],value:['value','nilai','val','turnover','nilaitransaksi'],volume:['volume','vol'],freq:['freq','frekuensi','frequency'],fbuy:['foreignbuy','asingbeli','fbuy'],fsell:['foreignsell','asingjual','fsell'],nf:['netforeign','nf','netasing','netbuyasing','nfbuy'],ma20:['ma20','sma20'],avgval:['avgnilai20','avgvalue','avgvalue20','avgnilai','ratanilai','avgval'],sektor:['sektor','sector']};
+function parseData(text){
+ const lines=text.split(/\r?\n/).filter(l=>l.trim());if(lines.length<2)throw new Error('Data kosong atau tanpa baris isi.');
+ const h=lines[0];const d=h.includes('\t')?'\t':(h.split(';').length>h.split(',').length?';':',');
+ const heads=splitLine(h,d).map(x=>x.toLowerCase().replace(/%/g,'pct').replace(/[^a-z0-9]/g,''));
+ const idx={};for(const k in ALI){const i=heads.findIndex(x=>ALI[k].includes(x));if(i>=0)idx[k]=i}
+ if(idx.kode==null||idx.close==null)throw new Error('Kolom Kode dan Close/Penutupan tidak ditemukan.');
+ if(idx.chg==null&&idx.prev==null&&idx.selisih==null)throw new Error('Butuh kolom Chg% atau Sebelumnya/Prev.');
+ const U=+unit,out=[];
+ for(const l of lines.slice(1)){
+  const c=splitLine(l,d),g=k=>idx[k]==null?NaN:parseNum(c[idx[k]]);
+  const kode=String(c[idx.kode]||'').trim().toUpperCase();if(!kode)continue;
+  const close=g('close');if(isNaN(close))continue;
+  let prev=g('prev');if(isNaN(prev)&&!isNaN(g('selisih')))prev=close-g('selisih');
+  let chg=g('chg');if(isNaN(chg)&&prev>0)chg=(close-prev)/prev*100;
+  let high=g('high'),low=g('low');if(isNaN(high))high=close;if(isNaN(low))low=close;
+  let nf=g('nf');if(isNaN(nf)&&!isNaN(g('fbuy')))nf=g('fbuy')-(g('fsell')||0);
+  out.push({kode,sektor:idx.sektor!=null?String(c[idx.sektor]||'').trim():'',close,prev,open:g('open'),high,low,chg:isNaN(chg)?0:chg,
+   value:(g('value')||0)*U,freq:g('freq'),nf:isNaN(nf)?NaN:nf*U,ma20:g('ma20'),avgval:isNaN(g('avgval'))?NaN:g('avgval')*U});
+ }
+ if(!out.length)throw new Error('Tidak ada baris yang terbaca.');
+ return out;
+}
+
+/* ---------- helpers ---------- */
+const tick=p=>p<200?1:p<500?2:p<2000?5:p<5000?10:25;
+const araLim=p=>p<=200?35:p<=5000?25:20;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const lg=x=>Math.log10(Math.max(x,1));
+const fmtRp=v=>{if(isNaN(v))return '–';const a=Math.abs(v),s=v<0?'−':'';if(a>=1e12)return s+'Rp'+(a/1e12).toLocaleString('id-ID',{maximumFractionDigits:2})+' T';if(a>=1e9)return s+'Rp'+(a/1e9).toLocaleString('id-ID',{maximumFractionDigits:2})+' M';if(a>=1e6)return s+'Rp'+(a/1e6).toLocaleString('id-ID',{maximumFractionDigits:1})+' Jt';return s+'Rp'+a.toLocaleString('id-ID')};
+const fmtP=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toLocaleString('id-ID',{minimumFractionDigits:2,maximumFractionDigits:2})+'%';
+const fmtN=v=>isNaN(v)?'–':Math.round(v).toLocaleString('id-ID');
+const TIERC={'Prioritas Top Value':'var(--teal)','Sangat Agresif':'var(--red)','Agresif':'var(--amber)','Pantauan':'var(--blue)','Prioritas Likuid':'var(--teal)','Volatil Tinggi':'var(--amber)','Tren Kuat':'var(--teal)','Menarik':'var(--amber)','Akumulasi Besar':'var(--teal)','Akumulasi':'var(--blue)','Katalis Kuat':'var(--teal)','Katalis Positif':'var(--green)','Tidak lolos':'var(--mute)'};
+
+/* ---------- scoring ---------- */
+function score(r){
+ const why=[],neg=[];const mv=P.minValue*1e9;
+ const range=r.low>0?(r.high-r.low)/r.low*100:0;
+ const pos=r.high>r.low?(r.close-r.low)/(r.high-r.low):(r.chg>0?1:0.5);
+ const nfr=!isNaN(r.nf)&&r.value>0?r.nf/r.value*100:NaN;
+ const spike=!isNaN(r.avgval)&&r.avgval>0?r.value/r.avgval:NaN;
+ const nw=NW[r.kode];const ns=nw?(nw.s+2)*25:null;
+ r.range=range;r.pos=pos;r.nfr=nfr;r.spike=spike;r.ara=r.chg>=araLim(r.prev||r.close)-1;
+ let fail='';
+ if(r.close<P.minPrice)fail='Harga < Rp'+P.minPrice;
+ else if(r.value<mv)fail='Nilai < '+P.minValue+' M';
+ else if(!isNaN(r.freq)&&r.freq<P.minFreq)fail='Freq < '+P.minFreq;
+ let s=0;
+ if(strat==='bsjp'){
+  if(!fail&&r.chg<P.bsjpMinChg)fail='Naik < '+P.bsjpMinChg+'%';
+  if(!fail&&pos<P.bsjpMinPos)fail='Close jauh dari high';
+  s=25*clamp((pos-0.5)/0.45)+20*clamp(r.chg/15)+20*clamp((lg(r.value)-lg(mv))/2)+10*(isNaN(r.freq)?0.5:clamp((lg(r.freq)-lg(P.minFreq))/1.5))
+   +10*(isNaN(nfr)?0.3:clamp(nfr/15+0.3))+15*(isNaN(spike)?0.4:clamp((spike-1)/2));
+  if(pos>=0.9)why.push('Close di high');else if(pos>=0.75)why.push('Close dekat high');
+  if(spike>=2)why.push('Value '+spike.toFixed(1)+'× rata2');
+  if(r.ara)neg.push('Dekat ARA');
+  if(r.chg>=P.sangat)neg.push('Risiko reversal');
+ }else if(strat==='scalp'){
+  if(!fail&&r.value<P.scMinValue*1e9)fail='Nilai < '+P.scMinValue+' M';
+  if(!fail&&!isNaN(r.freq)&&r.freq<P.scMinFreq)fail='Freq < '+P.scMinFreq;
+  if(!fail&&range<P.scMinRange)fail='Rentang < '+P.scMinRange+'%';
+  const tp=tick(r.close)/r.close*100;r.tickp=tp;
+  s=30*clamp(range/8)+20*clamp((1.2-tp)/1)+25*(isNaN(r.freq)?0.5:clamp((lg(r.freq)-3)/1.7))+15*clamp((lg(r.value)-lg(P.scMinValue*1e9))/1.5)+10*clamp(Math.abs(r.chg)/8);
+  why.push('Rentang '+range.toFixed(1)+'%');if(tp<=0.5)why.push('Tick '+tp.toFixed(2)+'%');
+  if(tp>1.5)neg.push('Tick mahal '+tp.toFixed(1)+'%');
+ }else if(strat==='swing'){
+  if(!fail&&r.chg<P.swMinChg)fail='Naik < '+P.swMinChg+'%';
+  if(!fail&&r.chg>P.swMaxChg)fail='Naik > '+P.swMaxChg+'%';
+  if(!fail&&!isNaN(r.ma20)&&r.close<r.ma20)fail='Di bawah MA20';
+  const above=!isNaN(r.ma20)?clamp((r.close/r.ma20-1)/0.08):pos;
+  s=25*above+20*clamp(1-Math.abs(r.chg-4)/6)+20*(isNaN(nfr)?0.3:clamp(nfr/15+0.3))+20*(isNaN(spike)?0.4:clamp((spike-1)/1.5))+15*pos;
+  if(!isNaN(r.ma20)&&r.close>r.ma20)why.push('Di atas MA20');
+  if(spike>=1.5)why.push('Value '+spike.toFixed(1)+'×');
+  if(isNaN(r.ma20))neg.push('MA20 tak ada');
+ }else if(strat==='asing'){
+  if(!fail&&(isNaN(r.nf)||r.nf<=0))fail='Bukan net buy asing';
+  if(!fail&&nfr<P.asMinRatio)fail='Porsi asing < '+P.asMinRatio+'%';
+  if(!fail&&r.chg<0)fail='Harga turun';
+  s=50*clamp((nfr||0)/30)+30*clamp((lg(Math.max(r.nf||0,1))-8)/3)+20*clamp((r.chg+1)/6);
+ }else{
+  if(!fail&&!nw)fail='Tidak ada di berita';
+  if(!fail&&nw.s<1)fail=nw.s<0?'Sentimen negatif':'Sentimen netral';
+  s=nw?60*clamp((nw.s+2)/4)+15*clamp((nw.n||1)/4)+25*clamp((lg(r.value)-lg(mv))/2):0;
+ }
+ if(!isNaN(nfr)&&strat!=='asing'){if(nfr>=5)why.push('Asing net buy');else if(nfr<=-5)neg.push('Asing net sell')}
+ if(strat==='asing'&&!isNaN(r.nf))why.push('NF '+fmtRp(r.nf));
+ if(nw&&strat!=='berita'){s=s*(1-P.newsW/100)+ns*(P.newsW/100);(nw.s>0?why:nw.s<0?neg:why).push('Berita '+(nw.s>0?'+':'')+nw.s)}
+ if(nw&&strat==='berita'&&nw.katalis)why.push(nw.katalis);
+ if(nw&&nw.s<=-1&&strat!=='berita')neg.push('Sentimen negatif');
+ r.score=Math.round(s);r.fail=fail;r.why=why;r.neg=neg;
+}
+function tierize(list){
+ const pass=list.filter(r=>!r.fail);
+ const byVal=[...pass].sort((a,b)=>b.value-a.value);const topV=new Set(byVal.slice(0,P.topN).map(r=>r.kode));
+ for(const r of list){
+  if(r.fail){r.tier='Tidak lolos';continue}
+  if(strat==='bsjp')r.tier=r.chg>=P.sangat?'Sangat Agresif':topV.has(r.kode)?'Prioritas Top Value':r.chg>=P.agresif?'Agresif':'Pantauan';
+  else if(strat==='scalp')r.tier=topV.has(r.kode)?'Prioritas Likuid':r.range>=6?'Volatil Tinggi':'Pantauan';
+  else if(strat==='swing')r.tier=r.score>=70?'Tren Kuat':r.score>=55?'Menarik':'Pantauan';
+  else if(strat==='asing'){const t=[...pass].sort((a,b)=>b.nf-a.nf).slice(0,P.topN).map(x=>x.kode);r.tier=t.includes(r.kode)?'Akumulasi Besar':'Akumulasi'}
+  else r.tier=NW[r.kode].s>=2?'Katalis Kuat':'Katalis Positif';
+ }
+}
+
+/* ---------- render ---------- */
+function compute(){
+ let base;try{base=parseData(rawText)}catch(e){base=[];$('#dataMsg').textContent=e.message;$('#dataMsg').className='msg err'}
+ NW=Object.assign({},autoNews,news);
+ rows=base;rows.forEach(score);tierize(rows);
+}
+function renderHead(){
+ $('#presetPill').textContent=STRATS[strat].pill;
+ const d=new Date().toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'short',year:'numeric'});
+ const lbl=(mode==='auto'&&autoMeta)?('Data bursa '+autoMeta.tanggal_bursa):srcLabel;
+ $('#subline').textContent=d+(lbl?' • '+lbl:'');
+ const usingAuto=mode==='auto'&&autoCsv!=null;
+ $('#srcText').textContent='Sumber: '+(usingAuto?('data otomatis '+(autoMeta?autoMeta.sumber+' • tanggal bursa '+autoMeta.tanggal_bursa+' • diambil '+autoMeta.diambil:'data/latest.csv')):isDemo?'data contoh bawaan':(srcLabel||'data yang Anda tempel'))+' — '+rows.length+' saham terbaca. Verifikasi chart & broker summary sebelum eksekusi.';
+ $('#autoBtn').hidden=!(autoCsv!=null&&mode!=='auto');
+ $('#demoFlag').innerHTML=isDemo?'<span class="demo">DATA CONTOH — kode CTH fiktif, bukan data pasar. Tempel data Anda.</span>':'';
+ const chips=CTXF.filter(([k])=>ctx[k]).map(([k,l])=>`<div class="chip${k==='makro'?' warn':''}">${esc(l.split(' (')[0])}: <b${k==='makro'?' style="color:inherit"':''}>${esc(ctx[k])}</b></div>`);
+ $('#ctxChips').innerHTML=chips.length?chips.join(''):'<div class="chip ghost" id="ctxGhost">+ Isi konteks pasar (IHSG, nilai BEI, asing, sektor, makro)</div>';
+ const g=$('#ctxGhost');if(g)g.onclick=()=>openP('#pData');
+ $('#tabs').innerHTML=Object.entries(STRATS).map(([k,v])=>`<button class="tab" role="tab" aria-selected="${k===strat}" data-k="${k}">${v.name}</button>`).join('');
+ $('#stratDesc').textContent=STRATS[strat].desc;
+}
+function renderCards(){
+ const pass=rows.filter(r=>!r.fail);const el=$('#cards');
+ if(!rows.length){el.innerHTML='<div class="card empty" style="grid-column:1/-1">Belum ada data yang terbaca. Buka “Tempel Data”.</div>';return}
+ const cnt={};pass.forEach(r=>cnt[r.tier]=(cnt[r.tier]||0)+1);
+ const under=rows.filter(r=>r.close<P.minPrice).length;
+ const br=Object.entries(cnt).map(([t,n])=>n+' '+t).join(' • ')||'Tidak ada yang lolos';
+ const allV=[...rows].sort((a,b)=>b.value-a.value);
+ const lead=[...pass].sort((a,b)=>b.value-a.value)[0];
+ const top=[...pass].sort((a,b)=>b.chg-a.chg)[0];
+ const firstTier=Object.keys(TIERC).find(t=>cnt[t]&&/Prioritas|Kuat|Besar/.test(t));
+ const focus=firstTier?pass.filter(r=>r.tier===firstTier):[...pass].sort((a,b)=>b.score-a.score).slice(0,P.topN);
+ const fv=focus.map(r=>r.value);
+ const zone=top?(top.chg>=P.sangat?['Zona Sangat Agresif (≥'+P.sangat+'%)','Risiko reversal tinggi','EKSTREM']:top.chg>=P.agresif?['Zona Agresif (≥'+P.agresif+'%)','Pantau distribusi','AGRESIF']:['Kenaikan moderat','Tren lebih tenang','MODERAT']):null;
+ el.innerHTML=`
+ <div class="card"><div class="lbl">Total kandidat lolos <span class="tag">${esc(STRATS[strat].name)}</span></div>
+  <div class="big"><span class="k">${pass.length} Emiten</span></div>
+  <div class="foot">${esc(br)}${under?` | <span class="hi">${under} disaring &lt;Rp${P.minPrice}</span>`:''}</div></div>
+ <div class="card c2"><div class="lbl">Pemimpin kekuatan transaksi ${lead?`<span class="tag">#${allV.indexOf(lead)+1} nilai</span>`:''}</div>
+  ${lead?`<div class="big"><span class="k">${esc(lead.kode)}</span><span class="v">${fmtRp(lead.value)}</span></div>
+  <div class="foot mono"><span class="${lead.chg>=0?'up':'rd'}">${fmtP(lead.chg)}</span> • Net asing ${fmtRp(lead.nf)} • Freq ${fmtN(lead.freq)}</div>`:'<div class="empty">Tidak ada kandidat</div>'}</div>
+ <div class="card c3"><div class="lbl">Kenaikan tertinggi (1D return) ${zone?`<span class="tag">${zone[2]}</span>`:''}</div>
+  ${top?`<div class="big"><span class="k">${esc(top.kode)}</span><span class="v">${fmtP(top.chg)}</span></div>
+  <div class="foot">${zone[0]} — <span class="rd">${zone[1]}</span>${top.ara?' • dekat ARA':''}</div>`:'<div class="empty">Tidak ada kandidat</div>'}</div>
+ <div class="card c4"><div class="lbl">Fokus prioritas lanjutan <span class="tag">${esc(firstTier||'SKOR TERTINGGI')}</span></div>
+  ${focus.length?`<div class="big"><span class="k">${focus.length} Emiten</span><span class="v">${focus.map(r=>esc(r.kode)).join(', ')}</span></div>
+  <div class="foot mono">Nilai ${fmtRp(Math.min(...fv)).replace(' M','')}–${fmtRp(Math.max(...fv))} • Cek chart &amp; broksum</div>`:'<div class="empty">Tidak ada kandidat</div>'}</div>`;
+}
+function renderTable(){
+ const all=$('#showAll').checked;let list=rows.filter(r=>all||!r.fail);
+ const k=sortKey;list.sort((a,b)=>{const x=a[k],y=b[k];if(typeof x==='string')return sortDir*x.localeCompare(y);return sortDir*((isNaN(x)?-1e18:x)-(isNaN(y)?-1e18:y))});
+ $('#tblTitle').textContent='Daftar skor — '+STRATS[strat].name;
+ const cols=[['kode','Kode'],['close','Harga','n'],['chg','Chg%','n'],['value','Nilai','n'],['freq','Freq','n'],['nf','Net Asing','n'],['score','Skor'],['tier','Kategori'],['why','Alasan'],['news','Berita']];
+ const head='<thead><tr>'+cols.map(([c,l,n])=>`<th class="${n||''}" data-k="${c}">${l}${sortKey===c?(sortDir<0?' ↓':' ↑'):''}</th>`).join('')+'</tr></thead>';
+ if(!list.length){$('#tbl').innerHTML=head+`<tbody><tr><td colspan="10" class="empty">Tidak ada saham yang lolos. Longgarkan parameter atau centang “Tampilkan juga yang tidak lolos”.</td></tr></tbody>`;return}
+ const body=list.map(r=>{const nw=NW[r.kode];const sv=nw?nw.s:'';
+  return `<tr class="${r.fail?'out':''}"><td class="code">${esc(r.kode)}</td><td class="n">${fmtN(r.close)}</td>
+  <td class="n" style="color:${r.chg>=0?'var(--green)':'var(--red)'}">${fmtP(r.chg)}</td><td class="n">${fmtRp(r.value)}</td><td class="n">${fmtN(r.freq)}</td>
+  <td class="n" style="color:${r.nf>0?'var(--green)':r.nf<0?'var(--red)':'inherit'}">${fmtRp(r.nf)}</td>
+  <td class="n"><span class="bar"><span style="width:${r.fail?0:r.score}%"></span></span>${r.fail?'–':r.score}</td>
+  <td><span class="badge" style="color:${TIERC[r.tier]}">${esc(r.tier)}</span>${r.fail?`<div class="msg">${esc(r.fail)}</div>`:''}</td>
+  <td><div class="why">${r.why.map(w=>`<span>${esc(w)}</span>`).join('')}${r.neg.map(w=>`<span class="neg">${esc(w)}</span>`).join('')}</div></td>
+  <td><select data-news="${esc(r.kode)}" aria-label="Sentimen berita ${esc(r.kode)}"><option value="">–</option>${[2,1,0,-1,-2].map(v=>`<option value="${v}"${sv===v?' selected':''}>${v>0?'+':''}${v}</option>`).join('')}</select></td></tr>`}).join('');
+ $('#tbl').innerHTML=head+'<tbody>'+body+'</tbody>';
+}
+function renderPlot(){
+ const s=$('#plot'),W=s.clientWidth,H=s.clientHeight;if(!W)return;
+ const list=rows.filter(r=>r.value>0);if(!list.length){s.innerHTML='';$('#legend').innerHTML='';return}
+ const m={l:W<520?40:58,r:14,t:14,b:34};
+ const xs=list.map(r=>r.chg),x0=Math.min(-2,...xs),x1=Math.max(5,...xs)+1;
+ const ys=list.map(r=>lg(r.value)),y0=Math.floor(Math.min(...ys)),y1=Math.ceil(Math.max(...ys)+0.05);
+ const X=v=>m.l+(v-x0)/(x1-x0)*(W-m.l-m.r),Y=v=>H-m.b-(v-y0)/(y1-y0||1)*(H-m.t-m.b);
+ const fmax=Math.max(...list.map(r=>r.freq||0),1);
+ let g='';
+ const step=(x1-x0)>30?10:5;
+ for(let v=Math.ceil(x0/step)*step;v<=x1;v+=step)g+=`<line x1="${X(v)}" x2="${X(v)}" y1="${m.t}" y2="${H-m.b}" stroke="var(--line)" ${v===0?'':'stroke-dasharray="2 4"'}/><text x="${X(v)}" y="${H-m.b+18}" text-anchor="middle" font-size="12" fill="var(--mute)">${v}%</text>`;
+ for(let v=y0;v<=y1;v++)g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)" stroke-dasharray="2 4"/><text x="${m.l-6}" y="${Y(v)+4}" text-anchor="end" font-size="12" fill="var(--mute)">${fmtRp(10**v).replace('Rp','').replace(',00','')}</text>`;
+ if(strat==='bsjp'&&P.sangat<x1)g+=`<rect x="${X(P.sangat)}" y="${m.t}" width="${Math.max(0,X(x1)-X(P.sangat))}" height="${H-m.t-m.b}" fill="var(--red)" opacity=".07"/>`;
+ const sorted=[...list].sort((a,b)=>(b.freq||0)-(a.freq||0));
+ const lab=new Set([...list].filter(r=>!r.fail).sort((a,b)=>b.score-a.score).slice(0,W<520?4:8).map(r=>r.kode));
+ g+=sorted.map((r,i)=>{const rr=4+14*Math.sqrt((r.freq||0)/fmax);const c=TIERC[r.tier];const cx=X(r.chg),cy=Y(lg(r.value));
+  return `<g data-i="${rows.indexOf(r)}" class="pt"><circle cx="${cx}" cy="${cy}" r="${rr}" fill="${c}" fill-opacity="${r.fail?.15:.55}" stroke="${c}" stroke-width="1.5"/></g>`}).join('');
+ const placed=[];
+ for(const r of [...list].filter(r=>lab.has(r.kode)).sort((a,b)=>b.score-a.score)){
+  const rr=4+14*Math.sqrt((r.freq||0)/fmax),cx=X(r.chg),cy=Y(lg(r.value)),tw=r.kode.length*7.6+4;
+  const cands=[[cx+rr+3,cy+4],[cx-rr-3-tw,cy+4],[cx-tw/2,cy-rr-5],[cx-tw/2,cy+rr+14],[cx+rr+3,cy-10],[cx+rr+3,cy+18]];
+  const ok=([x,y])=>x>=m.l&&x+tw<=W-m.r&&y-11>=m.t&&y<=H-m.b&&!placed.some(b=>x<b[0]+b[2]&&x+tw>b[0]&&y-11<b[1]&&y>b[1]-11);
+  const c=cands.find(ok);if(!c)continue;placed.push([c[0],c[1],tw]);
+  g+=`<text x="${c[0]}" y="${c[1]}" font-size="12" font-weight="700" fill="var(--ink)" pointer-events="none" style="paint-order:stroke" stroke="var(--panel)" stroke-width="3">${esc(r.kode)}</text>`}
+ s.innerHTML=g;
+ const tiers=[...new Set(rows.map(r=>r.tier))];
+ $('#legend').innerHTML=tiers.map(t=>`<span><i style="background:${TIERC[t]}"></i>${esc(t)}</span>`).join('');
+}
+const tip=$('#tip');
+$('#plot').addEventListener('pointermove',e=>{const g=e.target.closest('.pt');if(!g){tip.style.opacity=0;return}
+ const r=rows[+g.dataset.i];const box=$('#fig').getBoundingClientRect();
+ tip.innerHTML=`<b class="mono">${esc(r.kode)}</b> ${esc(r.sektor)}<br>${fmtP(r.chg)} • ${fmtRp(r.value)}<br>Freq ${fmtN(r.freq)} • Skor ${r.fail?'–':r.score}<br>${esc(r.tier)}`;
+ let x=e.clientX-box.left+12,y=e.clientY-box.top+12;if(x>box.width-200)x-=220;if(y>box.height-90)y-=100;tip.style.left=x+'px';tip.style.top=y+'px';tip.style.opacity=1});
+$('#plot').addEventListener('pointerleave',()=>tip.style.opacity=0);
+const ro=new ResizeObserver(renderPlot);ro.observe($('#fig'));
+
+function renderParams(){
+ const keys=['minPrice','minValue','minFreq','topN','newsW',...PSHOW[strat]];
+ $('#paramForm').innerHTML=keys.map(k=>`<label>${PLAB[k]}<input type="number" step="any" data-p="${k}" value="${P[k]}"></label>`).join('');
+}
+function renderCtx(){$('#ctxForm').innerHTML=CTXF.map(([k,l])=>`<label>${esc(l)}<input data-c="${k}" value="${esc(ctx[k]||'')}"></label>`).join('')}
+function renderNews(){
+ const e=Object.entries(NW);
+ $('#newsRes').innerHTML=e.length?e.sort((a,b)=>b[1].s-a[1].s).map(([k,v])=>`<div class="nitem"><span class="code">${esc(k)}</span><span class="badge" style="color:${v.s>0?'var(--green)':v.s<0?'var(--red)':'var(--mute)'};text-align:center">${v.s>0?'+':''}${v.s}</span><span>${esc(v.katalis||'Diisi manual')}${v.src==='auto'?' <span class="msg">• otomatis</span>':''}${v.horizon?` <span class="msg">• ${esc(v.horizon)}</span>`:''}${v.n>1?` <span class="msg">• ${v.n} sebutan</span>`:''}${rows.find(r=>r.kode===k)?'':' <span class="msg">• tidak ada di data transaksi</span>'}</span></div>`).join(''):'<p class="msg">Belum ada hasil berita.</p>';
+}
+function all(){compute();renderHead();renderCards();renderTable();renderPlot();renderNews()}
+
+/* ---------- events ---------- */
+function openP(id){const d=$(id);d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'})}
+$('#goParam').onclick=()=>openP('#pParam');$('#goData').onclick=()=>openP('#pData');$('#goNews').onclick=()=>openP('#pNews');
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;strat=b.dataset.k;store.set('strat',strat);sortKey='score';sortDir=-1;renderParams();all()});
+$('#tbl').addEventListener('click',e=>{const th=e.target.closest('th');if(!th||th.dataset.k==='why'||th.dataset.k==='news')return;const k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=k==='kode'||k==='tier'?1:-1}renderTable()});
+$('#tbl').addEventListener('change',e=>{const s=e.target.closest('select[data-news]');if(!s)return;const k=s.dataset.news;
+ if(s.value==='')delete news[k];else news[k]=Object.assign({n:1},news[k],{s:+s.value});store.set('news',news);all()});
+$('#showAll').onchange=renderTable;
+$('#paramForm').addEventListener('input',e=>{const k=e.target.dataset.p;const v=parseFloat(e.target.value);if(!k||isNaN(v))return;P[k]=v;store.set('params',P);all()});
+$('#resetParam').onclick=()=>{P=Object.assign({},DEF);store.set('params',P);renderParams();all()};
+$('#ctxForm').addEventListener('input',e=>{const k=e.target.dataset.c;if(!k)return;ctx[k]=e.target.value.trim();store.set('ctx',ctx);renderHead()});
+$('#srcLabel').addEventListener('input',e=>{srcLabel=e.target.value.trim();store.set('srcLabel',srcLabel);renderHead()});
+$('#unit').onchange=e=>{unit=e.target.value;store.set('unit',unit);all()};
+$('#applyData').onclick=()=>{const t=$('#dataIn').value;try{const n=parseData(t).length;rawText=t;isDemo=t.trim()===DEMO.trim();store.set('data',rawText);store.set('isDemo',isDemo);mode='manual';store.set('mode',mode);$('#dataMsg').textContent=n+' saham terbaca.';$('#dataMsg').className='msg ok';all()}catch(err){$('#dataMsg').textContent=err.message;$('#dataMsg').className='msg err'}};
+$('#loadDemo').onclick=()=>{$('#dataIn').value=DEMO;$('#unit').value='1';unit='1';store.set('unit',unit);$('#applyData').click()};
+$('#fileIn').onchange=e=>{const f=e.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{$('#dataIn').value=rd.result;$('#applyData').click()};rd.readAsText(f)};
+$('#themeBtn').onclick=()=>{const r=document.documentElement;const dark=getComputedStyle(r).colorScheme.includes('dark')&&r.dataset.theme!=='light';r.dataset.theme=dark?'light':'dark';$('#themeBtn').textContent=dark?'Mode Gelap':'Mode Terang';store.set('theme',r.dataset.theme)};
+{const t=store.get('theme','dark');if(t){document.documentElement.dataset.theme=t;$('#themeBtn').textContent=t==='light'?'Mode Gelap':'Mode Terang'}}
+$('#newsClear').onclick=()=>{news={};store.set('news',news);all()};
+
+let sample=null;
+$('#newsBtn').onclick=async()=>{
+ const txt=$('#newsIn').value.trim();const msg=$('#newsMsg');
+ if(!txt){msg.textContent='Tempel teks berita dulu.';msg.className='msg err';return}
+ if(!sample){msg.textContent='Analisis Claude tidak tersedia di tampilan ini. Isi kolom Berita di tabel secara manual.';msg.className='msg err';return}
+ const btn=$('#newsBtn');btn.disabled=true;msg.textContent='Claude sedang membaca berita…';msg.className='msg';
+ const codes=rows.map(r=>r.kode).join(', ');
+ const prompt=`Anda analis pasar saham Indonesia (BEI). Baca teks berita di bawah. Identifikasi setiap emiten BEI yang disebut, baik dengan kode saham 4 huruf maupun nama perusahaan yang Anda yakin kodenya. Jangan menambahkan emiten yang tidak disebut dan jangan mengarang fakta di luar teks.
+Untuk tiap emiten beri:
+- "kode": kode saham 4 huruf kapital
+- "sentimen": bilangan bulat -2 (sangat negatif) sampai 2 (sangat positif) untuk dampak harga jangka pendek
+- "sebutan": berapa kali emiten itu muncul di teks
+- "katalis": ringkasan katalis maksimal 10 kata, bahasa Indonesia
+- "horizon": "intraday", "beberapa hari", atau "jangka menengah"
+Kode yang ada di data transaksi pengguna (untuk referensi pencocokan): ${codes||'(tidak ada)'}
+Balas HANYA dengan JSON array, tanpa teks lain.
+
+TEKS BERITA:
+"""${txt.slice(0,12000)}"""`;
+ try{
+  let out;try{out=await sample.json(prompt)}catch(e1){if(e1&&e1.code)throw e1;const r=await sample(prompt);const m=r.text.match(/\[[\s\S]*\]/);out=m?JSON.parse(m[0]):[]}
+  if(!Array.isArray(out))out=out&&Array.isArray(out.items)?out.items:[];
+  let n=0;for(const it of out){const k=String(it.kode||'').toUpperCase().replace(/[^A-Z]/g,'');if(k.length<3||k.length>5)continue;
+   const s=Math.max(-2,Math.min(2,Math.round(+it.sentimen||0)));news[k]={s,n:Math.max(1,+it.sebutan||1),katalis:String(it.katalis||'').slice(0,90),horizon:String(it.horizon||'').slice(0,20),src:'claude'};n++}
+  store.set('news',news);msg.textContent=n?n+' emiten dinilai. Kolom Berita di tabel sudah terisi.':'Tidak ada emiten BEI yang dikenali di teks.';msg.className=n?'msg ok':'msg';all();
+ }catch(e){msg.textContent=e&&e.code==='rate_limited'?'Terlalu banyak permintaan, coba lagi sebentar.':e&&e.code==='not_granted'?'Izin analisis Claude belum diberikan.':'Gagal menganalisis: '+(e&&e.message||e);msg.className='msg err'}
+ finally{btn.disabled=false}
+};
+
+$('#dataIn').value=rawText;$('#unit').value=unit;$('#srcLabel').value=srcLabel;
+renderParams();renderCtx();all();
+function renderHeadlines(){
+ const el=$('#headlines');if(!autoItems.length){el.innerHTML='<p class="msg">Belum ada data/news.json.</p>';return}
+ el.innerHTML=autoItems.slice(0,40).map(it=>{const safe=/^https?:\/\//.test(it.link||'');
+  return `<div class="hl">${safe?`<a href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.judul)}</a>`:esc(it.judul)}<span class="msg">${esc(it.sumber||'')}${it.waktu?' • '+esc(it.waktu):''}${(it.kode||[]).length?' • <b>'+it.kode.map(esc).join(', ')+'</b>':''}</span></div>`}).join('');
+}
+async function getText(u){const r=await fetch(u+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(r.status);return r.text()}
+async function loadAuto(){
+ try{autoCsv=await getText('data/latest.csv');parseData(autoCsv)}catch(e){autoCsv=null}
+ try{autoMeta=JSON.parse(await getText('data/meta.json'))}catch(e){autoMeta=null}
+ try{const n=JSON.parse(await getText('data/news.json'));autoItems=n.items||[];autoNews={};for(const[k,v]of Object.entries(n.sentimen||{}))autoNews[k]=Object.assign({src:'auto'},v)}catch(e){autoItems=[];autoNews={}}
+ if(autoCsv!=null&&mode==='auto'){rawText=autoCsv;isDemo=false;unit='1';$('#unit').value='1';$('#dataIn').value=rawText}
+ renderHeadlines();all();
+}
+$('#autoBtn').onclick=()=>{mode='auto';store.set('mode',mode);loadAuto()};
+$('#reloadBtn').onclick=()=>loadAuto();
+$('#useHead').onclick=()=>{if(!autoItems.length)return;$('#newsIn').value=autoItems.slice(0,60).map(it=>'- '+it.judul+(it.sumber?' ('+it.sumber+')':'')).join('\n');$('#newsIn').focus()};
+loadAuto();
+setInterval(()=>{if(document.visibilityState==='visible')loadAuto()},15*60*1000);
+if(window.claude&&window.claude.use){window.claude.use('sample').then(s=>{sample=s;if(!s){$('#newsBtn').hidden=true;$('#newsMsg').textContent='Analisis Claude tidak tersedia di sini — isi sentimen manual di kolom Berita pada tabel.'}}).catch(()=>{$('#newsBtn').hidden=true})}
+else{$('#newsBtn').hidden=true;$('#newsMsg').textContent='Analisis Claude tidak tersedia di sini — isi sentimen manual di kolom Berita pada tabel.'}
+}
+</script>
+</body>
+</html>
