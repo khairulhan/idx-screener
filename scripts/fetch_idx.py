@@ -11,6 +11,10 @@ Hasil:
   data/history/YYYYMMDD.csv  arsip harian (disimpan 60 hari terakhir)
   data/latest.csv            data terbaru + MA20 & rata-rata nilai 20 hari
   data/meta.json             tanggal bursa, sumber, waktu pengambilan
+
+Jalankan:  python scripts/fetch_idx.py
+           python scripts/fetch_idx.py --tanggal 20261126   (tanggal tertentu)
+           python scripts/fetch_idx.py --isi-riwayat 30      (isi arsip 30 hari ke belakang)
 """
 import argparse
 import csv
@@ -153,7 +157,8 @@ def tulis_csv(path: pathlib.Path, rows: list[dict], kolom: list[str]):
 
 
 def angka(v):
-    """Tulis angka tanpa pemisah ribuan; bilangan bulat tanpa desimal, lainnya 2 desimal."""
+    """Tulis angka tanpa pemisah ribuan; bilangan bulat tanpa desimal, lainnya 2 desimal
+    (dashboard membaca titik sebagai desimal hanya bila bukan pola ribuan 1.234)."""
     if v is None:
         return ""
     if isinstance(v, float):
@@ -162,7 +167,7 @@ def angka(v):
 
 
 def baca_csv(path: pathlib.Path) -> list[dict]:
-    with open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8", newline="") as f:
         return list(csv.DictReader(f))
 
 
@@ -200,7 +205,11 @@ def rapikan_arsip():
 def daftar_kode() -> list[str]:
     f = ROOT / "tickers.txt"
     if f.exists():
-        return [x.strip().upper() for x in f.read_text().split() if x.strip() and not x.startswith("#")]
+        kode = []
+        for baris in f.read_text(encoding="utf-8").splitlines():
+            baris = baris.split("#", 1)[0]          # buang komentar
+            kode += [x.strip().upper() for x in baris.split() if x.strip()]
+        return kode
     return []
 
 
@@ -218,13 +227,27 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tanggal", help="YYYYMMDD (bawaan: hari ini WIB, mundur bila libur)")
     ap.add_argument("--isi-riwayat", type=int, default=0, help="isi arsip N hari bursa ke belakang")
+    ap.add_argument("--tanpa-bei", action="store_true", help="langsung pakai Yahoo (untuk server cloud)")
+    ap.add_argument("--lewati-jika-sudah-bei", action="store_true",
+                    help="keluar tanpa mengubah apa pun bila data BEI hari ini sudah ada")
     a = ap.parse_args()
 
     hari_ini = dt.datetime.now(WIB).date()
 
+    if a.lewati_jika_sudah_bei and (DATA / "meta.json").exists():
+        try:
+            m = json.loads((DATA / "meta.json").read_text(encoding="utf-8"))
+            if m.get("sumber", "").startswith("Ringkasan Saham BEI") and \
+                    m.get("tanggal_bursa") == hari_ini.strftime("%d-%m-%Y"):
+                log("Data BEI hari ini sudah ada (dari komputer) -> cadangan tidak perlu jalan.")
+                return
+        except Exception as e:  # noqa: BLE001
+            log("meta.json tidak terbaca:", e)
+
     if a.isi_riwayat:
         for tgl in tanggal_mundur(hari_ini, a.isi_riwayat):
-            if (HIST / f"{tgl}.csv").exists():
+            f = HIST / f"{tgl}.csv"
+            if f.exists() and len(baca_csv(f)) > 300:   # arsip BEI lengkap sudah ada
                 continue
             rows = ambil_idx(tgl)
             if rows:
@@ -233,7 +256,7 @@ def main():
             time.sleep(1.5)
 
     sumber, tgl_bursa, rows = "", "", []
-    calon = [a.tanggal] if a.tanggal else list(tanggal_mundur(hari_ini, 5))
+    calon = [] if a.tanpa_bei else ([a.tanggal] if a.tanggal else list(tanggal_mundur(hari_ini, 5)))
     for tgl in calon:
         rows = ambil_idx(tgl)
         if rows:
@@ -265,7 +288,7 @@ def main():
         "jumlah_saham": len(rows),
         "diambil": dt.datetime.now(WIB).strftime("%d-%m-%Y %H:%M WIB"),
     }
-    (DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1))
+    (DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"OK {sumber} {tgl_bursa}: {len(rows)} saham")
 
 
