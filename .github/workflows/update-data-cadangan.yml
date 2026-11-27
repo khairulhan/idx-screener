@@ -1,0 +1,45 @@
+name: Update data saham (cadangan cloud)
+
+# Cadangan bila komputer Anda mati: berjalan di server GitHub memakai Yahoo Finance.
+# Bila data BEI hari ini sudah tersimpan dari komputer, cadangan ini langsung berhenti
+# tanpa mengubah apa pun.
+
+on:
+  schedule:
+    - cron: "23 19 * * 1-5"
+      timezone: "Asia/Jakarta"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-saham-cloud
+  cancel-in-progress: false
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Ambil data cadangan (Yahoo)
+        run: python scripts/fetch_idx.py --tanpa-bei --lewati-jika-sudah-bei
+      - name: Ambil berita (sekalian)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/fetch_news.py || echo "berita gagal, lanjut"
+      - name: Simpan ke repo
+        run: |
+          git config user.name "idx-bot"
+          git config user.email "idx-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && { echo "tidak ada perubahan"; exit 0; }
+          git commit -m "data saham cadangan $(TZ=Asia/Jakarta date +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
