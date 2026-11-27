@@ -1,7 +1,604 @@
 {
- "diperbarui": "26-11-2026 20:49 WIB",
+ "diperbarui": "27-11-2026 08:45 WIB",
  "metode_sentimen": "kamus kata kunci",
  "items": [
+  {
+   "judul": "Rupiah Tembus Rp 18.364 dan Tekan Emiten Berbasis Impor - SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBXby1Ud24tOXpsNGJZWl9DRE81cGltQ1A3SV9wQ3JDTjRRMXRfdDdFQVRLanAtLUlueGNCN2p4c0FsbW56RlZfem5aa0NiYzhmNEExdkVoUFJ3aVg4WjdXNnVleTJmUQ?oc=5",
+   "sumber": "SuaraGarut.ID",
+   "waktu": "27-11 08:38",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Menguat 0,86 Persen pada 26 November 2026 - infotoday.id",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE82LXladmFWQUVnYk1NQUJVSXdhSEU2MGpKRkFwTHN2M19XWmE0MG5nb29xQ1V5Z0pyLTdSRTI1S0ZkWkFmcFNSRnpBcFFmaHp0UXd6NFZobVlJdXFxMUczSUtjQm5KaXFX?oc=5",
+   "sumber": "infotoday.id",
+   "waktu": "27-11 08:36",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Melemah ke Rp 18.364, Emiten Ekspor Diuntungkan - cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5DU2puX3IwTFY4TDZvNkJpNzBqenFWbnhVRDhhQ3Y5Z1dQWG5fR1JQRjZtRWYtV29uZHRPaHBSUDhrNW5FQktOb29jSVNsTVoxVTdMbmV6X0JzR2REbW9qU3lSMFBhWE5UZG0ycQ?oc=5",
+   "sumber": "cwibc.co.id",
+   "waktu": "27-11 08:36",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Melemah ke Rp 18.364, Tekan Emiten Importir - Limapagi",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xanpSQlRsbkh5R01ZSzV0MlVfTFozcUl6RXFpVTNNaUZ1bGo3SElkUEFJYmFrNHdKVGFodWJ1eEs0bnVXaXprNERZSURUdUxhU2NDb0ZPZDM1Y3djM2tvdUc0TVhQaHE0eDBVTXdmajQ?oc=5",
+   "sumber": "Limapagi",
+   "waktu": "27-11 08:35",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Menguat 0,86 Persen, Tiga Emiten Pacu Ekspansi - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mbGh3SjNjSjhxYWFkbHhPUEpXRlQyR0hRRmFYSWhnRkJGaVV4UldBdnMyZEtJWUcxdGE1MGZqLTJUQjRDSFNwTVRaU3k5dXhhVW9CMHpwY1hlRnJycUJudmRDSGdFS0k3?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 08:35",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Menguat 0,86% pada 26 November 2026 - Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42ME43WFBDMzlSNEF3SzI5RjhpMzFkMjhqQUNlc2p5djA3OXUtdTNfME1yVXh1SDFIcEs0eGE1NjlkTjRKT2d4YWxLYzJwSklmQXU0enhjd0pvSEFncER4VXJhTDUwTlZhQjFOXzVuN04?oc=5",
+   "sumber": "Lensa Hukum",
+   "waktu": "27-11 08:35",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Tembus Rp 18.364, Emiten Tambang Diuntungkan - Lensa Hukum",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9lOGZUZ3B5emNEZkl3Tk1TTllJdUgxSWE4bmtWNXRSSGtWRE1jc2d3QzNiRGZzRmVlY1F3T2hnYVdJUjdZTUNlN3RQTThHY1JnNGFOcVlxV1dobkdfLVJCSVBLSm5YWjZOX0E?oc=5",
+   "sumber": "Lensa Hukum",
+   "waktu": "27-11 08:34",
+   "kode": []
+  },
+  {
+   "judul": "Rekomendasi Saham dan Proyeksi IHSG Hari Ini (Jumat, 27 November 2026) - Data Indonesia.id",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQk0zOS1fOWJ3M0p2U1hfVmRwdmV5OFZNVVZLeWFaOExHeHVFSDdxUmk2WGVWMG5JTi1wcE1OY3R1TlE1aUlycjAyczZEbUdQMnZlVEFyTXlJbS1qR1Nyc283WjBSWG1TSGdxazZScjNfR3pybl9VT3lVNTRWMVFLZmJzdk82eWJybF9ydEduQlV5d0pOQ3plWUY5NGFaajBjZ1FNQWgzdUMycHFTTVdQbw?oc=5",
+   "sumber": "Data Indonesia.id",
+   "waktu": "27-11 08:34",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Menguat 0,86 Persen dan Tiga Emiten Siapkan Ekspansi - SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYVY1WGplVl8wQktlMjNxdzFsR2pMZ1BfWkVfZjVranVEQ3N2YUdXVmFfdklxRnFrM0hYYkZmUmUtQ3JkSTd1S2ttMTh4X0M0alpKeTkyUjZZY2dZMTF6NnNMaWtOdHdmQXEtY3hOajBZZF9jNE13RXRCbThJcVVibG1pNXI?oc=5",
+   "sumber": "SuaraGarut.ID",
+   "waktu": "27-11 08:34",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Tertekan, IHSG Uji Level 5.320 - Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xeFQzVGpfMVhlWjdMRENFaFhNUWxQd2YyNnRYSUhmUWpucFNoeThrSEg4U2czOFdDZjRfV1JMYldhRGtYZlVQR3IyX1MtQkdqTFR2SldyXzB5dUdlUllsQndQbElXbG1DbllOM0ZWSFlxUzVwanc?oc=5",
+   "sumber": "Emitennews.com",
+   "waktu": "27-11 08:33",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Melemah, Ini Emiten yang Diuntungkan dan Tertekan - Kompas.com",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeDVTRVBkZmo1Q21odlk1Y1BLWVVNRXlaanRULTZNdVAzdTk1QVk1UlQ4MUt1UmFWNWZVVXl1YkRINElCbWZtVkxMdE5nYWo2aGtyRHp1bElUemRoT2xHa09iWDRFVUVYZUJnemp6Q291dk1ybXE2MUY5R3d0V09Ic2pNZFZUd1ZjWHlUY1BqeWEtb1hVMGltSHlMZlFNVVVJZ19rY2lIOFJTUQ?oc=5",
+   "sumber": "Kompas.com",
+   "waktu": "27-11 08:33",
+   "kode": []
+  },
+  {
+   "judul": "Simak Rekomendasi Saham Saat IHSG Menguat - detikFinance",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQT25UVUIxLWxIVFc5ZENNcUdtajBvc1NFTFJ1WFVTWncyeW1FUWlpNTl2amhRaGR4SmVjeDVOSmotZ1hDWmRINEVoVGoxTVV0Wi1scWM0N1lLb1dMR0Y2bGFYU3laX18yMllGd1ZPT1FHRVNId3ozOU8yeFpRcTZ6OXVfSWVBaEV2STBXdmh5MVdLTmFJT1ZaWdIBngFBVV95cUxNc0JYR1FvNkpCNG5xMFdOdHFaMEFLTmlEU3JCd0RsTFN2WUhYXzBiRzd5UUdyTkYzb2lnc193U2lSWDQ3clQ4VjM4c2hHa3psZU9yOUIwVk9iQnZvOU51emRUTElCYzNqOGluekxLSzJhMThxaWZSRVZwSWNsTTE3djVvbGoyR2RfNGc1WFZYM3RaVHc3NXR3UDM3MTdPUQ?oc=5",
+   "sumber": "detikFinance",
+   "waktu": "27-11 08:31",
+   "kode": []
+  },
+  {
+   "judul": "Dibayangi tarif AS 18% dan pelemahan rupiah, ke mana arah IHSG? - IDNFinancials",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORU5QdXBza1pCZ3dkc1JLOE1PQXM0eWRMelYzZW5Hc1d3Z0JuQURjSFBqRjNPYWEzZklja3RpY3pZZWxjXzdrR192S2VTNVgyTVFVMno5QVkyY2lWUDV3Z0drejhJck9zcnBYcDRTSmxRVE5hVFMxZjNhN0k3OVU3WVdQMHFrU3VSNldGSjRmeTFPLVpfTklxb2M0TW9ZWGxGOU1XbFJiVQ?oc=5",
+   "sumber": "IDNFinancials",
+   "waktu": "27-11 08:20",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Berpotensi Terkoreksi di Tengah Tekanan Rupiah - شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4VHVybnJ6dVREZHhDdVR3TVNZWmJuY2xIZl9jZWR6UExqM29uY3BaZ2poMGxSWGZqWDFyX1RwZUNlUjhmZDI3MEEzc3lIZzhTSnR3?oc=5",
+   "sumber": "شبكة تواصل الإخبارية",
+   "waktu": "27-11 08:17",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Menguat 0,85 Persen ke Level 5.242 - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1FR2Zob19rVWY2T251Y0ZRcEQ0RTJVVnZKV2M0M2lHYnVIYm9iM1VLbUdWeDBiMTNjcV9POUVPaVlKUWkwSzlpblV4clc5MkozMHpsNTJBQmFoWGJBUHZNTm1DVkZKQWdYN0hoSkJB?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 08:13",
+   "kode": []
+  },
+  {
+   "judul": "ANALIS MARKET (27/11/2026): IHSG Berpotensi Melanjutkan Penguatan Terbatas - Pasardana",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQllXeGJLSU1ld1U3U3RfbHFZQTRDZWVOWW9LS2hxR3pTVWZwYnN1dHNGNDRCQVptcUliUTBWRTZNNFkybGRYVV9NN3NOVXVGVzJDZHFDaVFyQUpVczFiME9HOUhvYW81b2p2c0QyR0dNd2ZQaXJUeU1hT2VaZ0tlTzFvaklUTlo3eEg3MUVsUVlhVEdGZXRMTzhBLUNnSXVLbGFvY2dYVzI5UExH?oc=5",
+   "sumber": "Pasardana",
+   "waktu": "27-11 08:11",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Diprediksi Bergerak Volatil, MYOR dan INDF Jadi Saham Pilihan - KabarBursa.com",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUNLdnp6OUJkRjUzTXV2VE9CZDNsNEJEamFOdkk2VnJ5U09ZYVdFN2syc0dOb3NBOWZxT1ZnTEI3Nkd2NjFHbzd1WGM2S0FwMkwzTEZYaXREOGRVU2lWTFFHYXNpMUFCTzlfaTBuZnFEcy10U01oWUhWcDByV1NEc3VkSzJlUUN3d0s3UkxPcW9kdzAwNWFMQ19CY3EydF9NNE5ZVUJpRGRlN1lD?oc=5",
+   "sumber": "KabarBursa.com",
+   "waktu": "27-11 08:07",
+   "kode": [
+    "INDF",
+    "MYOR"
+   ]
+  },
+  {
+   "judul": "IHSG Menguat ke Level 5.242, Cek Saham Net Sell Terbesar Asing Kemarin - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNblhuT19HQk9xZFJicTl2SGpUZWsyblFQUVIybGwxUWZROFZybUl0T203QlphZzJWeFM2Qm9TM1FMNWZqbF9RTV9kdUkyeWxja3dNSnpSUVljbzF6Zy1PWEJDbVBKSmw5ZmR6bVlNYmRMVTB5VXNkb1FXMDVJQjg2cktPVGNIM1pWYnNVeV81aUpoRFJvRmwxeHlubWF2aHdhWXdaeDlNQdIBnwFBVV95cUxNM2dCNzR3eFM2cEZXalRXQVVsalNOUlVmbkRKX1Btem9ESW5kakhhakI4U0lVMF9uVU1zMmpfMzNJY2J6cG5lWkQwaEpFM2NVQjdpTDhKRFY2S1B4bFFhVWV0Y0plWEJQWmRBaEdESFhxVWdnVUhrTTZ5MGlZQk5JQXFPZHJ2RnU0UkNUeWVnaVhta3Y1M3M3bW9yU0ZuVFE?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "27-11 08:07",
+   "kode": []
+  },
+  {
+   "judul": "ANALIS MARKET (27/11/2026): IHSG Berpotensi Koreksi - pasardana.id",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaWZVMDJ1ampYVUZiUlJsUnQ4eXNXSDJPRWRwMlZVcVpOYmdwR1RCSjdWXzV3SmMwQzlKVE1HQkRQQWF6UkdnQ0kwS1ZXVVhmOUxua1YyaXRzSERpZ1B4U1p5OXpWakJrMklrVlpxOFRXNWdjUk15V1pXMC1RZk5Td1lXMlBJR1hHbXVueFR3?oc=5",
+   "sumber": "pasardana.id",
+   "waktu": "27-11 08:05",
+   "kode": []
+  },
+  {
+   "judul": "Rangkuman Rekomendasi Saham Hari Ini, 27 November 2026 - Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNR2IxbEJmbDhvYTlFVTM2WDdVRHEwR1NVb2xkdENRZUFXdjZ6UjZDV3FGNXRkQ1hzSVE2Rzkyd1pMV0gzdEZkODRiZVdrQTFBVUxuNG1aeVBoWWlpTFEzQkZiMGM1MW9oM0hqSDRScVAtNW15UnpVOF8xUW1rUC10V2tic1RmM2NCNTZYdzF0UGoxVEZxdnJzTEZuYkdieVZKdGl5bEZXQjg?oc=5",
+   "sumber": "Bloomberg Technoz",
+   "waktu": "27-11 08:00",
+   "kode": []
+  },
+  {
+   "judul": "Bersiap Cuan Jumat, 27 November 2026 di Saham OASA, ASII, dan CDIA - investor.id",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZjVLOXBSYnpsQ1kwcVhTTUFPaFRKMHVuWGlvUnBJT3hKd0tOS0JCZUlqNGE5Q1plUjNjQ1BpeUprVFZENEZ5UFVELVFTVGFZU0pPSE50Y2M5NmRqanZJS0FtNWh3MGstUDQ5eWR0cU1uQ3FCcWZfMlFRR19XVXpOWnFVUEZYdnRacjJER2U3RWswZVhSZDJJaHAyQkRjUQ?oc=5",
+   "sumber": "investor.id",
+   "waktu": "27-11 07:54",
+   "kode": [
+    "ASII"
+   ]
+  },
+  {
+   "judul": "IHSG Berpotensi Koreksi, Intip 6 Saham Pilihan BNI Sekuritas Hari Ini: Ada EMAS dan DSSA - StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPU3RhZzM2UWFkVndONmtwdnh2YktrRGRCYjRCTE53UXZiNTlia3FQV0xnbzYxRmpfY0cyTTEzek1DdGtXT0x0RUtmYU5TUjVYYUFwM2ZVSXNyYmJ1UFB4eVhBVVNaR0RMbXRGTzRwc3lnMGFaaV9Yb0VxQlBRUTZWZWo2RUVSd242TFJyaWFjRUdHVVpYMHVGdkItNnoyb2NfdDRPSmdFc215SGc5eWc?oc=5",
+   "sumber": "StockWatch.id",
+   "waktu": "27-11 07:50",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Berpeluang Menguat ke Level 5.520 pada Perdagangan Jumat - cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWk9Vbkl1UTY3U0VrZWVvNzhEbDJJRkFPRVhrM0VMVTI5aUR2ZTdsLUdJX0NtcDRXX1lwQUNUNDdsT2w4OUNJc1hTbzc1MEQ1a3gxTldVVk1PLXJaSThQYzdvQ24wUTVtanFiV0d6R2ItbGw5XzFmdGhWV3IzMVRjWm9sQ3lRVE0?oc=5",
+   "sumber": "cwibc.co.id",
+   "waktu": "27-11 07:47",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Berpeluang Melesat, Cermati Rekomendasi Saham 27 November 2026 - Liputan6.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVnl4Tm9oT1p5dnAzU2lCQUVHVEllX1E4Z0U1RWdDZjFIclZhOGRpdmpPVWVMc3pGd3N3eVI0V3BfUmRrSlJLOG5uZjlKdTVIeElCUkpyWFg3ekM5aTlkX0ZkN0tFT2NmbzdCZF9qekRMcmVfaUhMTDI4X2J6ZE01c3NHOXB3XzZyYmx3RllTdzkwUWNFd19manNfRDRPWEpXaEZjMjhLNlhrcWdqT2ttedIBpgFBVV95cUxObTRra2c4NjZoNERoMXRmQnk4MzlPRlFUS2Ezci1idVVSTzA3bE1VWlozWW95S204Z2U3WENhYzd0c3JaWEZBZ1pzODg2OVNNNXFKWkpBMS1kQnBXTnFDS1hZcE1vVDlFQTdNN2tVOWFTQTdSbTd0MEc1UW5Gd3BscXI2bHFtRlRUYlp6ZGlJTUp6VEpNZFFOSEZpVUp0VnlZb3NhbHBB?oc=5",
+   "sumber": "Liputan6.com",
+   "waktu": "27-11 07:45",
+   "kode": []
+  },
+  {
+   "judul": "Asing Gencar Borong 10 Saham Ini Kala IHSG Menguat - CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUHhMY0ZXT2pvR2NOWWVwUnBKQnFxZjFzLV85YWJGMDhYcWY4cE1tZVV0ajZZTXdfdHE5aWhVd1hzbEE3ZDBTSnJpZzdhNUtZdEVNSGFELW1qckl3VDZJWUpSZmpRaTRQYTRyNjVtNHBlVnZHZDhHYmNZNzdXcHUxVWhZZ19xV0x5U3NUMmNPbmZTT3RyTmVrdzNoMkgycHhaVy1hWGpNSmtoS0NycGxYcVF30gG3AUFVX3lxTE5ldUdqRDUyNVJVc2NyTkhOQURvVXVPeFIwTE40OW5nMmk1a2JfQ2lMbGxaWEVRYVFsQ3hCa1lhUlBsdUY0S0IwRUJleUpFVGFQaV9VTkNOMnNfblRTV0RTT1JGNUlTbDRka0R4YWdGNVhQSzA4QXpNeUYtNVpabFBvT1Zxc2VIajFDSnJ5U1k3THJCbEVGS0xnenF0VTJPYnVDX0JLWHI5cWJYNDJxWUUzQ3EzOFFpdw?oc=5",
+   "sumber": "CNBC Indonesia",
+   "waktu": "27-11 07:35",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Diproyeksi Bervariasi, Pasar Masih Cermati Pergerakan Rupiah - kumparan.com - kumparan",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQT05Cc3FRMG5nUkc0N25fVDRZVXBwT1NUVUI5S0xHOW1nVDloQTdZUlExcllWaUlRSW56eUcyMk5kbzhGMU5HUjcxMC1zR1poZ3MxdDYzUTRXNDRWOFAyNlpKcUZnbldRR0VldkY5WFBOZndGc25IS2NNQ0JZZ2VURkV5RTR1TUg1WUNNV0k5QkNsemdKQ3ZYWjVUcE81MEdPZ3FwR1MwZ05KbHlTNFM1SEdB0gG6AUFVX3lxTFBCTmxqTk02Z0lldm9jRHhsd0xWVUllQUhtZS12TjZSY21Jb0cyc3VVOTFIdmdzNF8wU0RQY1RTbmc4STQ5NGdERzlNZ1BDUVVUSThrZDVUTE1NM0VaUWhrRGw4V1ptc193NU5CMFpwSFR4QU9BRDlSS3RvR1ZvQkNNczNpT0l2bk4xdWRlY0FreUdpS3B2UU5GZ2U3em1vb21LNUtYYkxHdDA1ZldaQnhuTXVaWWp5a0s4QQ?oc=5",
+   "sumber": "kumparan",
+   "waktu": "27-11 07:34",
+   "kode": []
+  },
+  {
+   "judul": "Investor Bidik ADRO hingga ASII untuk Window Dressing Desember - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQbjIxckh4amY4Zk4zRTNYRS00cDJRSWR4Z0dCU0s0eHI1U2hrUk9IZElELU1xTU1qYnJzWVpVZnZMd0p5SnREc01ISmV2SkZSeEZpLTRZMm92ajJKOXZZOVV1dC0yUmVYdzZsM2NqWGQ?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 07:28",
+   "kode": [
+    "ADRO",
+    "ASII"
+   ]
+  },
+  {
+   "judul": "IHSG Hijau, Asing Malah Banyak Lepas 10 Saham Ini - CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY09mOWRIeUhKTm4tYWtKZkNIX05yZ1M2OFA4ZkdxaGM1d1BZR0h0clNlQkRNTm9FU25Id1BSSTJiLXAtSXFhZWdReWx2aEZ3WnN2bXFwU0xnU2JROVZDRXVIV19rc1YyU0xqcXRsai1fM2tRZnUzbDg4c0dZTkRmS1Q4bXNuUE96YmJocTE3Z05CS2ZTVHVSR0VkOGdRdm42MnVwZmMzUFdWN18xMWZj0gG0AUFVX3lxTE5tNmNCN08xelpObkJQbFp6eDNuWGhQNXlYQUoySjBYc0RCUWZmUW9wWGdyWEhMZVNNM0Mzak50cy1nNFREY0tPZm53TTg4U2VRTS1lRGZVb0wwR3BUcUEzLUJBamFmQ2laUHFIU0lGRVVnam0tNmc3bW5iNFZUcXl0Zy03S1FDQ3RPSlgwT0lfTmdnMVJIVjhxVUM4NEd0d1FuUWk4bmdjYVJsVDl6WlJmYkFYaQ?oc=5",
+   "sumber": "CNBC Indonesia",
+   "waktu": "27-11 07:25",
+   "kode": []
+  },
+  {
+   "judul": "Rekomendasi Saham & Arah IHSG Hari Ini, Support 5.200 Jadi Kunci - Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNamtUQnBPa3I1NmMxSlF5ZWdXd1VFOTlDSEJZOUlGOUVvZ1lYMEdNd2JIOWVUNzV3VnFVaXZJNTM2WUJpRHhzTEZxSlUtVWczdGhfeDFpTkIzYmw1OGFQVmt2cGl1QllkaW5EVXp0ak43b3I2WW4yWjNfYXUtR3FuMFNSQ2oxTXdaYzk2SXhMZ2hidW44YmdETEYtYl85VXREYzNTaDdlZmVPSTdvQTBkNGlHTQ?oc=5",
+   "sumber": "Bloomberg Technoz",
+   "waktu": "27-11 07:25",
+   "kode": []
+  },
+  {
+   "judul": "Arah IHSG Jelang Akhir Pekan, Cermati Area Ini - Emitennews.com",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1UeVdVbS1DYVFBT09SakNpZU9DOTIzb1lsNy1hLXRKRHpES2lhc1prMnZZY2JTaVRUM2ZpT0dBdVZEdmlBbUFhc2FJMWltakFyT1BCQmdjQmNmRXNZSGtPd1hMN2N5Ull3U0ZlODh0UnRIWFp6emFtTzJ1WnlRUQ?oc=5",
+   "sumber": "Emitennews.com",
+   "waktu": "27-11 07:23",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Berpeluang Menguat, Rekomendasi Saham BMRI hingga KLBF - Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb1FGV0Y1UC0xd0tWNkFoQmJUdEc3Y1RRMEpqOFFhQThVZ3pqUDdqUXhjZGI5OHFZcHlqaFctZlhZbkl4YklJSEFqU0FTbW9OZUZrUTVRdmNsdXFFUWdDNmJoSF82MkdXdTN3dFA2VHJXaFVja0VOZ1gxZFdTS0VHOTcxSjh5V2FKVExXNzVpME5raUtLSGV1b1pxTkJRNlFucl8xZHVrY3kzU3VZ?oc=5",
+   "sumber": "Bisnis.com - Market",
+   "waktu": "27-11 06:58",
+   "kode": [
+    "BMRI",
+    "KLBF"
+   ]
+  },
+  {
+   "judul": "Rekomendasi Harga Emas 27 November 2026 : Dipengaruhi Pergerakan Dolar AS; Terbebani Prospek Kenaikan Suku Bunga Fed - Vibiznews.com",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPajdCbGttdFBMWk5CdmltOGJ1Y1JlWExIQXdCRFhGb2oxdlB2WFhuTTZKT3hNcnB6TENqLWUzRVFraWJzd09UWVJ4TEdOXzhVODBlTmJ3Y2hseVdCcjFOb1Y3R3ZTWXZldFBNZkhFMGQxS3FvdFJDalhkZndQUjc3MlBiYVphQ3dhbEV0NUFJVGxwY2tIVDR4V1Z3Mi1sS180bl9ISGtSQ1NsSk5rbGs0M2JvTWZtdUdmRF9BbmJmeGk2S2ZQRU9SSkcxeWtKN3ZUVzcxTzl1MWVMQTlzeUk5ckRaTUMtNTZjRl9pUFV3?oc=5",
+   "sumber": "Vibiznews.com",
+   "waktu": "27-11 06:45",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Berpeluang Lanjut Rebound ke 5.285, BRI Danareksa Jagokan OASA hingga ASII - auranusantara.com",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOU21qRHFsdGZ4YnR4N2VIU0VwZmZ5Q2RDaW91cE9aTVV5YUNPTUp2ajE3Uk1wMHg3aEpWdEVsSm1VSGJuTGVTMkphRks1MGx1djRfXzUwR1RMd1pjR1ZuN0NPX2lhVXB1c1lsR2VZTlNWNzNZeHgzZW5Land4N3VQQlBUWm9xM1BqWGhSMnM1N0dRM0VlUGdlN3RmNl96TV9nOFJac29HaGdXUU9RVXc1Mm5aRXYyRFZTa3RxddIBuwFBVV95cUxNYVkyV2VkS3lKZm9vd0xmU0R1bWNWTjJQZ3NzbmRUbmRfMzJmVGUxd2hWdVJ5V2VOUmNrS2dKdjNYZ3ZFLWZvSmtZdmhiY1NUWnZ5US1RR0F2S0RLNVZSYjhNZjVpblU1REFNQzNFZko0TzRyV1RRQ2FIWFJWRnowOV9hU1pJamVSR3NhaGl6MUxBNHBNSVl6Wm96T3hTbnk3TENjZGgxTjF1Y2NYbHlkS3hyWVdwcEx4YjA0?oc=5",
+   "sumber": "auranusantara.com",
+   "waktu": "27-11 06:42",
+   "kode": [
+    "ASII"
+   ]
+  },
+  {
+   "judul": "IHSG Dibayangi Rekor Pelemahan Rupiah, Cek Rekomendasi Sahamnya - Bisnis.com - Market",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPREplRWRKVUExaUZ6Z1hQMVF4bmdNdmtkVUF6akdLUmpKSVlEYmRQbmlYY0VVNDhreGtvUzFmRmpBY1VwUUlBQWI1VnlaMDR2TFhhU0FMLWZlbnRLM0V1ZXNDSkJZdWw3ajdDdkc2X3FxdmRDZk5pY1N4TVR6R0FJQ2c3cW5uUFN6RDBQV0dOelBVSU1jSm93LU1nbGxpN1ZuR2FXa0swTm1pQl9rczY2WmhBTUQ?oc=5",
+   "sumber": "Bisnis.com - Market",
+   "waktu": "27-11 06:31",
+   "kode": []
+  },
+  {
+   "judul": "Asing Borong Saham BBCA hingga Rp 1,19 Triliun - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1DUWo0M1hOWmUwODlfQjZJdzh5YVpzYndMNHFnRW9nU0lKMVFsSEItR2J1T1Bsa2lUTnR1d0syckhESHlKSm40dE1hdWNSSTUybzhKWDZkbWR0YTJLNDJGd3ZITHp6MS1DY3dJZDc1WTBfZVZRSFNObGtB?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 06:29",
+   "kode": [
+    "BBCA"
+   ]
+  },
+  {
+   "judul": "Investor Asing Borong Saham BBCA Rp1,19 Triliun - ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBlQzlMVnJUbmpRZmUxdFNmQmV6Y2F4SWFWWlN1ZTFyWnJDNzVDbkk5bG1Mdl9teGw1WmlJdXpyV2V5S1dacy0zUnU2TmJ3OXlSemJ2TkhNbnhiZnZmV05od1h1dlVwYjJmdFNucWVkanU2aTdu?oc=5",
+   "sumber": "ChatNews.id",
+   "waktu": "27-11 06:27",
+   "kode": [
+    "BBCA"
+   ]
+  },
+  {
+   "judul": "Asing Borong Saham BBCA Rp 1,19 Triliun Sepekan - MediaKompeten",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOFZXTjVsZm1QT1owTXFyVFlIN0ZBd3R2eGg2a0lYeFoxT0ZmVU5uU0hKZzc2T29hRGJBYVp0X3R1M0tkWTIybW5IUUR1QzhUQlg2UWRlZ3VzOVVGWW51cDhiek0wM0F6R3BEdERqcjRpbWprdG9GTWxYdHUxcW14LTZCTlE?oc=5",
+   "sumber": "MediaKompeten",
+   "waktu": "27-11 06:27",
+   "kode": [
+    "BBCA"
+   ]
+  },
+  {
+   "judul": "Hari Ini Prabowo Bicara di Pertemuan Penting BI, Ada Kabar dari China - CNBC Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOck9tbGlnX0hzYXM0dWtPUnB0MHdqR1ViaV9ZeTg4ZUZfaDZCMU9GWlJyLXNIMTVOQjdEclc4TjlSTXJlT29ZRml5dXhZN1dsTEFSTGVKZmVNWURaR1lNdFBXVWROZkpmZmxBaWNpdWQ0bVAwNEx1TVVZRE16dWphOFNSeU9zb0hvTFRyUkpRRWhGSExpYmNoS3g4UUg3NG5ycHhlUTJZLWszMTkwaUNNUmtsVXh1RlpGdDJsMzAxbWtETjNoblVHNFBxLVpWUQ?oc=5",
+   "sumber": "CNBC Indonesia",
+   "waktu": "27-11 06:25",
+   "kode": []
+  },
+  {
+   "judul": "Big Money Berlabuh di Saham BBCA - investor.id",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5tNUx4akxMeXR5SDlySjBBcDlOM1NBcU5UZUh6Y1ZkN1BUMzI2UlRUdXlQMEZxVVVORm92X2QzTl9aYk5IU2FVWW05V3d6TG9FRHpGeUhOQ3ZVSkk3cXdtZm13anhLeE44cDBLNXJrNzVTMXgw?oc=5",
+   "sumber": "investor.id",
+   "waktu": "27-11 06:25",
+   "kode": [
+    "BBCA"
+   ]
+  },
+  {
+   "judul": "IHSG Menguat 0,86 Persen ke Level 5.242 pada 26 November 2026 - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5odmJpQjE2OS1OblBqR3d0RG9UTUVyMDdIVmRwUmhDUDV5Q0p1MGh1VEp5bWVsVGtybDNvRURZZGE3cUFJU0NmWFU2ekctMU5wV0I3SDdYcEUzZ09hYzBCNEs4Skk?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 06:23",
+   "kode": []
+  },
+  {
+   "judul": "Reli Teknologi Saham Asia, Proyeksi di Tengah Kenaikan Minyak - Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMXN6RVhQTDh6NVpneW92aVZRdDRVclR1UFpDdjdGRnRLRjM2eXp4Qlhrand1dHA4TGphb0hkS3lqYWFibWFJMFNYdG9kcG9kRnZoQlFSX1hsMEhySnlxclNYWW5Ba2FfZXJtdEc4LVluZk5BaUQ4ZkVONEp0MzREaVJRZ0Utd2l4dVZoV0VsY0hHdHVFcXNOLWczTm9ieVRYbDc0WlpxTzZvVmNwaUR3QUR3?oc=5",
+   "sumber": "Bloomberg Technoz",
+   "waktu": "27-11 06:21",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Tertekan, IHSG Dibayangi Koreksi: Phintraco Rekomendasikan 5 Saham - tutur.co.id",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWE5yQ3BBY2wzamNFMVRUNnIwajNodUxvQVN4Wk9Ga0ZaTUV5d2dkYTMySTVXZkVCb3hySmxJV25VWlFNT1NaQ3dHbDN3SVExei15ZU1SRk9rWTg2UlF1aWM5Zk5IS0prUkR6ck5QTDhkUlY3bXMzVU5PaHZERHBTci0yX3JtR2o2S05JOU1UVW1ZN3cwLWtV?oc=5",
+   "sumber": "tutur.co.id",
+   "waktu": "27-11 06:18",
+   "kode": []
+  },
+  {
+   "judul": "Mirae Asset Proyeksikan IHSG Tertekan hingga 2027 - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tb1dtTzg2bUtYN2dmazlLeDJIUVVqc1BXa3JsQkJ4SUhGT29Qb2FuZnVzcmRiMVV1M0FlYWxjUHBOa2pLcWdXZ25UcVpKQmQxeE1VbDBia0pOdXl2REctUVNn?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 06:16",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Tertekan dan AS Bidik Tarif 18%, Bagaimana Prospek IHSG Hari Ini? - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcU1oZjFqbkJJODhXQXA1REhodVJxb1JuNGlrallNTlRuY202eU9mZ3cxN0tNcHdiNmdOUkFXZFdQZGs0VE9JUDI4b00tbWFQb3BhTEYxZko4S2p6S3NIRVpOUk1zdkEzSFVzZXZNN3V4OUlkXy1nQkZmTm1RRVAyZFV6Um1WeDVrczNTdWF2SG5DQ2VHVWdrREVrdm02SHBuZnluNy1WVS3SAaABQVVfeXFMUFRWaGNyR2g0REwyQ1lSZjZsOFVqd19ZZHFPcUNVdW9MMFBpcGRBcHdCMkxDaXRjYzE5UzBDRlhFYnNEcFZoUHB2bjRpVGpJSVdTNExIaDNYQ0NyR1J4WExYMjF6YXo3Szh0MkxBcmhRaGhKdEctejVhSElEWnp3SF9hRkFYVkZYamh5NnlGRjJjdUd4Y0JhR3BjS2ZHZTNMcg?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "27-11 06:14",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Diprediksi ke 5.500 pada 2027, Ini Delapan Saham Pilihan Mirae Asset - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORkdCUUFBVlNPd1RCYUZGc1QyUV80QWk3WExHY1NlYWJYODVZRWphenBZcWFUNmFUM25hVFBDUnRteHZtdmdTNGRjcDdXUUl2cjN5V0FXMFo2SjhRMTNVT2JUOGdDUzR2WTdIQ3F5eW5MOFgydklGUlhNQVR3OXVNMWR0QXlKR0gtbDlrQ28ydnFBWFhMc19kMEtJb2VtMTJsOXZqZFhLYlpqSEnSAaMBQVVfeXFMT0dIODBzYzJhN1ZqMEdOZVVwbjZadkJMMVJ6d3RDWkZMbndVMjhQN3BZQ2hvRnNEYnl1Z0JGRXI4dHR3MnF4d2ZsWWZtWnpnMEQ0dVJ2cWd0V0dsUzh0ZDE3dFNPU1RydkpaQVdZbVRjOW16U2ZyR2JNTXA4YmlMdHhsUkVBNWk5QVMtNGNJbzE3RVNZSmhGLU1FbFZMOFBMNlVEdw?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "27-11 06:10",
+   "kode": []
+  },
+  {
+   "judul": "Waspada, IHSG Rawan Terkoreksi Hari Ini - KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtN2xyUk1GNG9jWnBGNXRpSnJLQjY0bXVHSklyczNfX01aWGlIMWR0Q1BKb0daaV93bU14Smd6OXk1VGV4VjYxSEliZjB2Tkhfakw5YzBkM3RMTFpZRGRxNXNzNjJYVTdEaUV1RXZiNTZuZkE3cGdFUHpjZ2k?oc=5",
+   "sumber": "KONTAN",
+   "waktu": "27-11 06:00",
+   "kode": []
+  },
+  {
+   "judul": "Rekomendasi Harian Indeks Nikkei 27 November 2026 - Vibiznews.com",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWHZRUUk1ZUJUZGdjTW1sY3FDMEtZR2R4QWtvdUZFbmE0Q05uT2FkaVhVRzg3NlFnWUxKV3hRdXhWUEtYakswN1N4MWNveHlvb0w5ZmF5Wjl0LVMxcVZrUDlIUWtXWmZPZzEtQnZMUllGSGdSLXRJTERhNVVQRElYS1ZPMUlLS0ExY0hNTmhwUUQ5YjVNNWROaQ?oc=5",
+   "sumber": "Vibiznews.com",
+   "waktu": "27-11 06:00",
+   "kode": []
+  },
+  {
+   "judul": "Sebelum Berlibur Akhir Pekan, Simak Dulu Rekomendasi Saham Hari Ini, Jumat (27/11) - KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQTI5YkRqS3l6WHg1c3FRU2lQLWgzLTlNOWx4dHloRDQzYU53ZXFFeXZXb3pPdU5PQUNwdUUxZWdJemRFaXY1X0RwQVFNYkQ2UzROb1N0Qk1VN1c1eVN1QkQyMUlBYmg0MzNkdWlGa29NRjZlWW5ucm04X1NDaGFZdmxSVmxfNm1HVll4djhxWExHc1pRdVYtSHJBell6c19fRjloREM0dTVveTRwbVA5SQ?oc=5",
+   "sumber": "KONTAN",
+   "waktu": "27-11 05:51",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Dibayangi Pelemahan Rupiah, Harga Minyak, Hingga MSCI - Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZkFGbkt1eUlpZnJraEpmNGN2Z2Jyd05XLVZZcFI0Sm83RVptT0dMeTVJX2JrRnJ3WG93TFlqVDNLbVBjcjBDdHNfbHh1ckJocV9RejZuU2NXZTFsd0xQMV9ZOEZhQzJhUm93WHZNdndTbjNNNjBqSzdwM1JzQkc1T3FwTWJDcmRjRjBSTW5YSEc0Y1hreHZaend6VmdiQzF3RGRtZ0dueUFYQ0Jq?oc=5",
+   "sumber": "Bloomberg Technoz",
+   "waktu": "27-11 05:47",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Menguat 0,86 Persen ke Level 5.242 pada 26 November - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9RaTdwUmdFTWRCeUF4Q0puTjlHbXhnTm9HSm9KNUxVNW91bHNqU2t3VEJQOEk5Y0pvby1ucVQ2UG1Wdy1oY2h1QkhpU2o3d3RWVzN3RllielR3ZGhTQ0tWdkN1NXRUckNBRkIzXw?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 05:47",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Bangkit 0,86% ke 5.242, Sektor Energi Memimpin Penguatan - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9zQ1YtRENSZTVJODdqdW4xV21aSl8zOWluMVNockNSR0pHQzVxYngwdTQ4bUl6RklyTDJaYVZKUzExXzIyd2pMZ2JFYjdTSlVid194T0IwOUJOM0xiVTV3S1hobGlJdw?oc=5",
+   "sumber": "TradingView",
+   "waktu": "27-11 05:44",
+   "kode": []
+  },
+  {
+   "judul": "Phintraco Prediksi Rupiah Tekan IHSG pada Perdagangan Jumat - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQeG5rZm9Dbmx4c2pnWS1vUDZXenAxRTJUUl9EVTlneWFmNHk0bDBfbEgzbnhoVlJqVVllLUNCZVZWMnhBd2RRTlRrZk1tdXdicWZ4RTNmM1hpWXIzaDBtZU9taGoxanFCLU5tYg?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 05:38",
+   "kode": []
+  },
+  {
+   "judul": "Wall Street Tertekan Saham AI dan Inflasi AS, Rupiah Melemah - cwibc.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1OZElrWXpSVjVSVTZCTWs2cUFrcFRkUXd2dGpFS0xTTWs4UFJmR1lRQzMydmtJOGtNS2FXX0xjMjhEUGlVVW5FNVlmaXVfckM4eG04aG5NRUc1blpTUlZUT2d0aGJHVWZE?oc=5",
+   "sumber": "cwibc.co.id",
+   "waktu": "27-11 05:33",
+   "kode": []
+  },
+  {
+   "judul": "Daftar Saham LQ45 dengan PER Terendah Tertinggi (26 Nov 2026), BRPT Melonjak 14,96% - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTHpaY3Zub0t3dWZQcWd5cGRocEg4bmFRZ2lfUjE5T0ZFYmxMeDh2Unp5YVBPYW85b3VIRUJFaDFDV083SDdaV3VpRXlQcmhpZFA3VFdPdlJsUHliYXFnQWlwX3Z3M1otOFJramxNVk5FLU5FT0s2cEpXd3hkdUVlc2RyTlFyODVmcnZyQm43SnhGbXMxd0xDTVU5a0ZuSEFrY1RQQkFiWkhjMmJUVjRyZ2dkZ2vSAawBQVVfeXFMT0Y4SFUxTkNrTFNjejctVVpyTm1RNzJ1Ty1kd3d1ZjU2RDcxUFpqUDZYbVhyQnFKaFA2ZUwxUDY0WmJ6MTFoODQ1cFQyTFNyZTZ0T2twSkJ0U0xGc19KNWZ0ME5JdkJnU216N1BYQldyaDluQ21kbU9JSDVzVmUxUk1pdkRBM0JVZ2lRcE5KbHc5VVdPTnRHMnhreFNtZnlSalAtNTNueWFKNVVVZQ?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "27-11 05:24",
+   "kode": [
+    "BRPT"
+   ]
+  },
+  {
+   "judul": "IHSG Menguat 0,86 Persen, ISAT GOTO dan DEWA Jadi Sorotan - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBnZ0UzaGNOcDdoTVltMF9HLWpnV3pWUFFTRjRHNjhVSWc4YXFVbURPQ0o4a3VSWFB1X2RMalNpeVQ5MkFNZkNHNEo1VGxXYzhzUHA2eEZDeFZhajBiNDB1eG9HYks3czlUenc?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "27-11 05:23",
+   "kode": [
+    "GOTO",
+    "ISAT"
+   ]
+  },
+  {
+   "judul": "IHSG Menguat 0,86 Persen, ISAT GOTO dan DEWA Jadi Sorotan - شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5UT2I3RWN2TW9pZVhOb0ZHXzAzMGFvYS1feXhibEhWd1FCdWU0d3g1OXJJYXYzQXJuMEFocmZ5dWwwME9tY0dDeWNEQnhMVTZxMW9B?oc=5",
+   "sumber": "شبكة تواصل الإخبارية",
+   "waktu": "27-11 05:19",
+   "kode": [
+    "GOTO",
+    "ISAT"
+   ]
+  },
+  {
+   "judul": "IHSG Menguat, Simak Rekomendasi Saham ISAT, GOTO, dan DEWA untuk Jumat (27/11) - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcFlXVVViYm5nR3BlS1FDdnNsVVV1ekJXWUZKbWJQTXpuYmhhYm4zV3dOdFhGTHJvZWdJb0o1Y2JPS2hITDlySFNaRGViNnBsaFMxTDVCNmdKUXFPY1I2bkdOVUJHaVVhMXNKZEhoNFgxbEc1MXg0QlNpR3BDb3RoSk05YzJSNmZwQVViY3F0UWkzaUVuNjBKZ09heThLMHY4amVSQ1BNRTg0eWtS0gGkAUFVX3lxTE5xcDFuNGEzQm1OYXAxbGlYQWxoWmVpME5iUEZJenluTGdLZVY3ckJFZEwwNV84di16a3ZZb0RpRy1UUVlDQTNfQWQ5TUNLSnFaQ2pwUzJNb1F1M1BmVEl2ckh6SzAyR0h6dmFBX3ZlZE5Odzd4bjluTzZhXzJrZVZLSzhWcm1qSTV3WFZLWTZQZmVkZkQ2TjNDY1A0S2JOcDVrSkxT?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "27-11 05:15",
+   "kode": [
+    "GOTO",
+    "ISAT"
+   ]
+  },
+  {
+   "judul": "IHSG Menguat, Simak Rekomendasi Saham ISAT, GOTO, dan DEWA untuk Jumat (27/11) - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNYkt5QmJMTXNRVW1wQUZaMnl2UjBKaGE1SHNhTWxIYm5sOVFrcl9TQ1VKU00tdVJwdF9heE9idENyVG5wVkFrRXJiTG9lTzJDTnJjQS1RNUtjSWM1eU1hSDg4amxsQQ?oc=5",
+   "sumber": "TradingView",
+   "waktu": "27-11 05:15",
+   "kode": [
+    "GOTO",
+    "ISAT"
+   ]
+  },
+  {
+   "judul": "Investor Asing Diam-diam Borong Saham BBCA hingga ANTM - Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYS13akFYT0FsZTV6RlV3Z3JfR2hyeUhPQmRISEpFc2RXd0Y0Z0tjTmpxcV81UG4yUy0yT3pWQkdITUZSODQzOHN0YlBYMm85N2JLa1ZwQXdsXzAzazhDSC1wbHZ6TUdSb2pUSnltQ3JsdFEwR0REYkhEeEtuU3Vrb0tQak9rVlhMVjNrUkpwdmo1V3R2YXRSUS1RMmxGdTNyOXVueldQVkFvdw?oc=5",
+   "sumber": "Bloomberg Technoz",
+   "waktu": "27-11 05:08",
+   "kode": [
+    "ANTM",
+    "BBCA"
+   ]
+  },
+  {
+   "judul": "Investor Asing Diam-diam Borong Saham BBCA hingga ANTM - Market - Bloomberg Technoz",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNjBDdGU1UU5zMGZGNWRkbVFpOWdYS2dlZW0xUkFtV0VoUDVKeHZ4ZFoyZng5amxmVmVyUGUtdWJrR0RhenByQ19XVDVuZ2JJWVZKbV9aSUh6amw2cEd0WFBnRHFPeXFuMWtSem0wSzdrMTREQ2duZUg2dzVJUVFzMUhMQUFBdHh2VktFQUhVZ0NVNk5LTnd2blpWTUlOY3RMLXdsZERncWtXbUE1?oc=5",
+   "sumber": "Bloomberg Technoz",
+   "waktu": "27-11 05:08",
+   "kode": [
+    "ANTM",
+    "BBCA"
+   ]
+  },
+  {
+   "judul": "Simak Prediksi IHSG dan Rekomendasi Pasar Jelang Akhir Pekan, Jumat (27/11) - KONTAN",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ2xzY0U5bFdnMFI0VXU0clVmZ3J3QnJUVlN4dUVIbjlEd0MybVhtc3hxcENyRnY2VjhzTTdzWWZxVVJOMzZOVmdxd0hQS0JRdFB2YnpHbEo2cmJyT3NUVGc3MDJiSzFkTzFNelp2OWZpZ05xYmtCQzBGQTJCblZ6SGFyRG1saVlIS2hiNzU2dDREckFUdGVNdl9BSG1ldXFFSEVpd0ZSaTU?oc=5",
+   "sumber": "KONTAN",
+   "waktu": "27-11 04:50",
+   "kode": []
+  },
+  {
+   "judul": "Saham Pilihan Hari Ini: LSIP, MYOR, INDF dan Lainnya (27 November 2026) - JournalArta",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdHRfU1RpM2JGWmFmN2o1eTNjSUNhN2dZSEdFTVc4ZjhpdlBzQUtnUS1RQ3J3MWI2eEQ2RktlZTNna0NwUFBhMUtlVUNObjNLUnpuVlltTUZlb21oWG1FVUNyYTU5M1JBRkY5d05hb3RrWDVvb2hLdTQ4dmZabVpmcVMxdHM4SlZUOGRRaVhZQjYxcmMtelVXdmhnMnFIV0M3WDNlLWczYklxT0E?oc=5",
+   "sumber": "JournalArta",
+   "waktu": "27-11 03:16",
+   "kode": [
+    "INDF",
+    "MYOR"
+   ]
+  },
+  {
+   "judul": "SMBC Indonesia Siapkan Go Private dan Delisting Saham dari BEI - gadget.qoo10.co.id",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdW1CN3hwVVRMeTVyTnNlczA3NU9IaW1kYlhEemMwdmd4eW15MVc5SFoxYWE0c29GdHVfcmg4RmNMaDBNeWlDQlFUSkFyNlZmem0zSTJfbFJFNmhCWks3MElfeWtPODk4aS01MExQNXhqQTZQRnd2YTl4cDRSZ2ltMnhVSldLOFRvY243d283TEpKcTRL?oc=5",
+   "sumber": "gadget.qoo10.co.id",
+   "waktu": "27-11 01:23",
+   "kode": []
+  },
+  {
+   "judul": "BEI Ubah Komposisi LQ45 IDX30 dan IDX80 Mulai November - شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Kc3NUekNNVUY0d2szZVB3YW9fQ3NMWDJFcTl2VWVhOGRmVWFad0RuZzU1N2NyOTc4SUdZZi1OUjc1QXRxeF9QSDZsdVJELVFQQ1Fz?oc=5",
+   "sumber": "شبكة تواصل الإخبارية",
+   "waktu": "27-11 00:32",
+   "kode": []
+  },
+  {
+   "judul": "BEI Memperbarui Daftar 82 Saham Berkonsentrasi Tinggi - MediaKompeten",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOEhnWUg4OW5FczlsZEc1X2lDOHNwR2N4akVORXJubmN3V2wzWm9XWmdxSy1iX2xrUEhHODRPZTVlT0loVUE0WlJRNThZQUNIX1BfQWVCVTFodWFTTHdtdHlUV1FhelJwQzlpRzRiM3BZZXRmOEY0YzltbzhocUVkT3Z5OXZzbTdmdHlBQnln?oc=5",
+   "sumber": "MediaKompeten",
+   "waktu": "27-11 00:16",
+   "kode": []
+  },
+  {
+   "judul": "BEI Awasi Saham AYAM Usai Pergerakan Transaksi Tidak Biasa - MediaKompeten",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9WUUFaNXlCM0FMbzE5Sk5FbmlTUXg0LWRUamdGNDg2ZmF0TGs1TkVwTVpqZDNHVkdlTUU4RnlrM0RNSUx5UmE1NnBTcWg2TEhhQnVHTlY4cUgxUmRSWXlEOGx3aTNjYjRZY3FsQ1hGRQ?oc=5",
+   "sumber": "MediaKompeten",
+   "waktu": "27-11 00:14",
+   "kode": []
+  },
+  {
+   "judul": "Harga perak hari ini: Imbal hasil Treasury turun, dorong harga mendekati $42 - Traders Union",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZnBVcF80TFdudWk4UVJta0xRMnNtZkNPdDBUY0hURklkTkFaWXdSbDRSM1BqdktaVVJpSndILTZGbWJmRkw4cWlDZVFaUU5EYWhXTmxrYnpPSWdMcGllZDlaU2hVbTdBSVAzM2xYOTdQRHRIUnp3bFN2YTN4SEQ2TC1oVDRPdXpfTU1mX19MOGdzR05CSUdjZw?oc=5",
+   "sumber": "Traders Union",
+   "waktu": "26-11 22:43",
+   "kode": []
+  },
+  {
+   "judul": "Setelah Delisting, Simak Langkah Berikutnya dari Bank SMBC Indonesia - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWllmSW94dm1HZnBpS0ljTFhOSFBFTjVYbkJkcVVQbm5NQnFwNklMMHhVNFJneUtubUR4cTBhcHNqZDFNRjZGMXhXaDFtSkZraU52clZPMHpCTG5pUlY2VVFlXzEzcmVUUjREelkwQ0dmSEx4NHEzSWJ2cDd3dHozWGdIS1A0dFNYbEdMcUlmaDRmcVU0alZXbVJ6cGF6c1lFZnpMQ9IBngFBVV95cUxNNE1tbXpjWERTaF9abWxYNllzUGNRZnN2bjNBMGFjTVNpeGVEemdXRjBkYUc2Zk1FYTQzX3cyUEcwZXp4RmlqYzZhb0dsS2VFQzlUdFRGeWNjMGxKc2JnTkQ2OGYxNVk0WDBhRGh5amgtQnVkc2RaeURrMDBmOXRSdFEyZV80OHo0M05jX2FCc1lNOXUyVlE5bktvZnBJZw?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "26-11 22:27",
+   "kode": []
+  },
+  {
+   "judul": "Bank SMBC Indonesia Go Private — CAR 30,7% - https://feedberry.com/",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9oZGctVmVhVm1LYXJtY3YtVm1jcWtWYS0wRTc5bUpRbjhEQTFfTlRWLVVuek5USk40ZDQ5SUVlYjVZMlJ0Sm4zaElQR2djZWlQWHhJV1NUal95UWpITVlIMXZuQnlFd2hjVjBvejN6ZGlZWFc2dEtB?oc=5",
+   "sumber": "https://feedberry.com/",
+   "waktu": "26-11 22:27",
+   "kode": []
+  },
+  {
+   "judul": "Prakiraan mingguan saham Caterpillar: Pembacaan momentum netral membuat harga tetap berpotensi bergerak dalam kisaran - Traders Union",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdnM1NW1mS1IxMm1RLTFDOThNU001U2M0MlhXSGkwOUJZcXVkdmhkNldxZkNBTVNXZTFBa3BmTGhuTTNBNGVvQ2tnQTNxbFBKRU1HbnlQZ2o4RE9aV281YmozLUExa1pNU3JTNXlJWEdHc3pMTkdsVzNjYnd1eHJGUy1FaEtzTUFlNEtGWkFDbEhBTXdVTVdxQw?oc=5",
+   "sumber": "Traders Union",
+   "waktu": "26-11 22:12",
+   "kode": []
+  },
+  {
+   "judul": "Asing Catat Net Buy Rp221,82 Miliar di IHSG 26 November - ChatNews.id",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QNHZXOUVWMHZTd3VEMllINl9jYXl5bktaLUNWeDR5OVRsTENUOWFKUmhUTWQtUWRiXzRyZnlFTFBqV0ZLOXdmbmZ2aXp4VUFUVWdiMExHWUlTRzFTQW5adG9qTzhCZFhfTzNkQThNckRPT1NuUGx2RXYzdHNrckk?oc=5",
+   "sumber": "ChatNews.id",
+   "waktu": "26-11 22:01",
+   "kode": []
+  },
+  {
+   "judul": "Mengapa harga Jupiter naik 10,6% hari ini? - Traders Union",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkdzRnRmY2ZfNGxrWmpTbG9sd2NqaklUY2FXRG85aFFwbS1MeUE2YUM2aWVoaTl3UG5tUVhVZUhBM3RuVjFQNDlOTzZweHp6dENmQVlOclM4cTBsYlJCal80VEl5WXFlaW1yZG13dVBqMVFnOHJEV0dmT1NhaUVzclYwVnRpZ2V1ZXA2dEx1STBTZEZzdUJGbDl6MmNJNjFUeUIzODZVMFB2ZXpF?oc=5",
+   "sumber": "Traders Union",
+   "waktu": "26-11 21:30",
+   "kode": []
+  },
+  {
+   "judul": "IPO ANDA Mundur dari Jadwal, BEI Ungkap Perkembangan Terbaru - TOPIK.ID",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNb19qckYyVTVZMU02VGwwa19JcGp3djB6Vy05NHE2U2dTSEczMXpXdzlvUGFKSVhxQnBVS1V6ek1nSTY2VFVubWZINklud2VuUVRNNWMyQ3JkU25hU2VwS0g3YWNhOGk3LUxBbkJkTVZRODdCQjBTalFqang2SzhfczA0RVpQS1k?oc=5",
+   "sumber": "TOPIK.ID",
+   "waktu": "26-11 21:28",
+   "kode": []
+  },
+  {
+   "judul": "Harga minyak mentah WTI hari ini: Futures mendekati $86 di tengah kekhawatiran pengiriman di Hormuz - Traders Union",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVFRuakNKU01Ed0tpYkVBWDNsUURPaG9IX1NlQl84eklDd2tSNlBaTTdfeElpYkcxY0RBb0pENlNUaXF4dkY3RzlWYnh4ZDh6UThlYXlrTHZoOC1YbXUxNmVITnNJaUJWbFdJMERIZlRqa05WX1Vyak5KdEx5bHNqd293RlpZVUl0Ynp5XzJvV0dnQ3FzUlBKNA?oc=5",
+   "sumber": "Traders Union",
+   "waktu": "26-11 21:26",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Melemah Tekan Emiten Impor dan Untungkan Eksportir - MediaKompeten",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ld3hhb19fLUFBel9BRDR6V1IwTW95cFdraXZKNjRTemVMazdkcXdwMjA5Q3VxQTZRaDJENUNRaWV1WThrXzBQYXpXNHp4UUNBSHpWMnRiUWRja00yVWI5bnNQRzVpOGo5blZ6UkdPZTU?oc=5",
+   "sumber": "MediaKompeten",
+   "waktu": "26-11 20:57",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Melemah Tekan Emiten Impor dan Untungkan Eksportir - Demokratis.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1obkRNNi0wLVl3ZkZNNC1SRXhGTjB4WVVtR3BlVzByQy12ZENSRFRuTXZQRWhCdFNkMjg3SVNFMXZ4bnBuRzVyQVd6Nk9CMGN5VTZsZ291cVJoRDlvMER6REV4V0dKTUU?oc=5",
+   "sumber": "Demokratis.co.id",
+   "waktu": "26-11 20:56",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Melemah Dorong Saham Emiten Komoditas dan Ekspor - SuaraGarut.ID",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBRdndZamJmQ1QzclRuQzhsQ0xoWGJHSDB2dWZIcERBNm1wZ3lhMXVWX1hQRlpERGUyY0JTd281bWhWOGN1YXpoUWpYVDNWRWlfOXpzQW9mY1MtNEpFNUNqdFNqNk4tRzNDZEc0?oc=5",
+   "sumber": "SuaraGarut.ID",
+   "waktu": "26-11 20:56",
+   "kode": []
+  },
+  {
+   "judul": "Rupiah Babak Belur, Ini Emiten yang Diuntungkan dan Tertekan - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBOME15TkszcFNvbkVEM3hydTZjS0Nld2hrUHVFdWhGbktDd3JFY21lcUFNVmJIakVmSnFWUS1OdThVVWVWNmNBMHh4bzcxa1gyczliSEZjeGdTdWp4OWswam41NjVmQQ?oc=5",
+   "sumber": "TradingView",
+   "waktu": "26-11 20:53",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Rebound 0,85% ke 5.242, Cermati Saham Net Buy Terbesar Asing, Kamis (26/11) - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdXk3VDR0dHJTX3hDTTJxbnZCeVlhWm1kdlRhdjBRR01sZ3RqTHdxZnFTdFB1ZEpYMjB1WkpwWXJIczNJVVE3ZGVuU1NtNDlxVUJkX1hfMkhyaGM2QzRLRVQyTTVUTWpWVVU2WDN4dFhYMkhHNXpCUGhJcUhpNlNBY21TM0U2bHUxMHRRVkxMcjk5YnowVzdZcWhCZ2NhamMyS2JoYk5NRGZXZWVk0gGkAUFVX3lxTE1lZkUzNFh2Tmg1WS1PR1NMbnhhcWdmN3BJSGtOYllyYkk3TE9DRzFyMDg1X3JaLW1tb0xjUHlBQ3BkbGp5bmgwdjBYb1dkTTM2cXRrWTJpZ3hPam8tOXlEaTkweFFFeHN5WExnTU9hcnphNjBzN0g2LTY2Ty02Z3NPVFZad1ItNXNVTFBmZmZiNGlzVlNMc2t2MTVqb1YyeFY2Rnht?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "26-11 20:43",
+   "kode": []
+  },
   {
    "judul": "IHSG Terkoreksi di Tengah Ekonomi Solid, BEI Sumbar Ingatkan Investor Pahami Fundamental Emiten - Sakato.co.id",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQT2duNXpJZ0xlYnZ6WV9zQ3FGNjhjZlJtNUthSll3NGR6T1NNT2Qyb050Ym5kMlhLLUs5SmJ2V19pZEhEWlRKNm54SEdtV2NEa3ZTZy1xLTRid2xndGhvZTBPQWVCb1Jua281ZEZOUl9QUUpVTlhOeUxTY0lKUmdOMjRkZ21Tckc1WWNkSkpkSVY1VjEySjZLUnhoVmVPVWdBZHpkMHhiMHlfaGFwLUZqWk9hTUJyMnc?oc=5",
@@ -24,15 +621,8 @@
    "kode": []
   },
   {
-   "judul": "Kementerian Koordinator Bidang Perekonomian Republik Indonesia - - Kementerian Koordinator Bidang Perekonomian Republik Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOY1dJRE9xd1RBbjQ2MjI3c3pVUEJyYzV3ZXpYYjNUYmFWeEs4REVJdm1IeXFOaXhSUUxqZE9aUTdTWXc2UFItMW8yby1BR3pleS1RckxkQ053Vk1EemwtZVdqYUdTeTVRa2dnT05jM3d2bWlMbk10cXZVdzRKaDllMHRHVUhfbVE4dG9MWGhKM01iU3VKZGt3cUdYejVnWkFuY0RZalB4N29YT08wbGswcHNHeTZmdktfTlU0c2dIRTd1cTAwSUhmdUhnaklBcjBmUF9uU1FXVlk3X1dRRDJF?oc=5",
-   "sumber": "- Kementerian Koordinator Bidang Perekonomian Republik Indonesia",
-   "waktu": "26-11 20:06",
-   "kode": []
-  },
-  {
    "judul": "Buy atau Wait and See? Ini Rekomendasi Analis untuk Saham ENRG - kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQXp4aWt5dk9LcVBRbzU3WTc0WGNKSWNQRTVQbWRzWEpxdjFtNGNxUU13ZFNrQVVzRHhtTEJNR1Vxc0hzcUNSTk41d0I3V0Z3Rk1jcFQ2eXMtNGJNX3Y3MUpZdGVqNlhadVQxZUJyWEVkazlhQ3BKWkZmc09rZ1FLaTJGTnlRTVQ3LVRhOGJvaS1TQnBCSGRoNkZraXA4QQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQXp4aWt5dk9LcVBRbzU3WTc0WGNKSWNQRTVQbWRzWEpxdjFtNGNxUU13ZFNrQVVzRHhtTEJNR1Vxc0hzcUNSTk41d0I3V0Z3Rk1jcFQ2eXMtNGJNX3Y3MUpZdGVqNlhadVQxZUJyWEVkazlhQ3BKWkZmc09rZ1FLaTJGTnlRTVQ3LVRhOGJvaS1TQnBCSGRoNkZraXA4QdIBlgFBVV95cUxQRzVnOXQ5bXJTZWxCWGNNTTdRODI4R2VFWWxBRTZ6NXhYWHNkenVjRURaRko2a1dXdjVFdFRzRVVoRHNtNUsxVndGdXhEX3JIXzZjQUphYlV1blJrQUI1Skx6YUhncDlxSHpDTDVZcHJYWGk5dGN0YUpqM2dkTHlja0ZhU1VKN0xTZlF6SU1vYTI1dFNGclE?oc=5",
    "sumber": "kontan.co.id",
    "waktu": "26-11 19:37",
    "kode": []
@@ -42,13 +632,6 @@
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcDFGYWVtRlJaUFJ2Q2sxWVNnckF4X3hNRFVIVWptNWFLdnVrV0d6WW9KVzBmLXhWdHVkcWc5OThWU09va2JMT3FyXzRaRHFNSlloY29CMHh1NkZoTkNTak8tcmlDaTZMSW1EYVRrZnVfaWE3YjA2M0pCTkdOcUMzTXBDLVBiNGRqYjR0d1hQc1JxN29LWV9OcG5XM1NkZGI3aVZfZi1XWXRkWFRoZy05cUZISFlYRFnSAa8BQVVfeXFMTkZtcEZLSGRBSnE3TU8xWV9XMW51cWlYTG5tczFIUnZTVi1QeEJYZ3JmVzZUVVl5VGZEQVB6dE1IUEhFTDFBU2NTaXAxWWVKS0F3cXY4blJhQjYwZ3RHREpxdTFYT2ZMbXFqNkhHY2JsWVlsMlNHODVBeXlMZUs2MEJWbUhReUtJUzFWOGU5NlRMS3hwdWxfcC1oanh5SThXTEJaZEtVcjNTdDFWNl9nNA?oc=5",
    "sumber": "kontan.co.id",
    "waktu": "26-11 19:28",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Bangkit Ditopang Saham Big Caps dan Perbankan - Demokratis.co.id",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lb0JRUkkyVXU0RGN2VFNaS2RSSUM1dmFYZHVOYnYyZGd5RGZocGJab0NmOGJKYTA5U3RTS0xiTV8xX2drZUdFSFlnQ05IQkFqUEdBMFFDSHNGWjVEYklRWWc1M2RoYWV2T3R0bVNJQQ?oc=5",
-   "sumber": "Demokratis.co.id",
-   "waktu": "26-11 19:23",
    "kode": []
   },
   {
@@ -66,16 +649,23 @@
    "kode": []
   },
   {
-   "judul": "IHSG Menguat, Simak Level Support dan Resistance untuk Perdagangan Jumat (27/11) - kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeU1xQkxUdXM1YzdxWDlnWWlVMXlPXzJld2ZLeTRlMW5vb3JfdU52eXQzR2hDTXA1MWZHTGhfQnRCWkN6b1NuTmlwWmlPSmRyRlFmeFc5b0ZGLUxxMG04by1pWG1kQ0k1SHVtVXZrdlg0WjV4UVVneWo1eGlRMm43VXJDMGN3ZUxadEhZRE5JeHUwZVBQakVrSE11NVVhVURibmFhY1p4VURld0dTRk1tWU9R0gGqAUFVX3lxTE5rSjdqNi04djVVY0hFNFBNdXpYQkx0Nk1saTBpZ2l4M1ozcTFDNi1pdmFxbUxBNkx1dkxuVXAxNGR5WjV3NS1zVlZDZlJkYXhWdTBxc09RV1UtWFR5R0tJcVBOR3ZTSnhFUzV6cFBDUUZBWnBBMHJ3YlQ1WWdTUlprT3hTNElmTi1qOGJUNVlERGxOX2lodUNCTmFZMTFOOWEzUTRwRlJlUmV3?oc=5",
-   "sumber": "kontan.co.id",
-   "waktu": "26-11 19:03",
+   "judul": "Asing Catat Net Buy Rp221,82 Miliar pada 26 November - شبكة تواصل الإخبارية",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qY3lkemc1aDhkS0R5dXRoTTU1ai1qSGZoS1dkaGxveUJLYldHZ0FtSGFCS1ZIdXlJUzl2T2V5b3lGYWU1d3dDSThSVDNXbkpWdVNr?oc=5",
+   "sumber": "شبكة تواصل الإخبارية",
+   "waktu": "26-11 19:10",
    "kode": []
   },
   {
-   "judul": "Investor Lirik Saham Underrated di Tengah Tekanan Pasar - Demokratis.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03NzlLVzhYbERMaEFSTXNfOFlCVU9zMFVtaEVERl9XYkRxVEJnM2U5aEthVXhncEhmTXR3dFJnTmtrVlh1LUlqTE9JM0Z1TUlHWHJUQkQtWjJLWDRqdlRYWGJ4cTFmdjA?oc=5",
-   "sumber": "Demokratis.co.id",
+   "judul": "Rebound Searah Regional, IHSG Kamis Siang Menguat ke Level 5.233 - Vibizmedia.com",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWl9Ed1dJUXNRdi1xa21oXzhaQ0NoRU5YN1pkY19sY2RXWDlLMXJQUEQ0aFF3a2dQT1B0RmtBMTFjeDJBZjVKYnpmSFE2bHdZY2kwNXFrWm5tYzAwdWdQamFoT1pyeDFsOWhaa2k1cjVVVnZxTXNEUVFfUmllZHd4Mjlkd1FuVTRBUnlPaVBwLWZhS1N3dlRrbzdrRHN0SDJScHFXeGNTQ3NaZm5pcndsZzdB?oc=5",
+   "sumber": "Vibizmedia.com",
+   "waktu": "26-11 19:09",
+   "kode": []
+  },
+  {
+   "judul": "IHSG Menguat, Simak Level Support dan Resistance untuk Perdagangan Jumat (27/11) - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeU1xQkxUdXM1YzdxWDlnWWlVMXlPXzJld2ZLeTRlMW5vb3JfdU52eXQzR2hDTXA1MWZHTGhfQnRCWkN6b1NuTmlwWmlPSmRyRlFmeFc5b0ZGLUxxMG04by1pWG1kQ0k1SHVtVXZrdlg0WjV4UVVneWo1eGlRMm43VXJDMGN3ZUxadEhZRE5JeHUwZVBQakVrSE11NVVhVURibmFhY1p4VURld0dTRk1tWU9R0gGqAUFVX3lxTE5rSjdqNi04djVVY0hFNFBNdXpYQkx0Nk1saTBpZ2l4M1ozcTFDNi1pdmFxbUxBNkx1dkxuVXAxNGR5WjV3NS1zVlZDZlJkYXhWdTBxc09RV1UtWFR5R0tJcVBOR3ZTSnhFUzV6cFBDUUZBWnBBMHJ3YlQ1WWdTUlprT3hTNElmTi1qOGJUNVlERGxOX2lodUNCTmFZMTFOOWEzUTRwRlJlUmV3?oc=5",
+   "sumber": "kontan.co.id",
    "waktu": "26-11 19:03",
    "kode": []
   },
@@ -87,11 +677,28 @@
    "kode": []
   },
   {
+   "judul": "Asing Catat Net Buy Rp221,82 Miliar pada 26 November - Peradaban.id",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lUWd5ZTM3QlR5VmdaZXNWSGQ1YV9EQWlJcmxpVWFZd2dDZ19MLU5mRUZpdmsxT04xQXlpbzBuVnBmUjR6RWtpVnNaT3B2aEZlenRjajBLTWZGUExuaXF0UQ?oc=5",
+   "sumber": "Peradaban.id",
+   "waktu": "26-11 18:58",
+   "kode": []
+  },
+  {
    "judul": "Asing Catat Net Buy Rp221,82 Miliar pada 26 November 2026 - Limapagi",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9EenVvUDZFNWlwYXlyWU9ZSXpsSW9Sa2szcW9yTm1qb1RMMHRNRlQ3a21RUHpHeU9aNlRMekhzLVVwdC1JUG9LdjhUeG1leDFObjJmVjB1aUtZUndfX0hZSV8xZU1EdmduMXFSQQ?oc=5",
    "sumber": "Limapagi",
    "waktu": "26-11 18:56",
    "kode": []
+  },
+  {
+   "judul": "Simak Rekomendasi Teknikal Saham ISAT, GOTO dan DEWA untuk Jumat (27/11) - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaGV4ZTdZbFZjVFcwVktLSHBkazFoZVM3bWtiMWExcVhwOU52X0VUVkZRY1pLa0NOdi1EN3lYR1lORlEzSUtTeEJILXM4d29LRDBwc3BuckVRd0E3Y1pKald0ZFU0NHRfc2xnbDlOQjB3SWlQWDVyc3U3eEM2aVdPanRjUVktN216cnZPUnBLWUc4NDNxWlJOeVRSS1plSEM5aFlnekduNNIBnwFBVV95cUxNRTdCSmpnU2R5eW8tUmQzZS1pYmpWbkstWHFCMmxkZ0hXVXRkYzJvMUxDWFdlUzMxUUNYUnJUcUgxc3g5VEQ4d0dFczl4aVZJQlA1YlV6Q1BlY0E2SVNBNFo2bzBHdWxWQkdiNHNtYVhydGhFU0ptSWlJdU1wTlVzNEJxUHlOSDlFSS1aR3dpT252RkhjUGdMYXN2dG9ET1U?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "26-11 18:53",
+   "kode": [
+    "GOTO",
+    "ISAT"
+   ]
   },
   {
    "judul": "TOBA Pimpin Kenaikan Saham KOMPAS100, ISAT Tertekan - cwibc.co.id",
@@ -138,13 +745,6 @@
    "kode": []
   },
   {
-   "judul": "Terbesar dalam Sejarah Pasar Modal RI, Denda Emiten Tembus Rp2,1 Triliun - Akurat.co",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa1ppRnNtWllheFI4d0QzUjRaT0tmcUtIZWkzUkpnZXlvYkVRbnhqMnJySGJYSC1RakZHbDdKMGd3T0NnWmwtSVlfcVV5R0pwYS1HaUJpd1pSR3locVhUOTdzTHZqWDdnNUk4YVRGNmFtdEdZeDcyYkdrVlYxQ2FTbmdpMXcxNVVtMDNSTjRXNDBrdURVTHBFTFVQdjRmS2VER2ZjZUZsa0I?oc=5",
-   "sumber": "Akurat.co",
-   "waktu": "26-11 18:30",
-   "kode": []
-  },
-  {
    "judul": "Asing Catat Net Buy Rp221,82 Miliar pada 26 November 2026 - BeritaJejaring.co.id",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5kZWoxQmpqYVNkbFE3bG5laGxfNmxELVgxTjhoLWlUemZtelJ1ZUpGNFNETWkwNTVLeTFFdkZ5VmxFRTMyRkZSS0h4ZzVncEVweUhhdnlMMWF1Ujk0ZjQ2WUlhS1JXNjVzQXhHcQ?oc=5",
    "sumber": "BeritaJejaring.co.id",
@@ -152,34 +752,10 @@
    "kode": []
   },
   {
-   "judul": "Rebound Searah Regional, IHSG Kamis Siang Menguat ke Level 5.233 - Vibizmedia.com",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWl9Ed1dJUXNRdi1xa21oXzhaQ0NoRU5YN1pkY19sY2RXWDlLMXJQUEQ0aFF3a2dQT1B0RmtBMTFjeDJBZjVKYnpmSFE2bHdZY2kwNXFrWm5tYzAwdWdQamFoT1pyeDFsOWhaa2k1cjVVVnZxTXNEUVFfUmllZHd4Mjlkd1FuVTRBUnlPaVBwLWZhS1N3dlRrbzdrRHN0SDJScHFXeGNTQ3NaZm5pcndsZzdB?oc=5",
-   "sumber": "Vibizmedia.com",
-   "waktu": "26-11 18:10",
-   "kode": []
-  },
-  {
-   "judul": "Window Dressing Akhir Tahun Dorong IHSG Menguat ke 5.242 - Harian Jogja",
+   "judul": "Window Dressing Akhir Tahun Dorong IHSG Menguat ke 5.242 - Harianjogja.com",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZnhHendub3dfSU1hTTZoVmlYV1o5WjhCdHlLenRfNXk0aWZwM2RKdUF6MWtGSUFPWTY5c3ZUX1h1cWRaRll3dlRJWVNGR3JmOGhGa3p3NktwUkh1UTN3LUdCZl9QMWNrQWw1NWJ3S0VlbDVyeEdhR19lS1pNOHcxSkliR1IzMWRFSWxWdlJEbGI0RmhhcUJ5Rm41UQ?oc=5",
-   "sumber": "Harian Jogja",
+   "sumber": "Harianjogja.com",
    "waktu": "26-11 18:07",
-   "kode": []
-  },
-  {
-   "judul": "Investor Asing Berbalik Net Buy Saham Rp 238,90 Miliar, Saham BBCA dan ASII Diborong - InvestorTrust",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQS1tWUpkYThrN2I1blpzZERPVjBCZURyS3VCUGZ6TDNpY1plSEl2Z2JnZWV1YkZzQmdGQTVOV3ZXT1U2VlZkTWVJR1lESmk5d3psbjBiTXFmLTExZUE4eXBkYUdzQ3ktNXZsWG9fRVBDVlB4dDQtNFBmUjVfdDg5WkhZR24wLWdJZHpheG81NjlBS1hobmRkS1F4R1dNLVVHRktYbWROUTBOX2hlM2J4al9zVVhwMS1UUHNsanNhOA?oc=5",
-   "sumber": "InvestorTrust",
-   "waktu": "26-11 18:06",
-   "kode": [
-    "ASII",
-    "BBCA"
-   ]
-  },
-  {
-   "judul": "IHSG ditutup menguat seiring optimisme \"window dressing\" akhir tahun - ANTARA News Jambi",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQT0VEWEFtUGZGQ0JQc1ZPR2pLLVVUSE44NVJmX2huRVVJdWFSUzJ5YmpkTUltc2lMeEJvaUlCaTlLWlJKUUNFeC1nNHJGOXFFTG42SlVQdHV2YVU2S3VQOFVmUDJBRjhGaVJUOWR5MlVNRzlBbHNCdk5qa3dQN1FKdXZsYU5Sd1VuN0prVGNiaFdaXzFIb2NFcEJKaFFZX25mMUNuY01oMkc2WjAyTDVWanhCdw?oc=5",
-   "sumber": "ANTARA News Jambi",
-   "waktu": "26-11 17:47",
    "kode": []
   },
   {
@@ -232,6 +808,13 @@
    "kode": []
   },
   {
+   "judul": "Saham IPO ANDA Belum Bisa Dipesan di e-IPO, BEI Buka Suara - StockWatch.id",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWF9pMXZ5dGJqUWRoNlJjdUVIVU9aaGxOQVduTTN1OVRXeFh2WDdIbHVzdnR0SmFCYWhlSzFxTmRfTXpiQ0o0bjlCdGVsUzFPUUhiRWRBdjROR3JqSEZLTHFmdU9nR1lFcmxqcEROYU1rMWhMaEFpSFNKMUZiT0RwNWZZVzJEREE?oc=5",
+   "sumber": "StockWatch.id",
+   "waktu": "26-11 17:05",
+   "kode": []
+  },
+  {
    "judul": "Foto : IHSG Ditutup Naik 44 Poin ke 5.242, Saham BRPT Melonjak 14,96 Persen Halaman 1 - Kompas.com",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR2NCcXQ3akVua3VoTGpLa2w2ZUtaak5qa0l4NEZBM0ctSzZrS0pPdm9MNjFfcy04OEFTUW51cWRLTVdZa3lsRzNqTldJTXVWWkRFa0NLdVByZ1Nod29pc0dKeUtjWVJnaDRhTTZvOWlPblo0TjNsdlB4VXR6ZnY2eGxrUEJibEVZY0ZxRGFrVHlzRHR6S0xTREhyQmxnRDhCSG5TdERwaVFqTmNac2k3NGdhTVRtQ0wtMVBjem12UGVQQQ?oc=5",
    "sumber": "Kompas.com",
@@ -241,31 +824,10 @@
    ]
   },
   {
-   "judul": "IHSG Menghijau Hari Ini (26/11), Hampir Seluruh Indeks Sektoral Menguat - DataIndonesia.id",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZVloUHhHYzQ2VkRsaTl5WGhMRUItNFZhRHB0S0dPaFNPMnVlVW1oOWZKTldSamNya3BIbDdSOTZ2SzgzWTd6UTdlOUpxUXFWclBPR3BUak9FM2lpM0Yxc3IxUG9qcXNqbzdmQ09zSkpyLTByLXJrek9xYzl0V21MZWRPOTFKSGJMb01GQ3hiV3VsazVFTE5TSEJlU19HY3pyX1kwVm1KeUtaNEY3UVUyYg?oc=5",
-   "sumber": "DataIndonesia.id",
-   "waktu": "26-11 17:01",
-   "kode": []
-  },
-  {
-   "judul": "BEI Adalah: Pengertian, Sejarah, Fungsi & Jam Perdagangan - Pintu",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBNa1B5WXlWWlRtNXU1ZDF5eWlBMjROdDR3cU9JWHlEeUlGWk5NZFFsLWFVT2dQUXR2Y3hWVGxaRmFTcHBkUVhtUWRYWQ?oc=5",
-   "sumber": "Pintu",
-   "waktu": "26-11 17:00",
-   "kode": []
-  },
-  {
    "judul": "IHSG Ditutup Menguat ke 5.242, Hanya Sektor Infrastruktur yang Melemah - Infobanknews",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOaWR1Sl9XVWpmemFScVNWUkh2bTlIa3BKZUZobDhVbUJaT3hLM0dhU0haV2hvVnpYUE9qbi1zYlN0MlBOQ2lYTzRXN01xTzVISENqc3FrYjMzZzdrMVpaTGZaWURZVXJSOTByUlpSVmhTVWNIbTVyWmlDNmVLR01feTFfTXk1OG5tRG5JdXlSZVlWWWtvYXJUSmJR?oc=5",
    "sumber": "Infobanknews",
    "waktu": "26-11 17:00",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Menguat 0,86 Persen ke Level 5.242 pada Perdagangan Kamis - Limapagi",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5fc21YR0gtY3hjQ1JYNGRZLW1OLWxvZ2FpSTkxT1VabnZvR25ZYWZSVkVoVFFfNTRBamRtcVRlVE51VHVuTHZVczljd3ZvVWhoSnlXRjhsU2VCY0llTFdFREoxbVl6RC1GMVJPc2RJU1I?oc=5",
-   "sumber": "Limapagi",
-   "waktu": "26-11 16:54",
    "kode": []
   },
   {
@@ -276,20 +838,6 @@
    "kode": [
     "BRPT"
    ]
-  },
-  {
-   "judul": "OASA Pimpin 10 Saham Top Gainer 26 November 2026 - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOeDhYanlsSzJQQzhUYU9scnZJRUNmQm9vbU10eFNHY212ZVFiMjlTQXNocWNqY0RQc2hVdmpSTTA5RWtGb0dNZWJKbEllZGNOTUxLcmpUS21fSEowNDlxUWZ6U0dJUWFaVHhB?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 16:45",
-   "kode": []
-  },
-  {
-   "judul": "OASA Pimpin Saham Penguat 26 November 2026 - Limapagi",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ZWi1leHdqSUVSa2tFWnBEdGhKTzVKMlEtV0FXcXZEck9kM3d0OW13SlM2TmpWSDh5MkI0TGdJTkU0VExrYjVWUHFSaEt0aFFleDZqaHMzTVVzcVRWclo2ZTRlX3VCcTNW?oc=5",
-   "sumber": "Limapagi",
-   "waktu": "26-11 16:45",
-   "kode": []
   },
   {
    "judul": "Pasar Saham Tertekan, IHSG Diprediksi Kembali Melemah - Jawa Pos",
@@ -306,16 +854,9 @@
    "kode": []
   },
   {
-   "judul": "IHSG Menguat 0,86 Persen pada 26 November 2026 - infotoday.id",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ERmlRSkhCM2FBTmVGVkl0TmozRGZ3S3g5TVpIOXlab1VITGdKMUh3MW1TU3Nlb2R6YkJNaTAzVDZORmdTaTZXYjhiYkI4Zmlrek0zcVg5ektnRlNJTlVTV1Y3N1VDdw?oc=5",
-   "sumber": "infotoday.id",
-   "waktu": "26-11 16:30",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Menguat 0,86 Persen dan Ditutup di Level 5.242 - Peradaban.id",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBBcndWLTNuMUNkUVpNYzNZa28tWElOMWhtRHJMSXNmLUhuWGp0LUFQakFIT1hycTZUaGsxOUZVczk1MmVxWTJYeGRsR2o2MkI3Yzh2b2FEQVNlMlc3d2NHbV9wVXVOYXRGUG5jRw?oc=5",
-   "sumber": "Peradaban.id",
+   "judul": "IHSG Sore Masih Hijau di 5.242 Meski Pelemahan Rupiah Sempat Rekor - CNN Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVEUzMFN3OVNmTFdleEU4RXNhMGRTdnpTcWMyS2pTOXdLZnVsY0lVQU5FcWhQdVhoaFZfRUpaVUJRc2xpZ3dtRUdVZWRURTRzckJRd2R0U2w2UVF4d1BiSEtOQ0tNd3ctYlBDN1B6Ni1vUm1ocUJpVkFIRDcwd0ZET25jUnZFbTlBeFdHS21wOUd1azJ6MzBUcFQtdXFaeXl5WFd0TmNwbkU0QUFlSzYxSGlIb0JXeU5HVU1WeTJsWHN0ODZxbDc40gHMAUFVX3lxTFB3SUpEYWt6ckNjdWVEc2psNmo4eHFCN3I5ZDNnQmlxcV93eTlFUE9jS1NBVTlUcnczM3E2bm5zTC11WGcyTF9yTzEzNGdvOEl5a1RpeHk0d3BNMXZ1NUlfbmJ1NHJyazk1WTd2TjFwVy1jRG5jMXp1Tmdob1VrNWtNYlF0akJ0Y2dSQk96T3VDc2xEa0FqaXFXeWN1Wm9MR2Z2UkpGSkFRTkdFdnRmb3FuWThyOWwxR0JJeXV1ZHpfSElOWkRFOW9KRlJCSw?oc=5",
+   "sumber": "CNN Indonesia",
    "waktu": "26-11 16:30",
    "kode": []
   },
@@ -328,7 +869,7 @@
   },
   {
    "judul": "IHSG Ditutup Menguat ke 5.242 - detikFinance",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVTNSeGkweUpfV3dYUGVzWHVHb3luWkMxUWEzODd1U1k3SlBIT0p6amdtMkRZV1EwRnpGYzI3REtYZkZ1YjI3NWxnMkFhZGg2TGpQZGU0Rld6a2VYRVBGZ3cyTFVXdzhFU3dlczNCWlpXZUFMU1h0WXhhSHdwRTJZQ0stQkltTi1jTHdKUnNn0gGOAUFVX3lxTFBVM1J4aTB5Sl9Xd1hQZXNYdUdveW5aQzFRYTM4N3VTWTdKUEhPSnpqZ20yRFlXUTBGekZjMjdES1hmRnViMjc1bGcyQWFkaDZMalBkZTRGV3prZVhFUEZndzJMVVd3OEVTd2VzM0JaWldlQUxTWHRZeGFId3BFMllDSy1CSW1OLWNMd0pSc2c?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY1o1RUdOWmloUjlEdUNOM1JFRVFBUWJzY3dZSGwyY2VubnRXeGM3SUFmNG1FT2pJUDlTaHRZZ1VQSnNQajdlRktqZ1ZzZ1NzcV95cTdyX184RXVSWEpKYXB2RmRURnc3aVhwaDc4Z0tQZmN0ZFpzUE02X25saWZzemdCMFFNbDJ00gGOAUFVX3lxTFBVM1J4aTB5Sl9Xd1hQZXNYdUdveW5aQzFRYTM4N3VTWTdKUEhPSnpqZ20yRFlXUTBGekZjMjdES1hmRnViMjc1bGcyQWFkaDZMalBkZTRGV3prZVhFUEZndzJMVVd3OEVTd2VzM0JaWldlQUxTWHRZeGFId3BFMllDSy1CSW1OLWNMd0pSc2c?oc=5",
    "sumber": "detikFinance",
    "waktu": "26-11 16:26",
    "kode": []
@@ -338,13 +879,6 @@
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcWJISHBSYVNkd3NGLXoyTlVQZEQ5cm92bHZlaFlCWm03ek52cnJkVkY4MFc2ZFNtZDhXQVZxOE82X0hJTWQ3a0RDYU8wTThTc2NJd0t6bkpfSklYSXp2VEx0SGJyZzBjQmFmbFJhTEdWcEp6TEREZnFzLWhJeTdINktNcDJJWmNNMXVvUkln?oc=5",
    "sumber": "Emitennews.com",
    "waktu": "26-11 16:26",
-   "kode": []
-  },
-  {
-   "judul": "BEI Jateng I Siapkan Galeri Edukasi SMA pada 2027 untuk Calon Investor - Indonesians.id - Indonesians.id",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGlUVVIzSy1DcGEzdUgyd1h4bE9HQ2RDdlJkM1JQdHhXZVZ5bEJYUV9EM0hFZXo3RFRqaHB1VzZJLVdFdFU2SllUc3VDRUpoX1h0bGJDOXZYNzNEcmxPcUVmQlZmbEJWbml0ZlhScGF2X3Y5WHhTREs0V2VvZ2c2b2Q1Ymo5cElHUVNFcHVGNi02UFJmUmczNlNKRzN0UlVLQnRYR0pUR180V0xMNU1iTjFJRW9MLW9pWVRJZy1R0gHDAUFVX3lxTE1haVhQMlBldTJwUTVLTUJKc3ZjUXdGVTMybFVfTEhfRG53R1pPNFNuVzdIeHJENEs2dE1BUElWOGpiUTd3ODRLVWtXMkkxXzJfX1BjdEZRUjVtbGVoTU5CcjZqel9temsyeEYxSGg1TXNmc2FYRjl4d04wU21idzZ6U3E4aFJ0Q1hlcEFVdVg2SDRBc2V4c3ZOQ19IcXUwb0ZiSHVLVnViVW9FNmRrLVhtanREYVQ3M3ZsVVVOUERmUDNtbw?oc=5",
-   "sumber": "Indonesians.id",
-   "waktu": "26-11 16:20",
    "kode": []
   },
   {
@@ -387,7 +921,7 @@
   },
   {
    "judul": "IHSG Ditutup Menguat 0,86% ke Level 5.242,17 - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRHBpZnE5dDM0X1RCbzJOdGxycGRPZFR2eUZES2d0eTlVdXR1M3FlM0I3MHRYNWpRVWl1LWpyR2dtUWtIdV9XUzVDU0FQSUxSNmVFcUZLTmJVUmVaU1ZNbktJaHJ0NTFqQWdYZFVDR1ZSNUlUWVl3UzNFaDdKSl9VR0lKQWpZYmZ0N0cyel9GZ3JnSXVwUi00RkhKNEhPdnJreHJTRNIBqgFBVV95cUxNeG1JM09kQkpqMWMtaVVMSUlKMVhoUFdTeEJES2Ria1ZXN2p2dGhiUXhLb3dIRnhXdTJvS1p2VThnTFZSX3lQMDNxSklKa1Vpa0tUUGhwN25MdFFPYmVVeUpwZGJnYnFUOXlCZHJFb2g1bnhCZWNYcWh2RTdtSmZwb01CTHJ0VTVvaldCOTNKVmpEYkJGenZkQ2V3TWwxS0NrMnNhbktOY21jQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZWhkNTBsX0JOLUJWWkFMTnBoQjhvY0I3SGRTXy0xeVNHZTRJcy1vbWpDaWJmZWdlYXRJX2tUckttalZUdVlwckU4emt5cVI0WjBJVmRMTGNkTVEtaEN1b1lKV1pzQVhBUFlQaGNIYXlfWnliWWIxa0hMV2UzZ2xEZjZadWFVTU5NMjVOVjlqQy1ZV3lLaEh4bjhaY19qLV9QVU9qWtIBqgFBVV95cUxNNVNJcHFWblJlOS1XMVcybkhsYXdIa25oQzhCdzN2RW9leTdOZzBFZ0h1RjZ1ZzFCWWl3UEpMZlpUZFl1LVZOX1NkX3Jha0tNU1VYLUxkRllQdTNMb0ZiYjE2ZVBqb2JSc3NHbnJkV3lzS0JURE5oWmJwYk1oeW53bVdISzkxT1RTdF8wLWh4UFYwc25LSmRQR29DN0lEN3g5bTNGby0wemxmZw?oc=5",
    "sumber": "CNBC Indonesia",
    "waktu": "26-11 16:03",
    "kode": []
@@ -400,82 +934,26 @@
    "kode": []
   },
   {
-   "judul": "BEI Ungkap Nasib IPO Andalan Artha (ANDA), Meleset dari Jadwal - Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdWZTdjlhMHhDYUxSazJpakU2czB5NnhwUkNGOGx4TVo2Ylpvc1ZmZXkzOFlybDVXRzEtOC1obDRIM3NST3B3S0xZWV9DTlNrUnloMmpHcTRCN3JiRnhQRndvZ1pmUjRtcVZrSWRBYVV5RnJwNndqWXBHbmV4eFRXM2RIbWwtc2pPb1dzTDJ0cFNzc2RJTWZ0QWphcDNOQncyVFlIMFN4UkxyZkdrbFVWZg?oc=5",
-   "sumber": "Bloomberg Technoz",
-   "waktu": "26-11 15:58",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Catat Dua Kali Penurunan Desember dalam Empat Tahun - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCT3pWZ2NIZ2dfcFE1SHBtQ2M2QzRYRmtCOGpkenBhVjg4bVllVDE0QlNlZVI5ekFnRmZubnIwU0FXejU5R1Rza240N0h0eDd1MnM0VjFuNHhTUk55bk0xbXJqRDd2TWVBQ19j?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 15:54",
-   "kode": []
-  },
-  {
-   "judul": "BEI Tunggu Kepastian Jadwal IPO Andalan Artha Primanusa - Limapagi",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOODllSTQ0YlV1MnRLZDdaNWRxNlRHcWFWNEdXSENNdkMyQ2taeXJXSkVMbVZaYUMxS0gxNXd4VUNsNlZLQVMzRmh3TlYxUzZtQmdXZkZfTnRKdDV1ckNSRnlqbzEyMnlBamZ5QXBrS2FRNXNXdjc3ck1hQmtfMHppVkV1YmNRQQ?oc=5",
-   "sumber": "Limapagi",
-   "waktu": "26-11 15:54",
-   "kode": []
-  },
-  {
-   "judul": "Cara Membaca Rating Obligasi dan Saham - Maybank Trade ID",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNelUyWDQ3aGtLUHhqOG1MeV90QjdrZzl0dEdmMWFWcHlXWnpaRTJXODZ6di1tbXBUYTBzRGpyQXJuZHR4cGZaME1xdmIxSnR4eV9YOVlDa2w1SjdMQUdlQWpnVWc2U2pBOTFTaXoxWDh0TFROQmxsZ2NOUFU1eWlXLXp3aw?oc=5",
-   "sumber": "Maybank Trade ID",
-   "waktu": "26-11 15:50",
-   "kode": []
-  },
-  {
-   "judul": "ANDA Bidik Dana IPO Rp316,76 Miliar, BEI Tunggu Konfirmasi Jadwal - IDX Channel",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNODVkMnoxeS1MWXJmdWkxS3VXUmZIZlBxeDVzTnROTm5UYkJVcEpZdlVJSWgwbzBFdmgwTXV5eEw2Y3lpZnc3czF3eTdiREl1VW00VHk3OXJSbGc2M2J5d2tsZFV6UzV6MEdwNFh0Vi1JS1FvTHBXOUozNmR0TGIwZW9oN0tNdE0wbXMxMUNpQUZWRFZCUEQtN2Y5alctR2lPMEpyMtIBqgFBVV95cUxNTFI4Q1VUcExZLUNYa1QxNzhWRE95Tk9zT0xUUlV3VUxaMEdYRzZxc2xvSTFJSm4wMTVyMXVTdUE1RG5YVksyYkFobzctVXF6dXlvNmZKVkh3RzdhSENHaGJwbDZISl9ManhWWlQ5cXBEcnlLS2hMdFhiT09hV0ZjWGMxb0lXbE5iOXhLNFBMUVdHdnoycjJNb0tjSFZ1ajVkZmdzTGRIUUxNdw?oc=5",
-   "sumber": "IDX Channel",
-   "waktu": "26-11 15:49",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Catat Dua Kali Pelemahan pada Perdagangan Desember - Limapagi",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE40SFNYWXhXR1JLcVN0RjNvdTlwdFIyNElKSlIwNU0tY2ZCb2RfcnVaeG1fcXNjUGx3cWhlNkNkOFRCOEgyTXpnQXdNWllDci1vMk9STVhmV1JyN3ZaazVXcUg0ZWZUeEtCMnMw?oc=5",
-   "sumber": "Limapagi",
-   "waktu": "26-11 15:44",
-   "kode": []
-  },
-  {
-   "judul": "Window Dressing Desember, Apakah IHSG Pasti Naik? Ini Data Historisnya - Kompas.com",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNanoxRDhVdHZNMXFsRGRaNlBBc0xza21BNUFyMWhOMmVRaGJfTWctUS1PazdONFFNa3VqQ3dDX2M2UFFXR1lBSHhyTWJielhtOGluVFRxNXpfZ2lCMnVscXJQNHRyZEQtOFVDeEkwWnlIUC02V3ZPamJ1TEhDbmtMRHgxX296eHo2YlpqTk12QXd3RkIwb0RVdmFDa1YxOFAydVFvSHVwcjNsZ1RTLXF5TFB3ZnVEM2JJbkU0?oc=5",
-   "sumber": "Kompas.com",
-   "waktu": "26-11 15:40",
-   "kode": []
-  },
-  {
-   "judul": "Hadapi Tekanan Global, Pasar Modal Indonesia Perkuat Transparansi dan Tata Kelola Bursa - Sumbardaily.com - Sumbardaily.com",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZmp6aFZ5c0NxNzF0Z1RLN3VSU3BCODVKTmdSb2dYOVd5T1g3YnpaZEl6bmNHTTVlZFd3YUhUSjh3OFRHdkVFNUZxVW9RU0NOWjd1QXpqYTNtRmk0ajUxUWoydzdhQXJTblBFOWthUkFZcFFnaHdkUm03NndtZDV0YWxDUlFmS0pBT2JaeXI2dGdWWW81V0FsWUlhdEFoelp3VTRjcDZyUENfLUhUNXRTaVpkV0pDc0FfLWhmalpIVWJLMFBLVmtNeGd3RFHSAdIBQVVfeXFMTndOMl8xc0pwQzFGc2hzQkxGZFV0Tmw3UWt3RndkRFdtUmpib3p4YkZFc0JDU1lhNk9TUzBjbWh2SnU3dUd1RnhDcWVwNXRGUlFtUnhFWjFWTWhLNG41X3U0UWY0YXFOeHJlQXIwZHdZay1PVXNYaUJNSFo0a0RTNlJFVlI1c1Q1WXRoMUdQYXAzSF8xbll2M0hCblZZcy0wZWQ5Rkx2bjMxemJwUkY3SWZVd2l3dVcyZlVyR1JIbThLTENaTTJ6VGhBMkJEN2hrdmJB?oc=5",
-   "sumber": "Sumbardaily.com",
-   "waktu": "26-11 15:23",
-   "kode": []
-  },
-  {
-   "judul": "IPO ANDA Mundur dari Jadwal, BEI Tunggu Konfirmasi OJK & Underwriter - Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZUZxR3hVYmIzU25nRDcwMW53UTVZSFl6aDY4RjN0T0JFYk90WEV3a0oxWlliNU92S1I3bXBWRUE4SFhPNlRiRDNSQ1dXR0cxR3piN1NDRm81UlJWRjJyS0VGZ1ZZMGNJWFNyX2trZENMaXpXd0l6LVU0Z1lNRGdzSmxlNkJvM2w2ZkZUbGVEbVdUMDM0ZWEwT0xVYkxJUQ?oc=5",
-   "sumber": "Emitennews.com",
-   "waktu": "26-11 15:18",
+   "judul": "IHSG Hari Ini 26 November 2026: 5.242,17 (+0,86%) - times.co.id",
+   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBldk5tWDJld2h2UE5IdTF0S050Uk5VTDJCTGsyb082dENobmpPbGZzOXotX1lHTWgzMXNaZUtJYlZOSE5MY2NZMw?oc=5",
+   "sumber": "times.co.id",
+   "waktu": "26-11 16:00",
    "kode": []
   },
   {
    "judul": "Asing Net Sell TLKM Rp131 Miliar, Saham Turun 2,4% - Ajaib",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcWkzQmRHWlkxTkRIS29BcmtMY3VrNFJSRmpOM1E5Z183RHp2TDlNcFdNMGlhX2xnWEpUc2czMEFjQU1QZjJTOUJwaWRUZE51RlBZeko1ejQxZ2hYaGZMYk5hQklYSVgzMlVrTjN5b3lCZ0NMRDRzVTFsMnpiMWw3RGFjU0UtSG5HdHRSWmdOX1FRWU55azdMY0RfYlRIOXRKQUVz?oc=5",
    "sumber": "Ajaib",
-   "waktu": "26-11 15:16",
+   "waktu": "26-11 15:59",
    "kode": [
     "TLKM"
    ]
   },
   {
-   "judul": "BEI Tunda Kepastian Jadwal IPO Andalan Artha Primanusa - bsinews.id",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBQemliZU1vRGZESFdUemEzdUNDanZVR0swT05fNkRGU0lVYkJQbTN6RmZnaDM1SVhid1JNRTJ1M2dhQ3k2cTRmbzRmb0ROaF9EZUYyMzNDM3dpOFE?oc=5",
-   "sumber": "bsinews.id",
-   "waktu": "26-11 15:14",
+   "judul": "Akselerasi Proyek Gas Topang Prospek Kinerja, Simak Rekomendasi Saham ENRG - kontan.co.id",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNlllZmkyUTdfOHkzSTd5VWItQUVhSFJQbjJQSzEyMHJpbmt3RV9lczQ5WFBLMGVBdlBlZmNOYXlidDRTbnQ5YklEbm1QT195eksyYXNicnhQSGd2dC1nQm9SOXBUMmRfclp2OFd3SFZrZVVkQURNWjhlRUtHT0VTd3lMb3ZmM1NaNWR5VVRtRDZTWWF6TjZaYVQ4SEZwLVNZMVppMXhmWnlub2wzNHfSAaYBQVVfeXFMTmRqd1k4VHh5N3o0WG1uYmN5TmROWmxZcGtZQUY2TzhZeFl2LXJ6QkZwQlBWSkhxWl9vLU5yd0R1TDNjUUtieEc1WVVSbHJkdjRCU3JoZTVJMFhOZFI1LS1IVGpFcXo2U1hmbG14eWxrUVdTajdleGVlcVRXTmpqb3ltdjMxOTFjYkpMdjlHZ2NFdzNZQjVKNEtZOGZuVzlKSEt3MHktQQ?oc=5",
+   "sumber": "kontan.co.id",
+   "waktu": "26-11 15:22",
    "kode": []
   },
   {
@@ -495,31 +973,17 @@
    ]
   },
   {
-   "judul": "BEI Tunggu Kepastian Jadwal IPO Andalan Artha Primanusa - SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5iZjNIQnJBUDA1dHZjajNackJLb2EwSHR1MmNsQzV6alRBaUZDWnFQZGZHdmoxa3lsNHNqSVpWcDRtY253Mk9uRmRPcEItYko2dmxFU1o1Y3VtRW92emxuc3NkbFA?oc=5",
-   "sumber": "SuaraGarut.ID",
-   "waktu": "26-11 15:09",
-   "kode": []
-  },
-  {
-   "judul": "BEI Belum Pastikan Jadwal IPO Andalan Artha Primanusa - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9FWkNtdkFLNUk4bnU3UVJfaXZVbkQ5Q1FOLWJEdE9wbWNHMGJQSVluNWtQWnlpTWpDSHBwVUxRNWZ6ZUFhcnZzdFZfakx0TThBWTY0QU55aFp6LWJP?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 15:06",
-   "kode": []
-  },
-  {
    "judul": "BEI Percepat Reformasi Pasar Modal, Kepercayaan Investor Global Jadi Penentu Daya Saing Indonesia Kini - Hallo Emiten - Hallo.id",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQd2lrandSZzBTY2ctTFVQSkZac1hmVFR3b2FUaW9Idlc4ZFdGazJrYlplZFkyZWg2c1RxMEFabGRVWUxuODk4M2xQV0Z0NlJLYTNsbzFuV0tfS092NEE1TC1lcWFSV0FHb3ZocWhNT0lLQzlwSWNMdVo1cUJQN091djRWNU1RSnlqNkRCTGNVcnljV3I5Vi1RbzhncTVBVk1YNGtXa01tQVVuWDhvVkFySGZ3RDNndnM5RXlmREJ5RzRXLXNnU2RLSkJLa1NPc3JNSDJsTWpndEtkOW1leEJod3lsUEo4N0NNakHSAeoBQVVfeXFMUHdpa2p3UmcwU2NnLUxVUEpGWnNYZlRUd29hVGlvSHZXOGRXRmsya2JaZWRZMmVoNnNUcTBBWmxkVVlMbjg5ODNsUFdGdDZSS2EzbG8xbldLX0tPdjRBNUwtZXFhUldBR292aHFoTU9JS0M5cEljTHVaNXFCUDdPdXY0VjVNUUp5ajZEQkxjVXJ5Y1dyOVYtUW84Z3E1QVZNWDRrV2tNbUFVblg4b1ZBckhmd0QzZ3ZzOUV5ZkRCeUc0Vy1zZ1NkS0pCS2tTT3NyTUgybE1qZ3RLZDltZXhCaHd5bFBKODdDTWpB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdXQ0QXNpemduQ1RsZWZXS1VkTFAwLVJQU2FmdUoxcU90bE5yNFc0VDlFbjVmVzZfdms2NmhPelBQaXpsRjZJMm44WEFoZXFwSElCOHRadzZmY083bDRNVXZLLU1uNkhtYjdGNWU1dDFuZjdxdFJnempyN3pKbWJxNTlzd2JmMWctNWZJbUIwX1RKSktVeW1tMGw3SmZOUDRmNDg4TWltMHBIS0RnYmpEZ0xZN1ZSTDZfeEFoTlBCSWtsWF9vdVN0UHg1QWFoVDdQeGJOckZIdE9OVkpmMkgtS2ROejfSAeoBQVVfeXFMUHdpa2p3UmcwU2NnLUxVUEpGWnNYZlRUd29hVGlvSHZXOGRXRmsya2JaZWRZMmVoNnNUcTBBWmxkVVlMbjg5ODNsUFdGdDZSS2EzbG8xbldLX0tPdjRBNUwtZXFhUldBR292aHFoTU9JS0M5cEljTHVaNXFCUDdPdXY0VjVNUUp5ajZEQkxjVXJ5Y1dyOVYtUW84Z3E1QVZNWDRrV2tNbUFVblg4b1ZBckhmd0QzZ3ZzOUV5ZkRCeUc0Vy1zZ1NkS0pCS2tTT3NyTUgybE1qZ3RLZDltZXhCaHd5bFBKODdDTWpB?oc=5",
    "sumber": "Hallo.id",
    "waktu": "26-11 15:00",
    "kode": []
   },
   {
-   "judul": "Dorong Perusahaan Melantai, BEI Tekankan Pentingnya Laporan Keuangan untuk IPO - investor.id",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNLXZXeFBCZXljaWhoc0NOcDRYdFRuYzhGdlhTSXBpcERieXRxWTFHSXUyU2UzUW8xREc3R0VJNzIyc1dRQ1lUYU90OFlkMWZJaGpKMElxZ0tmX1pPQ09kQk84d3BNbDVHRzdyYUNfZkRjZTM2MTM5cFFDWTBwYXZUSTJEWE9KODNkQTQ0STlfS18za3JfeGs5RmJNMnNXQkR4U1padlNGSVRsUzN2bEQxNA?oc=5",
-   "sumber": "investor.id",
-   "waktu": "26-11 14:50",
+   "judul": "BEI Tunggu Kepastian IPO Andalan Artha Primanusa - MediaKompeten",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vSWJOanItc3lRdE9mX2N2dm9qTW9IN21lOWdKWm96S2ZLdHdBM2oxRzc0X0tBU1FLbVNtZjZtNlRGUllJajlfeW1LejlUV19mLWRpMlhvYmg1d25mWE0waFBLdkRWUG9TZk1oWDR3?oc=5",
+   "sumber": "MediaKompeten",
+   "waktu": "26-11 14:51",
    "kode": []
   },
   {
@@ -539,27 +1003,13 @@
    ]
   },
   {
-   "judul": "OJK Jatuhkan Denda Rp 2,1 Triliun kepada Emiten - Lensa Hukum",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3X0c0X0NIY0JRYzFsT3BsMDhBRGw3VGNyWVU4LUFld0hIUUNwNzVEMVVGMTJtVU9naDBiVWFVMFJVVEFMeG1ia2RXenNSMHBKdVJfbHFwZXZ0N0liWDl0UV9LRjB3RHp4YUtSbHJLVHdwT0ZONFRpUURXZw?oc=5",
-   "sumber": "Lensa Hukum",
-   "waktu": "26-11 13:58",
-   "kode": []
-  },
-  {
-   "judul": "Investor Asing Borong Saham BBCA Rp270,04 Miliar - SuaraGarut.ID",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE52ZDYyVzF5U0s3bGRlWUI5NHY5SWZCT2JQOGhiWDY3UE9jTThsSHp3ZWlvLUdLcWluN3ZZMFhTTzlOTk5rUTNvTEg2dDNuSDcyOXVnZHBfZ3pxcktHX1ItT2tsMVI?oc=5",
-   "sumber": "SuaraGarut.ID",
-   "waktu": "26-11 13:55",
+   "judul": "Asing Borong Saham BBCA Senilai Rp270,04 Miliar - bsinews.id",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJbWJFTGhlZWJoUkxPWnl0bEc3dkVBZ2lKbWw0VWpyWVN1cjZiTWhSUVFnLXFWTnE5Vk1xTVZEWTlQNjZUd1hNYzQwYXJiLS1lZjRJbA?oc=5",
+   "sumber": "bsinews.id",
+   "waktu": "26-11 13:54",
    "kode": [
     "BBCA"
    ]
-  },
-  {
-   "judul": "OJK Jatuhkan Denda Rp 2,1 Triliun kepada Emiten Pasar Modal - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rZkxqWkJkWklQQUg0UXdNU25Kd0d4Y3lxMlRlUTM4WWFiUEROdERNQURQeVR0NmxSQzdlQUdCdEFCcWJmUmZ0RDRDYTFxMV8yU2tNQzF1bUhhVUxI?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 13:49",
-   "kode": []
   },
   {
    "judul": "SMBC Indonesia Rencanakan Go Private dan Delisting dari BEI - Demokratis.co.id",
@@ -651,494 +1101,112 @@
    ]
   },
   {
-   "judul": "Foto : IHSG Sesi I Ditutup Hijau, Ditopang Saham BRPT, AADI, hingga ADRO Halaman 1 - Kompas.com",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNR2xXX19mYk5PbnlaUzFfR0ZTRkRMLXRxcFN3NGMzSW1KanFzbDczVnJlMmFnYnBGczY1cnhiWVBMd3FfTThOSnBkSU5RMTYwNnpQWXBWdkY2MHlRVmRCZFNMNlBrb29SRnQ1cGkySzJtVHI0eU5WQmw5cWc4UGs3aGJqVy1Hc1pNaWFCamtOZFFNbnJWRHFHaEw5TC1FamZic1I1elJ5a3NQWXlvZ0piaGwwMXdBRkI2d0ZnbnBR?oc=5",
-   "sumber": "Kompas.com",
-   "waktu": "26-11 12:47",
+   "judul": "Harga Saham BMRI Hari Ini, Kamis 26 November 2026 - Pintu",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YaHIxLVgtSm9zdzVVR1h6WW5vMl9EbXhvOGpMUXZwVGwyc3BZdHNfRmlZM2phSDhzMmg3N2J4MGZ5VE5YSGNmQlgzZ3czT1lISm1ZZEREa2pLRGdOa1pIZkFJUmZXNWxRSU9nVVVoS1Vya3ZFMGNRT0NlSXRzcUE?oc=5",
+   "sumber": "Pintu",
+   "waktu": "26-11 12:49",
    "kode": [
-    "ADRO",
-    "BRPT"
+    "BMRI"
    ]
   },
   {
-   "judul": "IHSG Hari Ini 26 November 2026 Menguat ke 5.233, Saham Energi dan Bahan Baku Jadi Penopang - Aktualita.co",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB0M096MUFkMlJNLWwzVkNaTXd2YWNoejJTLUVtTDlLSTVDRUF1VTJWWDY2cDI4aVNfOUpuMmhLVWw1NEo0eW1QaFZMZTZoWUtySTBvQWpzSWVMcFg4WkJSOEZiYlRFZGg1SGFN?oc=5",
-   "sumber": "Aktualita.co",
-   "waktu": "26-11 12:43",
+   "judul": "Harga Saham BRMS Hari Ini, Kamis 26 November 2026 - Pintu",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0xNE5mVU1EMEt6QUM4blZ4RkpvRElzOGR2TF9BV2V3ZWw5clVMUjAyVi1kWUpYSmZaN2VsV2NoRmxCelp0TWNiSy1TbGphRTkwQmNGR2h0YmlLSkNVdTJKU2FwOFdwVlByVWp4Sk9zc1BoNlQ0a2dncmVxZ3c2anM?oc=5",
+   "sumber": "Pintu",
+   "waktu": "26-11 12:49",
    "kode": []
   },
   {
-   "judul": "IHSG Menguat 0,68 Persen ke Level 5.233 pada Sesi Pertama - Limapagi",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPa0x6WVFIN2J0T29lNFZyZTN6RUR5RUVnQ1hFS2NfTklhXzdOb0dxSmN0UVQxV3FfdDVjc1NnbWVnZlVMSjRkQmswMFNmWXJhMko0UWxtWlhEaDUzR1RaVGI1Tm9zSnBkTFRfOEotV2k4OEVZXzd4OE1jQUc3VXNJZmZaY0lxUQ?oc=5",
-   "sumber": "Limapagi",
-   "waktu": "26-11 12:43",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Menguat 0,68 Persen ke Level 5.233 pada Sesi Pertama - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNM1BQLUFyNXp2bE1kQVd5bDNYZUl0QUxIcnhZMThoa25lQ0M3RlZXSGN0Y2JLc0tCZWdJaV90YndUM0ljeHRyX18xaF9RemItQXVkUTFxUHRYN1A5Zk10TjhZYk1acS0tWl94cTJOX25FSEdTakd3Y1k3NFFCdFktZA?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 12:41",
-   "kode": []
-  },
-  {
-   "judul": "Daftar 27 Saham Bank Masuk Kategori HSC BEI, Terancam Keluar dari Bobot IHSG - KalderaNews",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdmptQm9JdHBPZy1Sc3pxZnZGVDZDZU1ySW8wajBrdzBJTGZfb2tad1J4bUk0Tk9aRXp3dThwSktBbzNETDJXNlZ1NXp4dDZTY0FKVDAwSGcwb2I1bGNIUjZLNjVjZ3l1OGpOX0wzWjMxeDJOQzBJWFBxRTI0X282ZlNTcFRYTlFfaUprUV9WVWZnS1BhdTl5djh6SE5faUc3QWxmMENfOEVaRy04c0J3bEZ3?oc=5",
-   "sumber": "KalderaNews",
-   "waktu": "26-11 12:40",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Sesi I Ditutup Hijau, Ditopang Saham BRPT, AADI, hingga ADRO - Kompas.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOU0dPVkZyNTd5SzhRXzBaU0N1ZFZVYUlhUFhoU3h3UmZ5NWZud3lXN1ZiM2FtZFEwRW9JVzBubG0xVnFfOTY5Q2lISkJyeVVHaHljM3pSZk5KWnJEa09USU1FVFhabUVSWkxRbDl1dEJPLUhhSkc5dWF4eGVhMGZLNThhM3liWWI1OV9TNTNXc1UzRWt1Y2Q1TnE4WEZjTFU0SDROV281cjF2UXVEQnNTNzVyOA?oc=5",
-   "sumber": "Kompas.com",
-   "waktu": "26-11 12:37",
+   "judul": "Harga Saham EXCL Hari Ini, Kamis 26 November 2026 - Pintu",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82RjBkSnFUQmNPeDRvYnU4YVdLSFFmZVpFWjRYTWplNzNBaUVETGpNalVuRVFGam9wWDFYYkk4TC05X09BdHFFZUhoT19vcDM1WlF6MFA0SzRhS094MVpUTXpLNm1aaXhGX1czczdYNlBpWUVZaEdET0pWOTdjeGs?oc=5",
+   "sumber": "Pintu",
+   "waktu": "26-11 12:49",
    "kode": [
-    "ADRO",
-    "BRPT"
+    "EXCL"
    ]
-  },
-  {
-   "judul": "Terungkap! Ini Bocoran Isi Telepon Prabowo dengan Bos MSCI - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMjFzRXVNdEVPN29iazlpRmNxVWp6ZkdJZkd3c2RKZl9OVGdpSWF1dzVaZ21kdldTNUFweUZSMFloQnJBdzVKR3VKaEUzTGhoVjJYQWhNREtGeEFjZFRNYmRSUllpdXRLM1hPWTBVMWxabmNyVmxmVkFXZXlfb24wN0d5cndWaEN1WktfaU92MDB6YnlncWtXc3VmM2dwVDc4aXV4Z3FwX3J3RXRFQXJNMllYal9FNFJYVUp1VWN0aULSAcABQVVfeXFMTjIxc0V1TXRFTzdvYms5aUZjcVVqemZHSWZHd3NkSmZfTlRnaUlhdXc1WmdtZHZXUzVBcHlGUjBZaEJyQXc1Skd1SmhFM0xoaFYyWEFoTURLRnhBY2RUTWJkUlJZaXV0SzNYT1kwVTFsWm5jclZsZlZBV2V5X29uMDdHeXJ3VmhDdVpLX2lPdjAwemJ5Z3FrV3N1ZjNncFQ3OGl1eGdxcF9yd0V0RUFyTTJZWGpfRTRSWFVKdVVjdGlC?oc=5",
-   "sumber": "CNBC Indonesia",
-   "waktu": "26-11 12:34",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Menguat 0,68% pada Sesi I Kamis (26/11), Saham BRPT dan AADI Jadi Penopang - kontan.co.id",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWVNlTm5majlJRmxFZFUzSkdEeC1tWDE2TjUzU1lqY0NGazVHOXVEM044SWJUdmd6M0hFb1A0NGhVVk5qc2t6Vzh6eThUdW5jeEN3TjVkQXRpS0lWbE5uejFtWExjZExPU05ycUV6cWZTOU5wbHFvNGZYOWpDNmc1TTNyOHpOUU9sLXRHTnNtS0lHVUd1aWxYRWMyWlBfNGdENmdvZ0xzQzIwZERhQkHSAaYBQVVfeXFMTnhMRnVBYXlxV2hWSXZsSjA3RDlvUHQySUtCc3lKTzdvckVJdE5tSW5SaWNXa2NrWnI5Uk0wUHhRSWsyemFCNUNuOVF3WktTelhwLTBoQWpERl9HbkhKZXBaREZKMmktRXhfUUJhamVZZ0J2TlZYQ2ZLd2ZNYUlfWDFVMnk0MFdzRzJUdXN6dTdLaW1kRFJzT25CaDVHZUc4RTNWM0pxZw?oc=5",
-   "sumber": "kontan.co.id",
-   "waktu": "26-11 12:24",
-   "kode": [
-    "BRPT"
-   ]
-  },
-  {
-   "judul": "10 dari 11 Sektor Menguat, IHSG Sesi I Ditutup Naik 0,68% di 5.233 - Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWnRfbndZY3pDRVNMeDNhNmJwU3NhWmtKZEZsNVdsS1JPNjJhZng0NF9OU0FjWWZ4WEtEU2tDbGdDcjFTQnh6bklad0F6SlRqSW5sMDJjQWNMeHpRMlA2ZVV2ektOQWk5eV9mTjZpVm13THdRZ1pNbWI1bE1ZSWxaRU9fS3dNNVBNSHJFQURVUnEtSlU4Wm9vdDlB?oc=5",
-   "sumber": "Emitennews.com",
-   "waktu": "26-11 12:23",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Sesi I Menguat 0,68 Persen ke Level 5.233 - Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONTV0bGsyczFVRUZuMWY2Uy0tQ09ibWlnMko1X05tV0hQdkw0Z2ZYaGhka0VpdTdvQUdwanB1b0lFZS1hOHcxY1BDOGR1ZnlvYUtlZnVaZEZxNXRSLTRldmhQZE1jNmNHdUV3NU4zMEhyLWtXS1RGYmdla1M0MUFnU2U4VjRRRkd0YXZz?oc=5",
-   "sumber": "Pasardana",
-   "waktu": "26-11 12:16",
-   "kode": []
-  },
-  {
-   "judul": "Akhir Sesi I IHSG Diitutup Menguat 0,68% ke Level 5.233 - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObmtObmZHZUdqRUljcV9RV3lYOXlnZ2lkU3ZxMm5fTlU2ZmVBSll5NjNOY0pYMElNRG4zaXE3bWwzeHRBaUhGbEdZU0N6Rl8xRTV2ZzNxM3FFcE1IYnh5X2l0WWhqSGpEVGFrUnFYd2FsMzFyTmdsOTNPSXJUWmZ5OHJpWnhBbmRCcm1BQlpKU2ZnclNvWkJuN1VwNTJ0UGdXdkJydUVsQjlYeUZ3UmdEZFRsZ2XSAboBQVVfeXFMTnNzNWF2WHlTTnYxU09XUFlwNmgyekkyN2VVRGNrcXVubFpFQmJiWkdBQjZrcm4xeWhld2U1UVBtdDhCQi1hdXFBajgyUmlJWjRHd3VfdmJxbC1QUjNEd3RXV3k4WVpIempFc25fdGFUT2hHSU94SndXMlNzTGp3a0Y4ak5oRkFueFRoUGR0QmdEaXZsVWxfbDNVSzNmRmJjREx2VjNVVFpINjY1OXpUeDJTQkZ3OTZEaDVR?oc=5",
-   "sumber": "CNBC Indonesia",
-   "waktu": "26-11 12:11",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Sesi I Ditutup Menguat 0,68 Persen ke Level 5.233 - kumparan.com - kumparan",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaU1IcGZBeFltTkdBVWl6b055ZUl6cFdCUFNxcVVkbnpqSnlEUEFURXVhUHpFSkNSNEZla3ZiSmVHdXllNVR4ZHdmX2RKc0VhS0s2Sm00SkRpWE1laEh0YlpJQVhJdGRWQU5vRlZMblVpUWJBcnRjZkpkUUltMjAtcnlYd0k0QU04S0RselItcDZlQTNERHpQN3JaTzg4eXVYT3ZBRNIBrAFBVV95cUxPLXpNSG9wazFTSEQwZXRKdkVlUjRFVWhZdGVCZ1lsemRvOGRTT3ZHM05YeXN3cnh3NVNUV29Td0ZyVTVEbGJFby1mTmRpeEs5TEJVWGFfRXkxQzVXZ1k2MWt0Q1lDOE1aYzE0blJBN3NXaXoxRFdCQTh6UDNscUJ3U2x1eXRaRUtTbVVGQ1NlWGRQUHAxUUlKeElmclRaWElwVUdLUExlSHNHN0JP?oc=5",
-   "sumber": "kumparan",
-   "waktu": "26-11 12:09",
-   "kode": []
-  },
-  {
-   "judul": "Penguatan Ekonomi AS Tingkatkan Risiko Suku Bunga, Cermati Saham DSNG, ESSA, dan TAPG Hari Ini - SWA.co.id",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObi1aM0JVUWQ0QmtaQnpKOWJJTW1JZUN0Mk90czQ2SVVQaDFJUmlBWkhXb0JPUEVjZGhpS2JmNWlEa3BWbVQ2Vk1nNmhOS2VnNmxodDJQSU14THBaOWsweDVZTkpLNkJwVXp1UWtmWFZzNGxNOFFPTUs2Y2VpMVhzQkl5VTF4WXR0YkNqVVVFM1JXbC1fd251UElPN0RENzNacm9jbjFwS0FJQ2d0b3Q5RHZMbEctZzViNXdONXlB?oc=5",
-   "sumber": "SWA.co.id",
-   "waktu": "26-11 12:01",
-   "kode": [
-    "ESSA"
-   ]
-  },
-  {
-   "judul": "Go Private SMBC Indonesia, Transparansi Jadi Prioritas - Infobanknews",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbFN5U28xendReUM1bmZDcFRJQlEtd2RUMUNZNjZGS1I1UTNVT25sNEJJQUFnQW1lNlZ0TFhXRlQzV2UwcUtGM1ZOUEJsRjVacUcwc3BRTlpkV2QyR2o3c2dJck9fbWVCbThsLUJkbnpYNE9DclRxMGpLbXlrRkRhSUtIYkhXOFpIcnVXeFhNYnhnRXVfU3cwZm5kb0VJTjVJ?oc=5",
-   "sumber": "Infobanknews",
-   "waktu": "26-11 11:46",
-   "kode": []
-  },
-  {
-   "judul": "Saham Keluar MSCI November 2026 dan Arti Standalone Market - Ajaib",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ2dEUzZSX1Y2YzluQnNuMEgySkV3RFVjeUd1UXN5OEhtTkZWeWZnZnRyaXR1Z1NGLWx6YVl3REV1WUoweURtQTNjamZFbGJkdGpyVWtkMTZQYzNQWHZtbWVBcy1xTV93UzhreEFGWWNxaF9XWFdjTG5wVklMYjRjOHduNG41OEg1YVNNNE1zLUhCaFBWUWQw?oc=5",
-   "sumber": "Ajaib",
-   "waktu": "26-11 11:44",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Tertekan, Big Banks Tetap Cuan: Pantau Sinyal Pasar - Maybank Trade ID",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOa2ZRdi1FZU11a0N1TEdtY19ldUNaM21mcGE0WHQ4MjlNMG5abnVlNDY5V091WG1NOE1mRHROUXp4dUQ3TzZ4cmpCQXFHMy15R2ota3VlY3VqRnlMdUZsTV9ldWZ3X2U4c055UF93V2pleG5SbWUwUndhU29xLXZ3VGtlY05sWmIwNGxhRzIwT1pQdTliTUZ0cg?oc=5",
-   "sumber": "Maybank Trade ID",
-   "waktu": "26-11 11:02",
-   "kode": []
-  },
-  {
-   "judul": "6 Rekomendasi Saham Hari ini: BBHI hingga AMRT - MetroTVNews.com",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWmhkaEZtQWw0ZHlWWlFRZ3BaMGZmNGRwRHdiMHdBMmVQUUtjNFd3NXA5VUFycndyR29UVE1UU2dLejVoQ3p0bnlsMUN2Vi02cVpJeE9lWl9pVXZJakJ2bHIzVDU3czJ4VmhuMzEyN1U5U3MtRnE0YWF3d19rclBtRWVtTWVsMGhOc3lkNFctam0?oc=5",
-   "sumber": "MetroTVNews.com",
-   "waktu": "26-11 10:58",
-   "kode": [
-    "AMRT"
-   ]
-  },
-  {
-   "judul": "Rekomendasi Saham Tim Analis Bareksa: ASII, ACES & INCO - Bareksa.com",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaGlsclVGeW9MOEdIeXhTQ0IzMURQUW55aEExNDhSRVh4LWdzdUY1V2E1V3pnMjE3WENfNXB1dzJyelJmdDJqV3lmaEFjV2ExRzdjNmVTRXRjRnpuX3I5ZVpiYWFUN0NNY0JvaW42QnF6MU4xNi1HdXh6NlJxQkJpXzNhdzhSaUZFRTg1RG40a0RyRlI2dzJMX3QwRUZkVi0yOTJQaFVn?oc=5",
-   "sumber": "Bareksa.com",
-   "waktu": "26-11 10:22",
-   "kode": [
-    "ACES",
-    "ASII",
-    "INCO"
-   ]
-  },
-  {
-   "judul": "Bursa Asia Kompak Menghijau, IHSG Pagi Melejit Tinggi 1,9% ke 5.297 - Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMXp2aFRobTlJTzVWSC1ONWFVSDFzTV9IeXNhVUNwUEl1VktkOTY5cVhiNzlzSnlWQmhnMDNETkE0dm9RNWIyeXZSYjNYdGhuM0ZOTVhRa3B3Nklna0pCNEpSenBlS0tVQ0pmWmNFTi03NWtEVHZfZ0Q0TmoxSnota2V5bnczMG9jenJxa3prcUxjc2l0TlE?oc=5",
-   "sumber": "Emitennews.com",
-   "waktu": "26-11 10:13",
-   "kode": []
-  },
-  {
-   "judul": "Investor Ritel Perlu Cermati Arus Dana Asing Sebelum Membeli Saham - MediaKompeten",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1WVXUtb1FMS0d0a1FZbTF1aGczaFB2d3RMcVVlc0pDQmlEUENaNWtUek5VMEc4UnhDM1N0V0tMSFBxVkdzbWJoVVUxZXFGTHYwSFJkX2hrS1lvX1hyWHpDbWlJYzlMc1c5eXZSTTJuRlNwVkwxUzRnSTZB?oc=5",
-   "sumber": "MediaKompeten",
-   "waktu": "26-11 10:05",
-   "kode": []
-  },
-  {
-   "judul": "Investor Ritel Perlu Cermati Arus Dana Asing Sebelum Membeli Saham - ChatNews.id",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sZlpkR3ctZ3dZaWpGM1V5eG9nOHNLMlJCZXllQlpfajZSckVLdllQUWVmNkl3ZDJxV3pIbHBRQ01uS2pGVjRXaGctX2tLVFhNYm5CYmNJTzdyNlJN?oc=5",
-   "sumber": "ChatNews.id",
-   "waktu": "26-11 10:03",
-   "kode": []
-  },
-  {
-   "judul": "Melesat Nyaris 2%, IHSG Juara di Bursa Asia - Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUVBLUUsyY05TMWN3WnhuS2ZUSHBuZklQMDFOQmx3RkVSY2ppUUM5XzFGNVdQNVJwUE94UjdFaHpiU2oyUWVjTnNGYnc3Z0RILWJpV1pteGxLT19wSjczNVJNeVZUZGx1Y0tpVzREb09nZG9BWkQ5cTNTNFZESHhRenZiZktMSmdQWE10OGJPY1NlVXJ3NnU5Sg?oc=5",
-   "sumber": "Bloomberg Technoz",
-   "waktu": "26-11 10:00",
-   "kode": []
-  },
-  {
-   "judul": "Asing Borong Saham, Sinyal Cuan? - investor.id",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1zZkpUa0dGbmJTZjl5bEJ0SWg2T3MtNHBLNkVqS3J5aFBNZ19fQjhxWXdGUE1wbXJ1eXNUaTRlTENiSFhKQllrRVlsN0hOM2RnR0l0WGt3N1NmeENzZ1Z3NnBMeXFIaFdXQUNNbTBqa0x5VWhneXc?oc=5",
-   "sumber": "investor.id",
-   "waktu": "26-11 10:00",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Hari Ini Menguat ke 5.263, Saham Energi Melonjak 2,57% - Listrik Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNV2JnOEg1ZlNBdWVwbkdGb3pVWlliY2NtQ0N4MkxYdWxnUlVnakFvS3QtWDc0bGZtM2sta0M1RUh6ZGZQOU9aSndyOHZuWnNSZEFoTTk0Mm1lT3p1bWZlcXVWSm9mRFJ6cXdqMU56YjAyYlpDeWVERGxDZ3J1MVNfMkd1MVdmTjh2WG9Gc2xyQzlybEdmaGsyMTdCdWRxQQ?oc=5",
-   "sumber": "Listrik Indonesia",
-   "waktu": "26-11 09:51",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Rebound 0,95 Persen ke Level 5.247, KOCI dan Empat Saham Lain Masuk Daftar Top Gainers - Bewara",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNmczdVBUV1lrcmNGcTliWE8wTHdJbmgwU1ZadDdGVTN3Z3VGZjRFemFQeTA5RmVNbXNRQlFkR3U2Vm1vRHdreVUwX1B0TkVKbE5mR21ndXc2QjAtaEJ5aUk2RXdmak8xeXQ4LVBNU3JoX2hDWEVaTVM1cENReUFsbnQtUFFINk5OaHNjUHFrdTNpNEpaWTRzd18tdTNyZDNyZ3NSLW1PcEgwbzNlbjc0?oc=5",
-   "sumber": "Bewara",
-   "waktu": "26-11 09:47",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Menguat 1,15 Persen ke Level 5.257 pada Pembukaan - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Ha1JYY2x0YWpBSlc3dHZyVTZHOXlWbFlROTZsT013Q2ZCM0RJWC0zQzN1aXBvdDJuRmFVZmd6UEdkSzVTODZjb2Y2a0ZFN0gxNE92ZHR6N2VPTFBIWENaXy1DV2xGVWs3N3Y1UA?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 09:36",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Menguat 1,03 Persen Saat Seluruh Sektor Saham Hijau - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9VZE9TdldDNi10aERONE5NTEVSYTg1cEc4a0NuRHg1MTRrSlZJWGxWTjBNWFhabGV0Z2M5X1kzZmxpcmRqUlR3WVdpWnFrUFpUYUJOWTB1UGFSYUdsTElvRnlNOA?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 09:28",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Menguat ke 5.254 Pagi Ini, 347 Saham Hijau - CNN Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOajNmY2YxOF9xRWRIaU5LZ29kUERKeG9JZXBzV2ZBUWRWTGYyeE9qQXJGZmlwdWl3VGZTYUl2ZjRlTEhpSUhYaElMb1IwSVNWY21ral9GYTIxYmlDU0NRRWIwNEplSTZKZHlwWElxS1hRRWoxdU4teVdGaTdhaWdib0FtZ0dVY01FaFBVOVE4TDhTbHZQNlFrbUlPdHlWUGhwa0FuWWtOZlg3R0h50gGyAUFVX3lxTFAza0hBamVOR2pPUWx2aXlvbE41X29QNENoYmdUWnozYjBwdTBqTjdZZzJDZ2NCNFpxWGd4VWtqQWNIMFI5MG1XX0xxUmUteVlISlowZ1hHQjl3Q3RFTV9EbmVRd3hpRll5dElfM1hKc3FyVnl0SHpRVk1kZW9DaWZxeVZrakV1cGdWNW4wSXdOeGJtQ3I4blFhc19KTU56c1lMVmdqQW1hb1R3b2tweEU5Z2c?oc=5",
-   "sumber": "CNN Indonesia",
-   "waktu": "26-11 09:26",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Pagi Ini Dibuka Menghijau, Naik 0,50 Persen - Infobanknews",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0weE9xaTFqX1V3a2J2NElZQ1BBUXpvV2doeWRlTGltN2R2Qkd0eWR0Q1RxT05IMDg1dWpXTHVXLXRsQnpnOEswaEs4RktaZ2Z5V1pidzJVTzJ3N3pLbmhocmtacnFyTTIyTTgwY2JWNVM0UEIwRzJQZnNUUQ?oc=5",
-   "sumber": "Infobanknews",
-   "waktu": "26-11 09:25",
-   "kode": []
-  },
-  {
-   "judul": "Rabu Pagi, IHSG Dibuka Menguat - TopBusiness.id",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAxZ3EyMk54UUpBdUt2VW4ydWREUTJ5RG1SOFZ2NEc5WmMwc2lqZEpOWUxvM2xHcmlBQjczWkRnQ3B6aERqc2VMMjNnUTE0YU02SXJNbTRJQTdhNUNvcDdYblhiLXdiX3h4UnM3RjRhMWgxamgzUjFDcEpR?oc=5",
-   "sumber": "TopBusiness.id",
-   "waktu": "26-11 09:25",
-   "kode": []
-  },
-  {
-   "judul": "Hari ini IHSG dibuka menguat 17,01 poin ke posisi 5.214 - ANTARA News Bali",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSVZyVDhMRGd1UmNZbUlHM2JYRUdUbGFUZy13X2RKU0FVTjlucWNUQlBWX083MGdGNjgtak16cHdQbVdqa2hONDd4dWlTVWx2enhlNFBnMzJvS2xjTUc1UVlkZ1psVkI1VEpNLVd4ZHhCaFZKUU8tU2NiRDFtSFc0TFBDMDFsTW8xblRTR1U2UzllY05lQVpxSUJYTdIBoAFBVV95cUxNN29CQWN1bTJqQjBnSmNYUGRmSDFYYTVBdFBkVmZfVU1YWTl2MzBKRnctY1BWMmswelZBOFI5b3F0RERmY0lvekJYakJDalh5WGZnMDNQSUE3NDZSb3BWajVsR1pmeDh0ZEwtRHYwMnMyYTVsaG9VR29PTUpwbXhlSmk5enBBVjhHNl9jUUtEYUdadTg4ZUNHZmd0emlHNUI1?oc=5",
-   "sumber": "ANTARA News Bali",
-   "waktu": "26-11 09:17",
-   "kode": []
-  },
-  {
-   "judul": "Rekomendasi Saham Hari Ini: ADRO, DEWA, dan INCO - Ajaib",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX3N0TlRfZFkyd3JFc2RfMzFJTERzbExsWjctU3l0eVN1eUtXVElpb1hqYlRXbHFmSjM2TmNsVXUzaFZTLUFzeDMxQ1NtaHRBTzAtcWtGUnpqTUI4Mk5iTHZqLVI2WGRwOHVlSzF1VkxHU0tHOEhsMkduaWFFbDdVUk9BVmlRZw?oc=5",
-   "sumber": "Ajaib",
-   "waktu": "26-11 09:13",
-   "kode": [
-    "ADRO",
-    "INCO"
-   ]
-  },
-  {
-   "judul": "IHSG Hari Ini Dibuka Menguat ke 5.214 - detikFinance",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR1VoYWozNmJ3OTZfV2lPWllxQ21RSDZyNlN4RkJKMEZkaTBydC1Va1pJSUt4RlpKbElyT1lGdW5fYjV0VXpPNENoUHNqZ3pEOW9rZXBuaUVGaVdLVFE1bG1QZ0NOU3oweFZ2X0RxdTFrNlZNSjVCeS1ZUzJnSzJlT3p0aFRCVmNMa0U5OFJJQnBTR251YUJxd9IBmAFBVV95cUxQR1VoYWozNmJ3OTZfV2lPWllxQ21RSDZyNlN4RkJKMEZkaTBydC1Va1pJSUt4RlpKbElyT1lGdW5fYjV0VXpPNENoUHNqZ3pEOW9rZXBuaUVGaVdLVFE1bG1QZ0NOU3oweFZ2X0RxdTFrNlZNSjVCeS1ZUzJnSzJlT3p0aFRCVmNMa0U5OFJJQnBTR251YUJxdw?oc=5",
-   "sumber": "detikFinance",
-   "waktu": "26-11 09:12",
-   "kode": []
-  },
-  {
-   "judul": "Breaking! IHSG Naik 1%, Ini Penyebabnya - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVG1KbDlYeGJsT3Rna2FpdzRSV1RCbWxVNXgxOHBlbHZkOXo3b0hycmdweE9FaHJoc0FlV3NaSS05VXY5S2JBclpTQ1NqZGRUdGVKQ2JiblhCdW1ocVlwZW5VMGpoWTNPcnJCQjJSamdPeVc0bDI4eG1OOGVwaVZYT1NGVTFveVNrNGtDLVpvWDlRUmhXYVpkTFp1VWxTbzDSAaQBQVVfeXFMUGgzNlZoa0JFWUQxYlFzdzdQeEhXMVh0TjVwNGw1NDkyVFpFem5obTY5Wk5GZjN4SVFZMVcxZV80RUs0Qm5MQVZpR2tVQjVfNXA0NXFkbWxrSHhKbENTd1BsV3M2ajlyOWFCSExMcS1tZEJ4eHVrS0lPMVViYlZCUGdsbG9yT2ROVGp3dndnaTR2MmJtTERjRjdQSFVPWFpVTXpSVHU?oc=5",
-   "sumber": "CNBC Indonesia",
-   "waktu": "26-11 09:10",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Dibuka Hijau, Terangkat Bursa Asia - Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSFVabHFVWlhjcXhsQXZfOE1XZkNoMXo2WWVLY1RDZUxMU3lnLTcxVUVPSktxUHd0ZGdPTmtFTHJMNWV5d3dkc0NsZl94WHRzU1k3ZWZyQkU3cDdmejBiWTlVckhmOU1yYnNwSkxNMUMzeDlLdjY1U1d1U1RMcVNIVjlZODBzd3pPbllPbDhqb1J4MTJ4?oc=5",
-   "sumber": "Bloomberg Technoz",
-   "waktu": "26-11 09:08",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Dibuka Naik 0,33% ke Level 5.231 - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU094Z2gxNnNLNHNrcEUtWkpHZU9NYVUwcmg1QloxVXl2ZjlSY1VuUHJUV3Y3eVVPTWhiYkVmX2JKR0JTLTRzQm5maEdPZUNlSFd3Mjh4YUxQUXNHRkh3VW5sRFBSR2E4NlFqZmQ1T0xIam9fMDljeDBCQWt1TUR2blRvNkxPOUw3TVl5TDl4c1F1SW9Sd0trMlVXVTjSAaIBQVVfeXFMTWlwVl8zTTEwQWVJbTlmSlhxamlWVFNWMWNNWTFPV3E2YlhidFBKNW9RN3hJejR1MF9BNzRHazVWV05aVVV2dlQzRk8zTWdkQzZEbWQ4VU5GQ01qbEk5dmtFOXpaX3RXSTFCQ2FQWFUyUG1STS1acElfZjRDOFdkN1VvbnVNQVctMjVnSXpTbF95anljSTJjT1o3REl6Z2R1WWdR?oc=5",
-   "sumber": "CNBC Indonesia",
-   "waktu": "26-11 09:04",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Berpotensi Menguji Level Support di Rentang 5.050-5.100 - Infobanknews",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdmoxczdrUjhDckhuN29wZWlBQWJpbEFiZnFuQnlTRVk3RURoZkxFQ1lHbEZ1TE81blZRbExVeGFpbjR3LWlndGoxQWpJM3p2Wld0YndHQnFGbVBEX25HRlpNTDltOXg4b2wybkVOYzd4UWFqUFRMT2l6cDFhUXFsSEhJQkd1ZlU3NkdtT1N3?oc=5",
-   "sumber": "Infobanknews",
-   "waktu": "26-11 08:59",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Melemah 0,84% pada 25 November 2026 - BeritaJejaring.co.id",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE13NXdtaXR4QWdSTTVMb1AtQWkxU1Q2N1pqc1JLakRwXzE3bXVYRU9CWmloZ1M3SDlrTUNyYy1wUlZyaGZ2cUoyVDFNaGFwbjZtWlE2WjJpS04wQzFSV0ZjYWNtcE1IdVYzaU9z?oc=5",
-   "sumber": "BeritaJejaring.co.id",
-   "waktu": "26-11 08:56",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Tertekan, Big Banks Masih Bertahan! Apa yang Harus Diperhatikan? - Maybank Trade ID",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYVNFekxRQmFuaU1hZ1I0VHdocGROTTdfdFg4NjJMQ2VlNTBZVU5Oa1ZoZHdpNmtqLWgyTV9wTW1vNmdLVVlPbW1BYUt4Wk1oODR3ZWFNVUJsMWpQQ01QdTFrcXlxWVNwTjNKVC0tVmJGTGZmUzVWaUM0aUJCaTJDSERnb0RyMDhLa2pGcm9MOExZV29WYVZMdDdWelpocG9hM1M2dkRSS1g2Zw?oc=5",
-   "sumber": "Maybank Trade ID",
-   "waktu": "26-11 08:53",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Ditutup Merah, Simak 5 Saham Pilihan Hari Ini - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYTNDMVF6SGF4c01peXlXaWJ3eGQwZENYblRIY01xdjF5WHBHSkhyemo0NHp3d3NIMUJ3XzFpNjk4V1huX0paYmlNcVgtY0NQM181WVdWZjBtQlNJakNlQ2lxb29LazVFUE9ZblJ4aXh1bld4X2t6NEV1ZGJJQzB2OTJYbzRhWTcxZzFfODVUWEFJMjZJaURCQWVqdU4wNXIzUVgyWUNtd0Q2YjNSTUs1TdIBtgFBVV95cUxOZXFRVHR1WnJsVjZSbnV1U0otMWJBOHNZc1NvOTQ5aGpOQUgtZmt0d240dVlJYkdnRENMRXVyc3dMRDRKc2F1OHV1anRaalYtSzhaaE1odEZqVEkwUFpPcTAyQjAyeGtDSnRzY3MyeFk5Q3BzNktxTGg4Z1V2ZERYV0Z5NGVtRzBNOG9KNloxSnFkREdRZ19nbVZWbU9vbVA1X2sxR0tCMXNmQ1pHOVRFaUlEVzRKdw?oc=5",
-   "sumber": "CNBC Indonesia",
-   "waktu": "26-11 08:50",
-   "kode": []
-  },
-  {
-   "judul": "ANALIS MARKET (26/11/2026): Wait and See! - Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84YWduY1RTSElWLUFkcFpKRURQSjBVbHZMSHp5OWQ0YXdRY1dhTmpFODRZRlpxb1ZaUFFVaG5CN1c4bklYSHdpd213Q0hETDZTQWI3eExEX3dTc2pzSEhta0pIekIxaHd5aHJhWW5Wb0FmQk40emdFNVItRk4ySVU?oc=5",
-   "sumber": "Pasardana",
-   "waktu": "26-11 08:48",
-   "kode": []
-  },
-  {
-   "judul": "ANALIS MARKET (26/11/2026): IHSG Diperkirakan Bergerak Mixed dengan Kecenderungan Melemah - Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVHV0V0dqR2QydEEzOTV4aE1LU1AzSExGcDdzRlVYWXRsNlVUXzJiNHdPWXc0Zkx3dXFSaEl5UUFiQW9QbWM2UlFrX09rWGFrdlQ4XzFpUDdNQTBHaDBFRzNDS1JSYnRMVHNBX1hjLUxBT1daUFplMTlUcG4zMU1iakRYdHRNRF9lWGZWOW5xeE41RDkxVXJldGJHbmxJT1ZMRGhYaHYwZFR4b3dmOFJCVWVhVVpsZG8zTTNLYjQxZEU?oc=5",
-   "sumber": "Pasardana",
-   "waktu": "26-11 08:45",
-   "kode": []
-  },
-  {
-   "judul": "Prediksi IHSG Hari Ini Kala Rupiah Tertekan dan Ancaman Tarif AS - Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNd2F3M0lzem1QWHhTR3hscjl3LVNXYUNLYktNR3pRd2VuYVpxMllTdkFzeXFCZmdobHpIa3lCVS1aMXhmWm1lNTMwSnlnSTRyaXpqYmhGU0NfZlJINEZQLWdtU1d4dFRyQ0VRVlpCbWpRb1NiMDRsTHFvZGVLNG5lVTRlOFAzM2xLT2k0aEFMa0VCbDJjUEh1dXVxLXc4WktmZVdtRTh1RmpqM0JwQnlZd2Voc3RsVjA?oc=5",
-   "sumber": "Bloomberg Technoz",
-   "waktu": "26-11 08:45",
-   "kode": []
-  },
-  {
-   "judul": "Mengekor Wall Street, IHSG Terkoreksi - Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE16eTZHTG1vckxaaWpuUjJKRjl3aHJGSnBCZFVBdll4ZFlDdTd5ajAzZnlJdmtNRDlsU2ctUDFmVFhyeE96WlF4aFJ6SG1LZC12bU85U3g1dHEyM0RmZWZINkF5ZEFRaWpPNFVLZ2lKV19FUQ?oc=5",
-   "sumber": "Emitennews.com",
-   "waktu": "26-11 08:41",
-   "kode": []
-  },
-  {
-   "judul": "Tawarkan Kupon 10,75%, MBMA Rilis 3 Seri Obligasi Rp600,9 M - Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaWZ4UFN2a2JCb2R5MEFFRzBpUkk3QldEZTI4SFJ6SlJYcmlnbUZEQzZEenJOSVRQZ1VmNm9KVUc3WERIU3ZyMlN3M0szR0g4ZEpyRk1jVHdjZTdNYWdNVXg3aVd5NXZ5ZVRVbHRSUjd6a1pId1ZpLUpja18zOFZRUUpWRlowemdBVFQzMlphV1Y?oc=5",
-   "sumber": "Emitennews.com",
-   "waktu": "26-11 08:37",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Berisiko Lanjut Melemah Akibat Inflasi AS dan Rupiah, Ini Rekomendasi Saham Hari Ini - digtara.com",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOR1RRcF90NnFCdFNVX3FENUVlOWh6Q1gwMWNLbmlPYU9mOFFnckpfYS1RTmdxeWs0YllXZ3NJS3VleHNqUmIzcmF3aHROMXhiODk0NWNTQlN1YkRscTcyeXliVHhMNmp1THJRQk1rV0dDUGhCUzdfVmVOR2FRU0I1ZzlxdHRrLU16UmJDZktnNmg4eHVIMmxhR0hlVmVod3BtR1pDOGdZQjlES0FSZFJ4RjY2YnBNZ2MzVG5SZTFVcTg4UUxvUE5J?oc=5",
-   "sumber": "digtara.com",
-   "waktu": "26-11 08:30",
-   "kode": []
-  },
-  {
-   "judul": "BEI Keluarkan 27 Saham Bank HSC dari Perhitungan IHSG - ChatNews.id",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB5X3kzRDJaT1NaVXhYWVVNME0wazhiSTFqNTVYbDRrRTZPVGJXcEZWNmxBR3plMHNYT09MLXFhZ1N1d2I0WTBIc2xxdUlEMXBZQ3dSelh3?oc=5",
-   "sumber": "ChatNews.id",
-   "waktu": "26-11 08:20",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Diproyeksikan Melemah, Sentimen Negatif Global Tekan Pasar Saham Indonesia - TopBusiness.id",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdC0xWGJ1V00xX3lPMzVmNmo2YlRJLW1SSUJrNjVKZjlaRmJ0MHFGVDExSl9obmNVUkF3OHFyY1AwMXRJc19JSEtOMXpXLVNWU3FrazVLbERVQlU1bmlac1pYODBJeUFKRnk1ZjlJaHRlU0N5VDZjbExlbGZtd2pqN21qVlJoSS1EWEtGQlpPb1YxLWFJUG5FdE1VRVpBSVJYXzBjalpCdWw1aHNEcmwtM0tDQVBNT2pJ?oc=5",
-   "sumber": "TopBusiness.id",
-   "waktu": "26-11 08:17",
-   "kode": []
-  },
-  {
-   "judul": "Rekomendasi Saham dan Proyeksi IHSG Hari Ini (Kamis, 26 November 2026) - DataIndonesia.id",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONk5Kbnh2THdwWmcyOERicmF5MGZvQ0k4V2pkTzVoZk1QYW1RU2xJLXFja1VnQUY3TDJnUjVIN3ZBN2FKaTRrZGFFemNnUjNpbFlIZmJBM3pabHU1QjQ3M3pPaHdmTEdNWFpiMUJzYXRCYTBrZEFmN0NUaHRMNjBRZ1QtM0ozTXRJV1pRUDlMVFNFUExrN3ZPSGVyX3V0bk9oS3MzT182NnJJSTR2X2Fveg?oc=5",
-   "sumber": "DataIndonesia.id",
-   "waktu": "26-11 08:16",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Diprediksi Melemah Usai Tekanan Saham Big Caps - cwibc.co.id",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4xTHYzV3VBeHB0MGdBUW5YSHJpY2NrX0Fac2NyR0xHTXROLTFzdk9xN1ZIOGtnaTRkV0pWeGNhMVhJNUpsVGpudWEydU9GeUJ3bEdFUlFxZ1dUSF8wQ0FOYXdrRUtUMkViR2x0X3JHYWpCWTM2SE5xbmpWdw?oc=5",
-   "sumber": "cwibc.co.id",
-   "waktu": "26-11 08:15",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Diprediksi Menguat, Cek Rekomendasi Saham 26 November 2026 - Liputan6.com",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSVczV1lwdnhpQzZhZXdSOE95OEVaX3g5V3RERnZpTDRpNHVBbUg1VDktOGR1MTBTdmVoTkgyVFJOWHRSUFdFVGlWN2FxQ1k0Z0c0Zm9uVmRPcFVXY1RTenp0YmZJUU9RTXVZVERjSU9mQnZJTUV3QzdOZUd0eG1mUHkxZUZKLWVfRDdUWlFPclR1TjVNdU44M1VMNVdXb1JqRTRRMGZwbV9Gb0XSAaABQVVfeXFMTndZdUdodVdFcEVEU0J4QWtEa19GRG9jbGItZVgzbHozZFV3ZHlfSjFyOE5CWkxGWWxTRVpFVXJyeTFuVTlyYXJHTXpQOWM0OGVXUENtT3ktOEl6RldIczNaZ3dMdVczaDcxQXR4R04wWjNvYThKQ04zZ21FcmhmS0w2bW9GS2ozbk1Lb1BSMUZrRldBQ2ozUjhnN001cjh1NQ?oc=5",
-   "sumber": "Liputan6.com",
-   "waktu": "26-11 08:15",
-   "kode": []
-  },
-  {
-   "judul": "Sahamnya Dikuasai Segelintir Pihak, 27 Bank Ini Masuk Daftar HSC - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUG10MGlQWkY2YmZ4a2EwZGE0YlcyOEJGYmRxQVVJbkdzcG5LTGQxaFBleThoMkM0NzZFajRMVkpqRldOSkUzblNUR2FWX1JuNHlodnM4TERES1BOQS1acU1HczlBQ29VOUJ2TWdQM0xIazNuWTQ2WFlQdEFRWlBLTjUwV3ZhQVFUbG1GSldZSDlxclI1Q0pvUXdON2dFaElkdlhrdDB4cTlqVFFTNjZwa0EyMWRQd1p4OTJTb1d6RmtiVmfSAcgBQVVfeXFMUGd1djBnS0V2MnJRZUx2cFh2YlYwVVA1QTZyaHoxZUttdDRUWk81XzZYcXpFR1NFTVJVRnV1eGNsWF9PX0lwbm5oNG1wci0xdlNjc2RfZVRJdzJxZ1BUYUNBU1NrSFlzR3M5OGxzaHBPS1FUenM4ZldlMkFmaWVXOUJiSlE4dTlsa2U5NmhxME9TcTF3OWhFdFFhaVF3Yk5GNXdlMFAzU2g2RzdCTzNpUzMwSUMzclZSSjZvMWp1QTMzU0wzOVJDMjU?oc=5",
-   "sumber": "CNBC Indonesia",
-   "waktu": "26-11 08:15",
-   "kode": []
-  },
-  {
-   "judul": "IHSG Berpotensi Lanjut Melemah: Tekanan Rupiah, Tarif AS, & MSCI - Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd20tX2pvY1EyT1hBMG1MMzBkNUFtWEhKU1JSMmVLSG1QNjNSbmU5WWhKcWdIOEdqUnl0RTdLcWJzRkpJc2JER3Y3dnQwUEtwZDViVF9Cc0VCTkRWRzdKTHhLdnlhazdWX1RySzB1NEFfSEtDQzdfS3RYZW9XbE5IS2VFS1UzWkQ4enlRV0tYQ25QaFJfbTdhQnhtUEdtYkVKb0oxZEJ1RWtwR01QSmg0eg?oc=5",
-   "sumber": "Bloomberg Technoz",
-   "waktu": "26-11 08:10",
-   "kode": []
-  },
-  {
-   "judul": "Pasar Masih Cenderung Bearish, Analis Rekomendasikan Buy Saham Ini: ELSA, HMSP, ASII, dan MEDC - TopBusiness.id",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdDNRTDdLcUFORUJRZi05NHZZdFllc1dZZkhMbHRGa1RkRG5MMWdDU05uZFVtNGY3X2FRLUcxSnVqY0wyQzNHRC1CNjh2VjM3NmhnWi12TWVTSEtyNVg5c0xWaTlmZmRmRmM2eTIxSTFCWGlpREdGMWVMQVhmNkFqUkRINFZRWXcyYkZ1S1dka3pkN0RITkRnU21hMENqNTRMaW9RRWU5VTd1Skh0Vm1FUFFxOUliZG14akZ2U3luUnVvaEdVaUhJ?oc=5",
-   "sumber": "TopBusiness.id",
-   "waktu": "26-11 08:07",
-   "kode": [
-    "ASII",
-    "MEDC"
-   ]
-  },
-  {
-   "judul": "IHSG Tertekan Rupiah, Cek Rekomendasi Saham Hari Ini - rancakmedia.com",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdUxqczlZTm5nLUhzc244LW9jOVlUMHdfeERheUpVa0M2X1ZiMkczR3p5S2M3dVBPZ2FuYk9pYzJCLS1lYlQwbzVvZTJ0Wktfb3pYWE82Y0JEYUhxcWlzd0l0MmZYLWRtOVFhRE5IaE12U2RtX3hMLV9wc3NSVUQwamx1bm9VSHVQajc1LW9HS2ttMnBSaWxRMVpITQ?oc=5",
-   "sumber": "rancakmedia.com",
-   "waktu": "26-11 07:49",
-   "kode": []
-  },
-  {
-   "judul": "ANALIS MARKET (26/11/2026): IHSG Diproyeksi Kembali Tertekan - Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTjUyeU5XbEJMeUhweUFJaFRmZWI3aHFISUpGa2NpMzBxdU5DaENESTZiMjZMTy1JZ1lCaTUydFRiZFlXWkZXc3h5RVBMRXR2UkJUZ3Z2OXFRX3Iwb1VmanNhOUpzeldKOW1OTXhtMzVNRWs3blpNRi1ZTDUtRGg5c2E5emJsOEEwV0tYNkVZeWpUTnpkN1NHc2hR?oc=5",
-   "sumber": "Pasardana",
-   "waktu": "26-11 07:45",
-   "kode": []
-  },
-  {
-   "judul": "Rupiah jebol Rp18.332/US$, IHSG rawan uji level ini - IDNFinancials",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORXFJY0lEajh6aUdnOXFFS3ZWbEZBNnRRNWdtY09PSl9HdHJlc1FhQzQzWktER09DVFlwVXhyYkpVTUlKdVZ0U1ZWdDFRVF95MXdESWFmMzhuS3dEejBYMUIwb0xrR2lKRnV6amstUWJJbDB3b1lTTWg1WDRFcFY1V1VFQXFlLVc4SHl4eUI1QUJLZlItUk5j?oc=5",
-   "sumber": "IDNFinancials",
-   "waktu": "26-11 07:40",
-   "kode": []
-  },
-  {
-   "judul": "ANALIS MARKET (26/11/2026): IHSG Berpotensi Sideways - Pasardana",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQOXRRVFl3eHFFOVVhMG51S0hCWVNDYWtReG9xN0tQUW45ZUpOTGlMNmNPeUtrN0RxSjRyLU14Qkt1aTFFVkloREZKOGFzM0hyd2VrRXZvYkMzYVBvUk1Va2RkaEtkaEE4c08yUWs5UERaakVHTUw5elYxMEpSTjB4Wk1mZ1NfVEJBd2NEckNaRQ?oc=5",
-   "sumber": "Pasardana",
-   "waktu": "26-11 07:33",
-   "kode": []
-  },
-  {
-   "judul": "Usai Koreksi 0,8%, Intip Proyeksi IHSG Hari Ini - Emitennews.com",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVXVrR2VvRVplSXVhYjQ2dDdJMEQyc2lXNkh4UHk4ZW55WXlkU0t5eWVLVWlfN2NZZjV1N0laRGF1SG9RUmQzS0xENHhqdmljV293TVpGeFJTRGRxOHE1aVdIMGdfWERYYTZQc0JJeDc1WjZ5WWNtTE9wZlBtUVRhQ2dB?oc=5",
-   "sumber": "Emitennews.com",
-   "waktu": "26-11 07:29",
-   "kode": []
-  },
-  {
-   "judul": "Rangkuman Rekomendasi Saham Hari Ini, 26 November 2026 - Market - Bloomberg Technoz",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSVNUVDZFdmd2QUI0VnI2clMxcUpkVl9TcjMyTUMzVm5ySjI5bkFPQktVRFRRQl9kejhQV1lYa3ljWjhtaUltbmVuV3htZjlwMVFQV0c2ZGw2OTY2T0hKcjJYdGtxMjdMVXlvVS1aeU8zVE9BSFJya3pKVEtEQXhBUDhSLXZVakV6SWRvdHptZ1pBRkppdW1GSTkxbmVnUzduMzFDTGhZa3Q?oc=5",
-   "sumber": "Bloomberg Technoz",
-   "waktu": "26-11 07:25",
-   "kode": []
-  },
-  {
-   "judul": "Asing Net Sell Rp336 Miliar, Tapi Diam-Diam Serok 10 Saham Ini - CNBC Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYmphc2NLNmxNM290X0RJS1cxN3RSRFNWQW1IUlpXTlZHZkNjUjhIYUpiSUk2VUtTOWVNWmtyUUY1YVlsbVV2c1owTGppSll2WTRSdXF4enhUd25vcEtYUzZuLWtKdXVqNHliV3pQZ3U3cTFvd2VCelBrQkxZUmhyRUF3a21YcEQxZFlqYjNXeXZNbmVVM2VPZjdaTmdoQ3ZQMkZya1p6SnpzU0hqM3ZycVJtSU1LR3Y3YXhWNmk0RHjSAcYBQVVfeXFMT0ZUSVA4UFBzdDRBV2s1aGxpdE9pQ01kcUtLODhJdzROa3A0di1TUmNDVzBIUXRkR3FuY3lpUFhVMDYzU2xlSTFweElFeEExMzMtQkZaSnNtUkN3b0RHUXZEdkhzZjdpdVNSQU95djYxQ0tuNzdMMTBSdHgyb296eUNmdGZrbkVPdnltZm5KZmlVTEtKQVhjQ3BsN0NKdlZrbE9VM1d1dEgzclI5eDExUG5FWUpOaUp3Y2RTVkhBaHhqQWF1YmVn?oc=5",
-   "sumber": "CNBC Indonesia",
-   "waktu": "26-11 07:25",
-   "kode": []
   }
  ],
  "sentimen": {
-  "ISAT": {
-   "s": -2,
-   "n": 1,
-   "katalis": "TOBA Pimpin Kenaikan Saham KOMPAS100, ISAT Tertekan - cwibc.co.id",
+  "INDF": {
+   "s": 0,
+   "n": 2,
+   "katalis": "IHSG Diprediksi Bergerak Volatil, MYOR dan INDF Jadi Saham Pilihan - KabarBursa.com",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "MYOR": {
+   "s": 0,
+   "n": 2,
+   "katalis": "IHSG Diprediksi Bergerak Volatil, MYOR dan INDF Jadi Saham Pilihan - KabarBursa.com",
    "horizon": "",
    "metode": "kamus"
   },
   "ASII": {
-   "s": 1,
+   "s": 0,
    "n": 6,
-   "katalis": "Investor Asing Berbalik Net Buy Saham Rp 238,90 Miliar, Saham BBCA dan ASII Diborong - Inv",
-   "horizon": "",
-   "metode": "kamus"
-  },
-  "BBCA": {
-   "s": 1,
-   "n": 5,
-   "katalis": "Investor Asing Berbalik Net Buy Saham Rp 238,90 Miliar, Saham BBCA dan ASII Diborong - Inv",
-   "horizon": "",
-   "metode": "kamus"
-  },
-  "BRPT": {
-   "s": 2,
-   "n": 6,
-   "katalis": "Foto : IHSG Ditutup Naik 44 Poin ke 5.242, Saham BRPT Melonjak 14,96 Persen Halaman 1 - Ko",
+   "katalis": "Bersiap Cuan Jumat, 27 November 2026 di Saham OASA, ASII, dan CDIA - investor.id",
    "horizon": "",
    "metode": "kamus"
   },
   "ADRO": {
    "s": 0,
    "n": 4,
-   "katalis": "IHSG Ditutup Menguat ke 5.242,2 Hari Ini (26/11), Top Gainers LQ45: BRPT, AADI, ADRO - kon",
+   "katalis": "Investor Bidik ADRO hingga ASII untuk Window Dressing Desember - Demokratis.co.id",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "BMRI": {
+   "s": 0,
+   "n": 3,
+   "katalis": "IHSG Berpeluang Menguat, Rekomendasi Saham BMRI hingga KLBF - Bisnis.com - Market",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "KLBF": {
+   "s": 2,
+   "n": 1,
+   "katalis": "IHSG Berpeluang Menguat, Rekomendasi Saham BMRI hingga KLBF - Bisnis.com - Market",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "BBCA": {
+   "s": 0,
+   "n": 10,
+   "katalis": "Asing Borong Saham BBCA hingga Rp 1,19 Triliun - Demokratis.co.id",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "BRPT": {
+   "s": 2,
+   "n": 8,
+   "katalis": "Daftar Saham LQ45 dengan PER Terendah Tertinggi (26 Nov 2026), BRPT Melonjak 14,96% - kont",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "GOTO": {
+   "s": 1,
+   "n": 5,
+   "katalis": "IHSG Menguat 0,86 Persen, ISAT GOTO dan DEWA Jadi Sorotan - Demokratis.co.id",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "ISAT": {
+   "s": 1,
+   "n": 6,
+   "katalis": "IHSG Menguat 0,86 Persen, ISAT GOTO dan DEWA Jadi Sorotan - Demokratis.co.id",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "ANTM": {
+   "s": 0,
+   "n": 2,
+   "katalis": "Investor Asing Diam-diam Borong Saham BBCA hingga ANTM - Bloomberg Technoz",
    "horizon": "",
    "metode": "kamus"
   },
   "TLKM": {
    "s": -2,
-   "n": 1,
+   "n": 2,
    "katalis": "Asing Net Sell TLKM Rp131 Miliar, Saham Turun 2,4% - Ajaib",
    "horizon": "",
    "metode": "kamus"
@@ -1147,6 +1215,34 @@
    "s": -2,
    "n": 1,
    "katalis": "Asing Lepas BBRI Rp217,9 Miliar, Net Sell Terbesar Saat IHSG Turun 0,84% - Ajaib",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "EXCL": {
+   "s": 0,
+   "n": 1,
+   "katalis": "Harga Saham EXCL Hari Ini, Kamis 26 November 2026 - Pintu",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "INCO": {
+   "s": 0,
+   "n": 3,
+   "katalis": "Harga Saham INCO Hari Ini, Kamis 26 November 2026 - Pintu",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "TPIA": {
+   "s": 0,
+   "n": 1,
+   "katalis": "Harga Saham TPIA Hari Ini, Kamis 26 November 2026 - Pintu",
+   "horizon": "",
+   "metode": "kamus"
+  },
+  "HRUM": {
+   "s": 0,
+   "n": 1,
+   "katalis": "Harga Saham HRUM Hari Ini, Kamis 26 November 2026 - Pintu",
    "horizon": "",
    "metode": "kamus"
   },
@@ -1168,41 +1264,6 @@
    "s": 0,
    "n": 1,
    "katalis": "Rekomendasi Saham Tim Analis Bareksa: ASII, ACES & INCO - Bareksa.com",
-   "horizon": "",
-   "metode": "kamus"
-  },
-  "INCO": {
-   "s": 0,
-   "n": 2,
-   "katalis": "Rekomendasi Saham Tim Analis Bareksa: ASII, ACES & INCO - Bareksa.com",
-   "horizon": "",
-   "metode": "kamus"
-  },
-  "MEDC": {
-   "s": 0,
-   "n": 1,
-   "katalis": "Pasar Masih Cenderung Bearish, Analis Rekomendasikan Buy Saham Ini: ELSA, HMSP, ASII, dan ",
-   "horizon": "",
-   "metode": "kamus"
-  },
-  "BMRI": {
-   "s": -1,
-   "n": 2,
-   "katalis": "IHSG Masih Rawan Tertekan Hari Ini, Saham BMRI hingga ASII jadi Rekomendasi - Katadata.co.",
-   "horizon": "",
-   "metode": "kamus"
-  },
-  "BRIS": {
-   "s": -1,
-   "n": 3,
-   "katalis": "Cermati Rekomendasi Teknikal Saham BRIS, INDY, dan PANI, Kamis (26/11) - kontan.co.id",
-   "horizon": "",
-   "metode": "kamus"
-  },
-  "UNTR": {
-   "s": -2,
-   "n": 1,
-   "katalis": "UNTR Pimpin Penguatan Saham Saat INDY Anjlok di BEI - Demokratis.co.id",
    "horizon": "",
    "metode": "kamus"
   }
