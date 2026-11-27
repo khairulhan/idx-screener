@@ -1,66 +1,43 @@
-name: Update data saham
+name: Update data saham (manual)
 
-# Berjalan di KOMPUTER WINDOWS Anda (self-hosted runner), karena situs BEI
-# menolak server GitHub tetapi melayani internet Indonesia.
+# Data BEI harian sekarang diambil oleh tugas terjadwal Claude (lewat browser Claude
+# desktop di komputer Anda) sekitar pukul 16:50 WIB dan langsung disimpan ke repo ini.
+# Workflow ini hanya untuk dijalankan MANUAL bila perlu: di server GitHub, BEI biasanya
+# menolak, sehingga hasilnya memakai Yahoo Finance (tanpa frekuensi & asing).
 
 on:
-  schedule:
-    - cron: "47 16 * * 1-5"
-      timezone: "Asia/Jakarta"
   workflow_dispatch:
-    inputs:
-      isi_riwayat:
-        description: "Isi arsip N hari bursa ke belakang (0 = tidak). Pakai 25 saat pertama kali."
-        required: false
-        default: "0"
 
 permissions:
   contents: write
 
 concurrency:
-  group: data-saham-pc
+  group: data-saham-cloud
   cancel-in-progress: false
 
 jobs:
   data:
-    runs-on: [self-hosted, Windows]
-    timeout-minutes: 40
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-
-      - name: Siapkan Python
-        shell: cmd
-        run: |
-          set "VENV=%GITHUB_WORKSPACE%\..\idx-venv"
-          if not exist "%VENV%\Scripts\python.exe" (
-            where py >nul 2>&1 && (py -3 -m venv "%VENV%") || (python -m venv "%VENV%")
-          )
-          "%VENV%\Scripts\python.exe" -m pip install --quiet --disable-pip-version-check --upgrade -r requirements.txt
-          echo VENV_PY=%VENV%\Scripts\python.exe>>"%GITHUB_ENV%"
-
-      - name: Ambil Ringkasan Saham
-        shell: cmd
-        env:
-          PYTHONIOENCODING: utf-8
-        run: |
-          "%VENV_PY%" scripts\fetch_idx.py --isi-riwayat ${{ github.event.inputs.isi_riwayat || '0' }}
-
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Ambil data (BEI, bila gagal Yahoo)
+        run: python scripts/fetch_idx.py
       - name: Ambil berita (sekalian)
-        shell: cmd
         env:
-          PYTHONIOENCODING: utf-8
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          "%VENV_PY%" scripts\fetch_news.py
-          exit /b 0
-
+        run: python scripts/fetch_news.py || echo "berita gagal, lanjut"
       - name: Simpan ke repo
-        shell: cmd
         run: |
           git config user.name "idx-bot"
           git config user.email "idx-bot@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet && (echo tidak ada perubahan & exit /b 0)
-          git commit -m "data saham BEI (komputer)"
-          git pull --rebase origin %GITHUB_REF_NAME%
+          git diff --cached --quiet && { echo "tidak ada perubahan"; exit 0; }
+          git commit -m "data saham manual $(TZ=Asia/Jakarta date +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

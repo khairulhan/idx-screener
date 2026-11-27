@@ -228,6 +228,8 @@ def main():
     ap.add_argument("--tanggal", help="YYYYMMDD (bawaan: hari ini WIB, mundur bila libur)")
     ap.add_argument("--isi-riwayat", type=int, default=0, help="isi arsip N hari bursa ke belakang")
     ap.add_argument("--tanpa-bei", action="store_true", help="langsung pakai Yahoo (untuk server cloud)")
+    ap.add_argument("--dari-json", help="file JSON {tgl, kolom, baris} hasil ambilan browser Claude")
+    ap.add_argument("--riwayat-json", help="file JSON {YYYYMMDD: 'KODE,close,nilai;...'} untuk mengisi arsip")
     ap.add_argument("--lewati-jika-sudah-bei", action="store_true",
                     help="keluar tanpa mengubah apa pun bila data BEI hari ini sudah ada")
     a = ap.parse_args()
@@ -255,8 +257,30 @@ def main():
                 log(f"arsip {tgl}: {len(rows)} saham")
             time.sleep(1.5)
 
+    if a.riwayat_json:
+        isi = json.loads(pathlib.Path(a.riwayat_json).read_text(encoding="utf-8"))
+        for tgl, teks in sorted(isi.items()):
+            f = HIST / f"{tgl}.csv"
+            if f.exists() and len(baca_csv(f)) > 300:
+                continue
+            baris = []
+            for item in teks.split(";"):
+                p = item.split(",")
+                if len(p) == 3 and p[1]:
+                    baris.append({"Kode": p[0], "Penutupan": float(p[1]), "Nilai": float(p[2] or 0)})
+            if len(baris) > 300:
+                tulis_csv(f, baris, KOLOM)
+                log(f"arsip {tgl}: {len(baris)} saham (browser)")
+
     sumber, tgl_bursa, rows = "", "", []
-    calon = [] if a.tanpa_bei else ([a.tanggal] if a.tanggal else list(tanggal_mundur(hari_ini, 5)))
+    if a.dari_json:
+        isi = json.loads(pathlib.Path(a.dari_json).read_text(encoding="utf-8"))
+        data = [dict(zip(isi["kolom"], b)) for b in isi["baris"]]
+        rows = ubah_idx({"data": data})
+        if rows:
+            sumber, tgl_bursa = "Ringkasan Saham BEI (via browser Claude)", isi["tgl"]
+
+    calon = [] if (a.tanpa_bei or rows) else ([a.tanggal] if a.tanggal else list(tanggal_mundur(hari_ini, 5)))
     for tgl in calon:
         rows = ambil_idx(tgl)
         if rows:
