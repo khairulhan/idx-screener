@@ -2,3 +2,5 @@ curl_cffi>=0.7
 yfinance>=0.2.50
 feedparser>=6.0
 tzdata
+pandas
+numpy

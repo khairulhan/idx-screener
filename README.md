@@ -108,3 +108,12 @@ python -m http.server 8000     # buka http://localhost:8000
 - **Data milik PT Bursa Efek Indonesia.** Gunakan untuk keperluan pribadi dan patuhi syarat penggunaan situs BEI; jangan dijual ulang.
 - **Repo publik = dashboard & data bisa dilihat siapa saja yang tahu alamatnya.** API key tetap aman di Secrets.
 - Tombol "Analisis berita dengan Claude" di panel Berita hanya aktif bila dashboard dibuka di Claude; di GitHub Pages, sentimen berasal dari workflow (kamus atau Claude API).
+
+---
+
+## Tab "Tradeable" (pindai price action otomatis)
+
+- `scripts/scan_tradeable.py` memindai saham likuid (harga ≥ Rp50, nilai rata-rata 20 hari ≥ Rp5 M) memakai OHLC harian 6 bulan dari Yahoo Finance.
+- Aturan: tren naik (harga > MA50, MA20 > MA50, MA50 menanjak) → struktur higher high/higher low → harga di level kunci (pullback Fibonacci 38,2–61,8%/MA20 atau breakout resistance 60 hari dengan volume ≥ 1,5x) → konfirmasi candle → rasio untung-rugi ≥ 1:2. Hanya posisi beli.
+- Workflow `scan-tradeable.yml` berjalan otomatis setiap kali `data/latest.csv` diperbarui, plus cadangan pukul 19:47 WIB. Hasil: `data/tradeable.json`.
+- Hasilnya daftar kandidat untuk diperiksa manual, **bukan sinyal beli**.

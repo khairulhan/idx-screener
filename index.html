@@ -19,6 +19,7 @@
 --green:light-dark(#11804f,#34d399);--blue:light-dark(#2563c9,#60a5fa);--violet:light-dark(#7044c4,#a78bfa)}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
+[hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Inter Tight",system-ui,sans-serif;overflow-x:clip}
 .mono,.num{font-family:"JetBrains Mono",ui-monospace,monospace}
 .wrap{max-width:1280px;margin:0 auto;padding:20px max(3vw,14px) 48px}
@@ -121,6 +122,16 @@ code{font-family:"JetBrains Mono",monospace;font-size:12.5px;overflow-wrap:anywh
 <p class="desc" id="stratDesc"></p>
 
 <section class="cards" id="cards"></section>
+<section id="tradeView" hidden>
+  <div class="cards" id="trCards"></div>
+  <div class="box" style="margin-top:14px">
+    <h2>Daftar hasil pindai</h2>
+    <p class="hint" id="trInfo"></p>
+    <div class="row" id="trFilter" style="margin:4px 0 10px"></div>
+    <div class="scroll"><table id="trTbl"></table></div>
+    <p class="hint" id="trRule" style="margin-top:10px"></p>
+  </div>
+</section>
 
 <div class="grid2">
   <div class="box">
@@ -211,7 +222,8 @@ const STRATS={
  scalp:{name:'Scalping',pill:'Scalping — Likuid & Volatil',desc:'Mencari saham dengan frekuensi dan nilai transaksi tinggi, rentang harian lebar, dan fraksi harga (tick) kecil relatif terhadap harga — cocok untuk keluar-masuk cepat dalam sesi.'},
  swing:{name:'Swing / Tren',pill:'Swing — Tren Naik',desc:'Mencari saham dengan kenaikan moderat di atas MA20, didukung lonjakan nilai transaksi dan net buy asing — untuk ditahan beberapa hari.'},
  asing:{name:'Akumulasi Asing',pill:'Akumulasi Asing',desc:'Mengurutkan net buy asing, baik nominal maupun porsinya terhadap nilai transaksi, dengan syarat harga tidak turun.'},
- berita:{name:'Tren Berita',pill:'Tren Berita — Katalis',desc:'Mengurutkan saham yang disebut dalam berita yang Anda tempel menurut sentimen dan jumlah sebutan, disaring likuiditas minimum.'}
+ berita:{name:'Tren Berita',pill:'Tren Berita — Katalis',desc:'Mengurutkan saham yang disebut dalam berita yang Anda tempel menurut sentimen dan jumlah sebutan, disaring likuiditas minimum.'},
+ tradeable:{name:'Tradeable',pill:'Tradeable — Price Action',desc:'Hasil pindai otomatis saham likuid (6 bulan data harian) dengan hierarki price action: tren naik, struktur higher high/higher low, harga di level kunci (pullback atau breakout), konfirmasi candle, dan rasio untung-rugi minimal 1:2. Hanya posisi beli. Daftar kandidat untuk dicek manual, bukan sinyal beli.'}
 };
 const DEF={minPrice:50,minValue:5,minFreq:500,newsW:20,topN:3,
  bsjpMinChg:2,bsjpMinPos:0.7,sangat:19,agresif:8,
@@ -222,7 +234,7 @@ const PLAB={minPrice:'Harga minimum (Rp)',minValue:'Nilai transaksi minimum (Rp 
  bsjpMinChg:'BSJP: kenaikan minimum (%)',bsjpMinPos:'BSJP: posisi close minimum (0–1)',sangat:'Batas "Sangat Agresif" (%)',agresif:'Batas "Agresif" (%)',
  scMinValue:'Scalping: nilai minimum (Rp miliar)',scMinFreq:'Scalping: frekuensi minimum',scMinRange:'Scalping: rentang harian minimum (%)',
  swMinChg:'Swing: kenaikan minimum (%)',swMaxChg:'Swing: kenaikan maksimum (%)',asMinRatio:'Asing: porsi net buy minimum (%)'};
-const PSHOW={bsjp:['bsjpMinChg','bsjpMinPos','sangat','agresif'],scalp:['scMinValue','scMinFreq','scMinRange'],swing:['swMinChg','swMaxChg'],asing:['asMinRatio'],berita:[]};
+const PSHOW={bsjp:['bsjpMinChg','bsjpMinPos','sangat','agresif'],scalp:['scMinValue','scMinFreq','scMinRange'],swing:['swMinChg','swMaxChg'],asing:['asMinRatio'],berita:[],tradeable:[]};
 const CTXF=[['ihsg','IHSG (mis. 5.233,14 (+0,68%))'],['nilai','Nilai BEI (mis. Rp5,06 T)'],['asing','Asing (mis. Net Buy +Rp221,82 M)'],['sektor','Sektor penggerak'],['makro','Waspada makro']];
 
 let P=Object.assign({},DEF,store.get('params',{}));
@@ -466,7 +478,32 @@ function renderNews(){
  const e=Object.entries(NW);
  $('#newsRes').innerHTML=e.length?e.sort((a,b)=>b[1].s-a[1].s).map(([k,v])=>`<div class="nitem"><span class="code">${esc(k)}</span><span class="badge" style="color:${v.s>0?'var(--green)':v.s<0?'var(--red)':'var(--mute)'};text-align:center">${v.s>0?'+':''}${v.s}</span><span>${esc(v.katalis||'Diisi manual')}${v.src==='auto'?' <span class="msg">• otomatis</span>':''}${v.horizon?` <span class="msg">• ${esc(v.horizon)}</span>`:''}${v.n>1?` <span class="msg">• ${v.n} sebutan</span>`:''}${rows.find(r=>r.kode===k)?'':' <span class="msg">• tidak ada di data transaksi</span>'}</span></div>`).join(''):'<p class="msg">Belum ada hasil berita.</p>';
 }
-function all(){compute();renderHead();renderCards();renderTable();renderPlot();renderNews()}
+function all(){
+ const tv=strat==='tradeable';const asli=strat;if(tv)strat='bsjp';compute();strat=asli;renderHead();
+ $('#tradeView').hidden=!tv;$('#cards').hidden=tv;document.querySelector('.grid2').hidden=tv;
+ if(tv){renderTrade();renderNews();return}
+ renderCards();renderTable();renderPlot();renderNews()}
+let TRD=null,trFilt=store.get('trFilt','aktif');
+const TRC={tradeable:'var(--green)',tunggu:'var(--amber)','no trade':'var(--mute)'};
+const fmtNum=v=>v==null?'–':Number(v).toLocaleString('id-ID',{maximumFractionDigits:2});
+function renderTrade(){
+ if(!TRD){$('#trCards').innerHTML='<div class="card empty" style="grid-column:1/-1">Belum ada hasil pindai (data/tradeable.json). Hasil muncul otomatis setelah data sore masuk, atau jalankan Actions → Pindai saham tradeable.</div>';$('#trTbl').innerHTML='';$('#trInfo').textContent='';$('#trFilter').innerHTML='';return}
+ const j=TRD.jumlah||{},b=TRD.breadth||{},n=TRD.semesta||0;
+ const top=(TRD.items||[]).filter(r=>r.status==='tradeable');
+ $('#trCards').innerHTML=`
+ <div class="card c4"><div class="lbl">Tradeable <span class="tag">RASIO ≥ 1:2</span></div><div class="big"><span class="k">${j.tradeable||0} Emiten</span><span class="v">${top.slice(0,4).map(r=>esc(r.kode)).join(', ')||'—'}</span></div><div class="foot">Lolos semua syarat dari ${n} saham likuid</div></div>
+ <div class="card c2"><div class="lbl">Tunggu <span class="tag">PANTAU PEMICU</span></div><div class="big"><span class="k">${j.tunggu||0} Emiten</span></div><div class="foot">Tren/struktur mendukung, tapi level, konfirmasi, atau rasio belum terpenuhi</div></div>
+ <div class="card"><div class="lbl">No trade <span class="tag">LEWATI</span></div><div class="big"><span class="k">${j['no trade']||0} Emiten</span></div><div class="foot">Bukan tren naik atau tidak ada keunggulan</div></div>
+ <div class="card c3"><div class="lbl">Kondisi pasar (breadth)</div><div class="big"><span class="k">${b.ma50_naik??'–'}/${n}</span><span class="v">${b.median_3bln_pct!=null?fmtP(b.median_3bln_pct):'–'}</span></div><div class="foot">Saham dengan MA50 menanjak • median perubahan 3 bulan</div></div>`;
+ $('#trInfo').textContent=`Data harga s.d. ${TRD.tanggal_data} • dipindai ${TRD.diperbarui} • ${n} saham likuid (harga ≥ Rp50, nilai rata-rata 20 hari ≥ Rp5 M).`;
+ $('#trRule').textContent='Aturan: '+(TRD.aturan||'')+' Bukan rekomendasi investasi — periksa chart & broker summary sebelum bertransaksi.';
+ const F=[['aktif','Tradeable + Tunggu'],['tradeable','Tradeable'],['tunggu','Tunggu'],['no trade','No trade'],['semua','Semua']];
+ $('#trFilter').innerHTML=F.map(([k,l])=>`<button class="tab" data-f="${k}" aria-selected="${trFilt===k}">${l}</button>`).join('');
+ const L=(TRD.items||[]).filter(r=>trFilt==='semua'||(trFilt==='aktif'?r.status!=='no trade':r.status===trFilt));
+ const head='<thead><tr><th>Kode</th><th>Status</th><th>Setup</th><th class="n">Harga</th><th class="n">Chg%</th><th class="n">Stop</th><th class="n">Target</th><th class="n">Rasio</th><th class="n">Risiko</th><th class="n">Nilai 20h</th><th>Alasan</th><th>Pemicu / invalidasi</th></tr></thead>';
+ $('#trTbl').innerHTML=head+'<tbody>'+(L.length?L.map(r=>`<tr><td class="code">${esc(r.kode)}</td><td><span class="badge" style="color:${TRC[r.status]}">${esc(r.status.toUpperCase())}</span></td><td>${esc(r.setup||'–')}</td><td class="n">${fmtNum(r.close)}</td><td class="n" style="color:${r.chg>=0?'var(--green)':'var(--red)'}">${fmtP(r.chg)}</td><td class="n">${fmtNum(r.stop)}</td><td class="n">${fmtNum(r.target)}</td><td class="n">${r.rr!=null?'1:'+Number(r.rr).toLocaleString('id-ID',{maximumFractionDigits:1}):'–'}</td><td class="n">${r.risk_pct!=null?Number(r.risk_pct).toLocaleString('id-ID')+'%':'–'}</td><td class="n">${r.nilai20!=null?'Rp'+Number(r.nilai20).toLocaleString('id-ID')+' M':'–'}</td><td style="min-width:220px">${esc(r.alasan)}</td><td style="min-width:200px">${esc(r.pemicu||'')}</td></tr>`).join(''):'<tr><td colspan="12" class="empty">Tidak ada saham pada filter ini.</td></tr>')+'</tbody>';
+}
+$('#trFilter').addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(!b)return;trFilt=b.dataset.f;store.set('trFilt',trFilt);renderTrade()});
 
 /* ---------- events ---------- */
 function openP(id){const d=$(id);d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'})}
@@ -530,6 +567,7 @@ async function loadAuto(){
  try{autoMeta=JSON.parse(await getText('data/meta.json'))}catch(e){autoMeta=null}
  try{const n=JSON.parse(await getText('data/news.json'));autoItems=n.items||[];autoNews={};for(const[k,v]of Object.entries(n.sentimen||{}))autoNews[k]=Object.assign({src:'auto'},v)}catch(e){autoItems=[];autoNews={}}
  if(autoCsv!=null&&mode==='auto'){rawText=autoCsv;isDemo=false;unit='1';$('#unit').value='1';$('#dataIn').value=rawText}
+ try{TRD=JSON.parse(await getText('data/tradeable.json'))}catch(e){TRD=null}
  renderHeadlines();all();
 }
 $('#autoBtn').onclick=()=>{mode='auto';store.set('mode',mode);loadAuto()};
