@@ -11,10 +11,6 @@ Hasil:
   data/history/YYYYMMDD.csv  arsip harian (disimpan 60 hari terakhir)
   data/latest.csv            data terbaru + MA20 & rata-rata nilai 20 hari
   data/meta.json             tanggal bursa, sumber, waktu pengambilan
-
-Jalankan:  python scripts/fetch_idx.py
-           python scripts/fetch_idx.py --tanggal 20261126   (tanggal tertentu)
-           python scripts/fetch_idx.py --isi-riwayat 30      (isi arsip 30 hari ke belakang)
 """
 import argparse
 import csv
@@ -112,7 +108,7 @@ def ambil_yahoo(kode_list: list[str]) -> tuple[str, list[dict]]:
         log("yfinance belum terpasang; cadangan tidak tersedia")
         return "", []
     tick = [k + ".JK" for k in kode_list]
-    df = yf.download(tick, period="10d", interval="1d", group_by="ticker",
+    df = yf.download(tick, period="3mo", interval="1d", group_by="ticker",
                      auto_adjust=False, progress=False, threads=True)
     if df is None or df.empty:
         return "", []
@@ -128,6 +124,9 @@ def ambil_yahoo(kode_list: list[str]) -> tuple[str, list[dict]]:
         hari, prev = s.iloc[-1], (s.iloc[-2] if len(s) > 1 else None)
         close = float(hari["Close"])
         vol = float(hari["Volume"] or 0)
+        akhir20 = s.tail(20)
+        ma20 = float(akhir20["Close"].mean()) if len(akhir20) >= 10 else None
+        avg_nilai = float((akhir20["Close"] * akhir20["Volume"]).mean()) if len(akhir20) >= 10 else None
         out.append({
             "Kode": k, "Nama": "",
             "Sebelumnya": float(prev["Close"]) if prev is not None else None,
@@ -136,6 +135,9 @@ def ambil_yahoo(kode_list: list[str]) -> tuple[str, list[dict]]:
             "Nilai": vol * close,          # perkiraan: volume x harga penutupan
             "Frekuensi": None,             # Yahoo tidak menyediakan
             "Foreign Buy Lbr": None, "Foreign Sell Lbr": None, "Net Foreign": None,
+            # Yahoo menyediakan riwayat harga, jadi MA20 & rata-rata nilai dihitung langsung
+            "MA20": round(ma20, 2) if ma20 else None,
+            "AvgNilai20": round(avg_nilai) if avg_nilai else None,
         })
     return tgl_terakhir.strftime("%Y%m%d"), out
 
@@ -151,8 +153,7 @@ def tulis_csv(path: pathlib.Path, rows: list[dict], kolom: list[str]):
 
 
 def angka(v):
-    """Tulis angka tanpa pemisah ribuan; bilangan bulat tanpa desimal, lainnya 2 desimal
-    (dashboard membaca titik sebagai desimal hanya bila bukan pola ribuan 1.234)."""
+    """Tulis angka tanpa pemisah ribuan; bilangan bulat tanpa desimal, lainnya 2 desimal."""
     if v is None:
         return ""
     if isinstance(v, float):
@@ -179,8 +180,14 @@ def hitung_rata2(rows: list[dict]) -> list[dict]:
                 pass
     for r in rows:
         h, v = harga.get(r["Kode"], []), nilai.get(r["Kode"], [])
-        r["MA20"] = round(sum(h) / len(h), 2) if len(h) >= 10 else None
-        r["AvgNilai20"] = round(sum(v) / len(v)) if len(v) >= 10 else None
+        if len(h) >= 10:
+            r["MA20"] = round(sum(h) / len(h), 2)
+        else:
+            r.setdefault("MA20", None)        # pertahankan nilai dari Yahoo bila ada
+        if len(v) >= 10:
+            r["AvgNilai20"] = round(sum(v) / len(v))
+        else:
+            r.setdefault("AvgNilai20", None)
     return rows
 
 
